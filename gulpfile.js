@@ -135,7 +135,7 @@ function styles() {
         cssnano(),
         gcmq(),
     ];
-    return src(sourse + '/sass/main.scss')
+    return src(sourse + '/sass/main2.scss', {allowEmpty: true})
         // .pipe(sassGlob())
         .pipe(
             sass.sync()
@@ -152,12 +152,12 @@ function styles() {
 function common() {
     return src(
         [
-            sourse + '/js/common.js',
+            sourse + '/js/common2.js',
             // sourse + '/pug/**/*.js',
-        ])
+        ], {allowEmpty: true})
         // .pipe(babel())
         // .pipe(tabify(2, true))
-        .pipe(dest(publicPath + '/js'))
+        .pipe(dest(publicPath + '/js'), {allowEmpty: true})
         .pipe(browserSync.stream());
 }
 function svg() {
@@ -247,7 +247,7 @@ function startwatch() {
     // watch([sourse + '/js/libs.js'], { usePolling: true }, scripts);
     watch(sourse + '/sass/*.svg', { usePolling: true }, svgCopy);
 
-    watch([sourse + '/js/common.js'], { usePolling: true }, common);
+    watch([sourse + '/js/common2.js'], { usePolling: true }, common);
     watch(sourse + '/img', { usePolling: true }, img);
 }
 
