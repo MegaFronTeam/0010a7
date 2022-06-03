@@ -1,9 +1,92 @@
 mixin footer()
-	+b.FOOTER.footer
-		.container
-			.row
-				.col
-					
-				.col Footer
-				.col
-				.col-auto
+	+b.FOOTER.footer.footer
+		.footer__head
+			.container
+				.row
+					.col-6.d-none.d-lg-block
+						ul.footer__nav
+							li.footer__item
+								a.footer__link.text-white.link-body(href='#') &Gcy;&lcy;&acy;&vcy;&ncy;&acy;&yacy;
+							li.footer__item
+								a.footer__link.text-white.link-body(href='#') &Kcy;&acy;&tcy;&acy;&lcy;&ocy;&gcy; &acy;&vcy;&tcy;&ocy;
+							li.footer__item
+								a.footer__link.text-white.link-body(href='#') &Dcy;&ocy;&scy;&tcy;&acy;&vcy;&kcy;&acy;
+							li.footer__item
+								a.footer__link.text-white.link-body(href='#')  &Ocy; &kcy;&ocy;&mcy;&pcy;&acy;&ncy;&icy;&icy;  
+							li.footer__item
+								a.footer__link.text-white.link-body(href='#') &Fcy;&rcy;&acy;&ncy;&shcy;&icy;&zcy;&acy; 
+							li.footer__item
+								a.footer__link.text-white.link-body(href='#')  &Scy;&dcy;&acy;&tcy;&softcy; &acy;&vcy;&tcy;&ocy; &vcy; &acy;&rcy;&iecy;&ncy;&dcy;&ucy;
+							li.footer__item
+								a.footer__link.text-white.link-body(href='#') &Icy;&ncy;&vcy;&iecy;&scy;&tcy;&icy;&rcy;&ocy;&vcy;&acy;&ncy;&icy;&iecy;
+							li.footer__item
+								a.footer__link.text-white.link-body(href='#') &Ocy;&tcy;&zcy;&ycy;&vcy;&ycy;
+							li.footer__item
+								a.footer__link.text-white.link-body(href='#') &Ncy;&ocy;&vcy;&ocy;&scy;&tcy;&icy;
+							li.footer__item
+								a.footer__link.text-white.link-body(href='#')  &Pcy;&rcy;&acy;&vcy;&icy;&lcy;&acy; &acy;&rcy;&iecy;&ncy;&dcy;&ycy; 
+							li.footer__item
+								a.footer__link.text-white.link-body(href='#') &Kcy;&ocy;&ncy;&tcy;&acy;&kcy;&tcy;&ycy; 
+					.col-lg-6.text-lg-right.text-center
+						.footer__row-top.row.justify-content-end
+							.col-lg-auto.order-lg-0.order-1
+								.soc
+									a.soc__item(href='' target='_blank')
+										svg.icon.icon-vk
+											use(xlink:href='img/svg/sprite.svg#vk')
+									a.soc__item(href='' target='_blank')
+										svg.icon.icon-facebook
+											use(xlink:href='img/svg/sprite.svg#facebook')
+									a.soc__item(href='' target='_blank')
+										svg.icon.icon-instagram
+											use(xlink:href='img/svg/sprite.svg#instagram')
+								i.far.fa-address-book
+							.col-lg-auto
+								.footer__cont
+									div
+										a.footer__tel.h5.strong.text-white.link-body(href='tel:') +7 (495) 120-40-24
+									div
+										a.text-white.tdu.popup-with-move-anim.data-modal(data-title='Заказать звонок' href='#modal-call') &Zcy;&acy;&kcy;&acy;&zcy;&acy;&tcy;&softcy; &zcy;&vcy;&ocy;&ncy;&ocy;&kcy;
+							.col-lg-auto
+								.footer__text
+									| &Mcy;&ocy;&scy;&kcy;&vcy;&acy;, &pcy;&rcy;-&tcy; &Acy;&ncy;&dcy;&rcy;&ocy;&pcy;&ocy;&vcy;&acy; 8, &Tcy;&TScy; &laquo;&Mcy;&IEcy;&Gcy;&Acy;&Pcy;&Ocy;&Lcy;&Icy;&Scy;&raquo;, &ocy;&fcy;&icy;&scy; 4-108
+						.row.justify-content-end.d-none.d-lg-flex
+							.col-auto
+								a.footer__link.text-white.link-body.popup-with-move-anim(href='#modal-pay')
+									svg.icon.icon-purse
+										use(xlink:href='img/svg/sprite.svg#purse')
+									.d-none.d-lg-inline &Bcy;&ycy;&scy;&tcy;&rcy;&acy;&yacy; &ocy;&pcy;&lcy;&acy;&tcy;&acy;
+							.col-auto
+								a.footer__link.text-white.link-body.popup-with-move-anim(href='#modal-po')
+									svg.icon.icon-user
+										use(xlink:href='img/svg/sprite.svg#user')
+									.d-none.d-lg-inline &Lcy;&icy;&chcy;&ncy;&ycy;&jcy; &kcy;&acy;&bcy;&icy;&ncy;&iecy;&tcy;
+		.footer__bot
+			.container
+				.row.justify-content-lg-between.justify-content-center.align-items-center
+					.col-xl-auto
+						.row.align-items-center
+							.col-lg-auto.col.d-none.d-lg-block &copy; &Acy;&vcy;&tcy;&ocy;&pcy;&rcy;&ocy;&kcy;&acy;&tcy;24, 2018
+							.col-xl-auto.col-lg
+								.footer__btn-wrap.text-center.m.m--2.text-lg-left
+									a.footer__link-btn.d-inline-block.m-2(href='#')
+										img.res-i(src='img/webp/btn-1-d.webp' alt='' loading='lazy')
+									a.footer__link-btn.d-inline-block.m-2(href='#')
+										img.res-i(src='img/webp/btn-2-d.webp' alt='' loading='lazy')
+								.d-lg-none.text-center
+									a.scroll-link-top(href='#')
+										svg.icon.icon-angle-up
+											use(xlink:href='img/svg/sprite.svg#angle-up')
+					.col-xl
+						.footer__row-fot.row.align-items-center.justify-content-xl-end
+							.col-xl-auto.col-lg
+								.row
+									.col-lg-auto.text-center
+										a.text-gr(href='#') &Pcy;&ocy;&lcy;&icy;&tcy;&icy;&kcy;&acy; &kcy;&ocy;&ncy;&fcy;&icy;&dcy;&iecy;&ncy;&tscy;&icy;&acy;&lcy;&softcy;&ncy;&ocy;&scy;&tcy;&icy;
+									.col-lg-auto.text-center
+										a.text-gr(href='#') &Pcy;&ocy;&lcy;&softcy;&zcy;&ocy;&vcy;&acy;&tcy;&iecy;&lcy;&softcy;&scy;&kcy;&ocy;&iecy; &scy;&ocy;&gcy;&lcy;&acy;&shcy;&iecy;&ncy;&icy;&iecy;
+							.col-lg-auto.d-none.d-lg-block
+								a.scroll-link-top(href='#')
+									svg.icon.icon-angle-up
+										use(xlink:href='img/svg/sprite.svg#angle-up')
+			.d-lg-none.text-center &copy; &Acy;&vcy;&tcy;&ocy;&pcy;&rcy;&ocy;&kcy;&acy;&tcy;24, 2018

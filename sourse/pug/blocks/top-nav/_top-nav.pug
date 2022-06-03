@@ -1,5 +1,6 @@
 mixin menu-toggle()
-	+b.toggle-menu-mobile--js.d-lg-none
+	+b.toggle-mnu.toggle-mnu-1
+		p меню
 		span
 mixin mob-mnu()
 	-
@@ -12,8 +13,6 @@ mixin mob-mnu()
 		//- let dataJson = JSON.parse(json);
 	//- h1= dataJson['lala'] 
 	+b.menu-mobile--js
-		+b.toggle-menu-mobile--js
-			span
 		+e.inner
 			+mnu()
 	//  мобильное меню
@@ -21,36 +20,18 @@ mixin top-nav()
 	// start top-nav
 	+b.top-nav.block-with-lazy
 		.container
-			//- +e.row.row
-			//- 	.col
-			//- 		+e.city
-			//- 			+icon('map-point')
-			//- 			| Москва
-			//- 	.col
-			//- 		a(href="tel:+74951384388") +7 495 138 43 88
-			//- 	.col
-			//- 		a(href="#") Заказать звонок
-			//- 	.col
-			//- 		+soc()
-			//- 	.col
-			//- 		a(href="mailtp:info@a7.rent") info@a7.rent
-			//- 	.col 
-			//- 		+e.sell-auto
-			//- 			+icon('vehicle_car_regular')
-			//- 			| Сдать свой авто
-			//- 	.col 
-			//- 		+e.invest
-			//- 			+icon('analysis_graph')
-			//- 			| Инвестировать
-			//- 	.col-auto
-			//- 		a(href="#") Купить франшизу за 99 т.р.
+			+e.row.row
+				.col-auto
+					a(href="#") 
+						+logo
+				+e.col.col.d-none.d-lg-block
+					+input("Поиск авто: audi, поло, минивен, двухдверный, черный")
+				.col.d-none.d-lg-block
+					.menu-mobile.menu-mobile--js
+						.menu-mobile__inner
+							//- +menu-toggle()
+							+mnu()
+				.col-auto.ml-auto
+					+menu-toggle()
 			//- .row
-			//- 	.col.order-lg-0.order-last
-			//- 		.menu-mobile.menu-mobile--js
-			//- 			.menu-mobile__inner
-			//- 				+menu-toggle()
-			//- 				+mnu()
-					
-			//- 	.col-auto.d-lg-none
-			//- 		+menu-toggle()
 	// end top-nav
