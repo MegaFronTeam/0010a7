@@ -21,13 +21,36 @@ mixin top-nav()
 	// start top-nav
 	+b.top-nav.block-with-lazy
 		.container
-			.row
-				.col.order-lg-0.order-last
-					.menu-mobile.menu-mobile--js
-						.menu-mobile__inner
-							+menu-toggle()
-							+mnu()
+			//- +e.row.row
+			//- 	.col
+			//- 		+e.city
+			//- 			+icon('map-point')
+			//- 			| Москва
+			//- 	.col
+			//- 		a(href="tel:+74951384388") +7 495 138 43 88
+			//- 	.col
+			//- 		a(href="#") Заказать звонок
+			//- 	.col
+			//- 		+soc()
+			//- 	.col
+			//- 		a(href="mailtp:info@a7.rent") info@a7.rent
+			//- 	.col 
+			//- 		+e.sell-auto
+			//- 			+icon('vehicle_car_regular')
+			//- 			| Сдать свой авто
+			//- 	.col 
+			//- 		+e.invest
+			//- 			+icon('analysis_graph')
+			//- 			| Инвестировать
+			//- 	.col-auto
+			//- 		a(href="#") Купить франшизу за 99 т.р.
+			//- .row
+			//- 	.col.order-lg-0.order-last
+			//- 		.menu-mobile.menu-mobile--js
+			//- 			.menu-mobile__inner
+			//- 				+menu-toggle()
+			//- 				+mnu()
 					
-				.col-auto.d-lg-none
-					+menu-toggle()
+			//- 	.col-auto.d-lg-none
+			//- 		+menu-toggle()
 	// end top-nav

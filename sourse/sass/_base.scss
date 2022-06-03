@@ -487,3 +487,10 @@ iframe {
 	
 	// @include row-sw(10px, sm, 100px);
 }
+
+.container {
+	@include media-breakpoint-up(lg) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}

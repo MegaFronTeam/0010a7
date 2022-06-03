@@ -1,7 +1,102 @@
 
 	// start .topLine
-	.topLine {
-		 
+.top_line {
+	position: relative;
+	border-bottom: none;
+	background-color: $gray-100;
+	&__row {
+		--bs-gutter-x: #{rem(30)};
+		align-items: center;
+		margin-right: calc(var(--bs-gutter-x) / -2) !important;
+		margin-left: calc(var(--bs-gutter-x) / -2)!important;
+		& > * {
+			padding-right: calc(var(--bs-gutter-x) / 2) !important;
+			padding-left: calc(var(--bs-gutter-x) / 2) !important;
+		}
+	}
+	&__indent {
+		padding-top: rem(10);
+		padding-bottom: rem(10);
+	}
+	&__col {
+		@include media-breakpoint-up(lg) {
+			margin-left: auto;
+		}
+	}
+	&__city {
+		font-size: rem(14);
+		color: $gray-900;
+		display: flex;
+		align-items: center;
+		line-height: 1.40em;
+		max-width: rem(80);
+		.icon {
+			font-size: rem(20);
+			margin-right: rem(7);
+			flex: 0 0 auto;
+		}
+	}
+	&__num {
+		font-weight: 500;
+		color: $gray-900;
+		font-size: rem(14);
+	}
+	&__get-call {
+		color: $gray-600;
+		font-size: rem(14);
+		text-decoration: dashed !important;
+		text-decoration-line: underline !important;
+	}
+	.soc {
+		justify-content: flex-start;
+		&__item {
+			width: 20px;
+			height: 20px;
+			border: none;
+			.icon {
+				@include mt;
+				font-size: rem(20);
+				&-whatsapp {
+					color: #40A86F;
+				}
+				&-telegram {
+					color: #3BA4C4;
+				}
+			}
+			&:hover {
+				.icon {
+					&-whatsapp {
+						color: #348759;
+					}
+					&-telegram {
+						color: #287288;
+					}
+				}
+			}
+		}
+	}
+	&__mail {
+		font-size: rem(14);
+		color: $gray-600;
+	}
+	&__sell-auto, &__invest {
+		display: flex;
+		align-items: center;
+		font-size: rem(14);
+		color: $gray-900;
+		.icon {
+			font-size: rem(20);
+			flex: 0 0 auto;
+			margin-right: 6px;
+		}
+	}
+	&__buy {
+		padding: rem(11) rem(19);
+		color: $white;
+		position: relative;
+		background-color: $gray-900;
+		display: block;
+	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}
