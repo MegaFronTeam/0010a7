@@ -125,6 +125,7 @@ function copyLibs() {
         .pipe(rename(function (path) {
             path.dirname = path.dirname.replace(/\/dist/, '').replace(/\\dist/, '');
         }))
+        .pipe(dest(publicPath + '/libs2'))
         .pipe(dest(publicPath + '/libs'));
 }
 
