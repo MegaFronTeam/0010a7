@@ -1,0 +1,43 @@
+<svg id="l" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="211" height="179" viewBox="0 0 211 179">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: #333;
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        opacity: 0.5;
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        opacity: 0.2;
+        filter: url(#filter-2);
+      }
+
+      .cls-3 {
+        opacity: 0.05;
+        filter: url(#filter-3);
+      }
+    </style>
+    <filter id="filter" x="335" y="1759" width="91" height="179" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#fff"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="275" y="1759" width="91" height="179" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#fff"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-3" x="215" y="1759" width="91" height="179" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#fff"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="Фигура_631_копия_2" data-name="Фигура 631 копия 2" class="cls-1" d="M335.011,1848.21l1.408-1.41,89.569,89.78-1.407,1.41Zm0,0.58,1.408,1.41,89.569-89.78-1.407-1.41Z" transform="translate(-215 -1759)"/>
+  <path id="Фигура_631_копия_3" data-name="Фигура 631 копия 3" class="cls-2" d="M275.011,1848.21l1.408-1.41,89.569,89.78-1.407,1.41Zm0,0.58,1.408,1.41,89.569-89.78-1.407-1.41Z" transform="translate(-215 -1759)"/>
+  <path id="Фигура_631_копия_4" data-name="Фигура 631 копия 4" class="cls-3" d="M215.011,1848.21l1.408-1.41,89.569,89.78-1.407,1.41Zm0,0.58,1.408,1.41,89.569-89.78-1.407-1.41Z" transform="translate(-215 -1759)"/>
+</svg>

@@ -18,7 +18,20 @@
 	&__item{
 
 	}
-
+	.trop {
+		&__list-item {
+			margin-bottom: rem(16);
+			@include media-breakpoint-up(md) {
+				border: none;
+			}
+		}
+	}
+	.s-catalog-filter .wrapp-hidden {
+		padding-top: 200px;
+		@include media-breakpoint-down(sm) {
+			padding-top: 212px;
+		}
+	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}
