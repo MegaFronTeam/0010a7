@@ -3,8 +3,8 @@
 	// 
 	position: relative;
 	border-bottom: none;
-	padding-top: rem(15);
-	padding-bottom: rem(15);
+	padding-top: rem(14);
+	padding-bottom: rem(14);
 	&__row {
 		align-items: center;
 	}
@@ -17,14 +17,19 @@
 	&__input {
 		padding: rem(10) rem(15);
 		border-radius: 8px;
+		@include media-breakpoint-up(lg) {
+			width: rem(462);
+		}
 	}
 	.toggle-mnu {
 		padding: rem(13) rem(15);
 		background: #F6EE25;
 		border-radius: 8px;
 		color: $gray-900;
-		@include media-breakpoint-down(lg) {
-			height: 46px;
+		height: 46px;
+		width: auto;
+		@include media-breakpoint-up(lg) {
+			width: auto;
 		}
 		p {
 			font-size: rem(14);
@@ -56,6 +61,18 @@
 					top: 6px;
 				}
 			}
+		}
+	}
+	&__login-in {
+		display: flex;
+		align-items: center;
+		font-size: rem(14);
+		text-transform: uppercase;
+		color: $gray-900;
+		.icon {
+			flex: 0 0 auto;
+			font-size: rem(20);
+			margin-right: rem(5);
 		}
 	}
 	// &__city {

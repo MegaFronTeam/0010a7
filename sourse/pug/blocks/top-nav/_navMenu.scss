@@ -3,7 +3,7 @@
 
 		display: flex;
 		text-align: center;
-		@include roww(20px);
+		@include roww(18px);
 		flex-wrap: wrap;
 	}
 
@@ -19,7 +19,8 @@
 	}
 	a{
 		display: block;
-		padding: rem(20) calc(var(--bs-gutter-x) / 2);
+		padding: 0 calc(var(--bs-gutter-x) / 2);
+		text-transform: uppercase;
 	}
 }
 

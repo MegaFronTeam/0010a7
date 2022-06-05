@@ -24,13 +24,17 @@ mixin top-nav()
 				.col-auto
 					a(href="#") 
 						+logo
-				+e.col.col.d-none.d-lg-block
+				+e.col.col.col-lg-auto.d-none.d-lg-block
 					+input("Поиск авто: audi, поло, минивен, двухдверный, черный")
 				.col.d-none.d-lg-block
 					.menu-mobile.menu-mobile--js
 						.menu-mobile__inner
 							//- +menu-toggle()
 							+mnu()
+				.col-auto.d-none.d-lg-block
+					+e.login-in(href="#")
+						+icon('account')
+						| Войти
 				.col-auto.ml-auto
 					+menu-toggle()
 			//- .row
