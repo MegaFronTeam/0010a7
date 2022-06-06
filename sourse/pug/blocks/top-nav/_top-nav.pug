@@ -21,21 +21,21 @@ mixin top-nav()
 	+b.top-nav.block-with-lazy
 		.container
 			+e.row.row
-				.col-auto
+				+e.col.col-auto
 					a(href="#") 
 						+logo
 				+e.col.col.col-lg-auto.d-none.d-lg-block
 					+input("Поиск авто: audi, поло, минивен, двухдверный, черный")
-				.col.d-none.d-lg-block
+				+e.col.col.d-none.d-lg-block
 					.menu-mobile.menu-mobile--js
 						.menu-mobile__inner
 							//- +menu-toggle()
 							+mnu()
-				.col-auto.d-none.d-lg-block
+				+e.col.col-auto.d-none.d-lg-block
 					+e.login-in(href="#")
 						+icon('account')
 						| Войти
-				.col-auto.ml-auto
+				+e.col.col-auto.ml-auto
 					+menu-toggle()
 			//- .row
 	// end top-nav

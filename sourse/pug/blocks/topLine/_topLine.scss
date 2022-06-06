@@ -96,6 +96,9 @@
 		position: relative;
 		background-color: $gray-900;
 		display: block;
+		&:hover {
+			color: #19BB70;
+		}
 	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}

@@ -9,7 +9,6 @@
 		align-items: center;
 	}
 	&__col {
-
 	}
 	&__input-wrap {
 		margin-bottom: 0;
@@ -17,6 +16,9 @@
 	&__input {
 		padding: rem(10) rem(15);
 		border-radius: 8px;
+		@include media-breakpoint-only(lg) {
+			width: rem(309);
+		}
 		@include media-breakpoint-up(lg) {
 			width: rem(462);
 		}

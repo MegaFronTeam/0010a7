@@ -495,3 +495,26 @@ iframe {
 		padding-right: 15px;
 	}
 }
+
+.form-check-input {
+	color-adjust: exact;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: #fff;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	border: 1pxsolidrgba(0,0,0,.25);
+	height: 1.6em;
+	margin-top: -0.05em;
+	-webkit-print-color-adjust: exact;
+	-moz-print-color-adjust: exact;
+	vertical-align: top;
+	width: 1.6em;
+}
+
+.gj-picker {
+	position: absolute;
+	background-color: #fff;
+}

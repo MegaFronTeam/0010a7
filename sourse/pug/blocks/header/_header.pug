@@ -1,5 +1,37 @@
 mixin header()
 	// start header
-	+b.HEADER.header#header&attributes(attributes)
-		block
+	+b.HEADER.header2#header&attributes(attributes)
+		.container
+			.row
+				+e.col.col-lg-6
+					+e.wrap
+						.h1.text-center Аренда автомобилей без залога
+						+b.form-wrap
+							+e.inc-wrap
+								+in-c('radio', 'Посуточная', 'rent').border-bottom
+								+in-c('radio', 'Долгосрочная', 'rent').border-bottom
+								+in-c('radio', 'С выкупом', 'rent')
+								+in-c('radio', 'С водителем', 'rent')
+							+e.date-picker
+								+e.date-item
+									p Дата начала
+									<input id="datepicker" width="215" />
+								.dash
+								+e.date-item
+									p Дата окончания
+									<input id="datepicker2" width="215" />
+							+e.BUTTON.submit(type="submit").btn.btn-primary подобрать
+				.col-lg-6
+					+e.button-wrap
+						+e.slider--js.swiper
+							.swiper-wrapper
+								+e.slide.swiper-slide
+									+img('img/slider-car.png', 'bg')
+								+e.slide.swiper-slide
+									+img('img/artical-1.jpg', 'bg')
+								+e.slide.swiper-slide
+									+img('img/slider-car.png', 'bg')
+								+e.slide.swiper-slide
+									+img('img/slider-car.png', 'bg')
+						+arrow()
 	// end header
