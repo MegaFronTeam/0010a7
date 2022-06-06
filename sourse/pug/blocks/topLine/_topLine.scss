@@ -4,6 +4,7 @@
 	position: relative;
 	border-bottom: none;
 	background-color: $gray-100;
+	z-index: 1001;
 	&__row {
 		--bs-gutter-x: #{rem(30)};
 		align-items: center;

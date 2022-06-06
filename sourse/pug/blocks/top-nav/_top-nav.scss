@@ -3,12 +3,18 @@
 	// 
 	position: relative;
 	border-bottom: none;
-	padding-top: rem(14);
-	padding-bottom: rem(14);
+	z-index: 1001;
 	&__row {
 		align-items: center;
 	}
 	&__col {
+		padding-top: rem(14);
+		padding-bottom: rem(14);
+		&--2 {
+			padding-top: 0;
+			padding-bottom: 0;
+			align-self: stretch;
+		}
 	}
 	&__input-wrap {
 		margin-bottom: 0;
@@ -23,8 +29,8 @@
 			width: rem(462);
 		}
 	}
-	.toggle-mnu {
-		padding: rem(13) rem(15);
+	.toggle-menu-mobile {
+		padding: rem(13) rem(35) rem(13) rem(15);
 		background: #F6EE25;
 		border-radius: 8px;
 		color: $gray-900;
@@ -42,6 +48,7 @@
 		span {
 			background-color: $gray-900;
 			font-size: rem(20);
+			right: 15px;
 			&:before {
 				background-color: $gray-900;
 				font-size: rem(20);
@@ -60,7 +67,7 @@
 					top: 0;
 				}
 				&:after {
-					top: 6px;
+					top: 0;
 				}
 			}
 		}

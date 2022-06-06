@@ -145,12 +145,20 @@
 			input {
 				padding: 5px rem(25);
 			}
+			.gj-datepicker {
+				@include media-breakpoint-down(lg) {
+					width: calc(100% - 10px) !important;
+				}
+			}
 			.dash {
 				display: block;
 				width: 16px;
 				height: 1.5px;
 				background-color: $gray-900;
 				margin-top: 26px;
+				@include media-breakpoint-down(lg) {
+					width: 10px;
+				}
 			}
 			.btn-outline-secondary {
 				padding: 2px 3px;
@@ -163,10 +171,6 @@
 			.gj-datepicker-bootstrap {
 				width: 74px;
 			}
-			.gj-picker {
-				padding: 10px;
-    		text-align: center;
-			}
 		}
 		p {
 			font-size: rem(14);
@@ -176,6 +180,7 @@
 	}
 	&__button-wrap {
 		position: relative;
+		height: 100%;
 	}
 	&__slider {
 		max-width: rem(572);
@@ -189,15 +194,23 @@
 			width: 100%;
 			height: 100%;
 		}
-
+		
 	}
 	.swiper-button-hand {
 		top: auto;
-		background-color: #FFFFFF;
-		opacity: 0.2;
+		background-color: rgba($color: #fff, $alpha: .2);
+		// opacity: 0.2;
+		color: #fff;
 		border-radius: 8px;
 		width: 46px;
 		height: 46px;
+		display: none;
+		@include media-breakpoint-up(lg) {
+			display: flex;
+		}
+		.icon {
+			font-size: rem(20);
+		}
 		&-prev {
 			left: auto;
 			right: 61px;
@@ -229,5 +242,9 @@
 	@include media-breakpoint-down(md) {}
 	@include media-breakpoint-down(sm) {}
 	@include media-breakpoint-down(xs) {} 
-
+	
 } // end.header
+.gj-picker {
+	padding: 10px;
+	text-align: center;
+}

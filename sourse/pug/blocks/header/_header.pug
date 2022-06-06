@@ -3,7 +3,7 @@ mixin header()
 	+b.HEADER.header2#header&attributes(attributes)
 		.container
 			.row
-				+e.col.col-lg-6
+				+e.col.col-lg-6.order-2.order-lg-1
 					+e.wrap
 						.h1.text-center Аренда автомобилей без залога
 						+b.form-wrap
@@ -21,7 +21,7 @@ mixin header()
 									p Дата окончания
 									<input id="datepicker2" width="215" />
 							+e.BUTTON.submit(type="submit").btn.btn-primary подобрать
-				.col-lg-6
+				.col-lg-6.order-1.order-lg-1
 					+e.button-wrap
 						+e.slider--js.swiper
 							.swiper-wrapper

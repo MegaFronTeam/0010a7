@@ -1,5 +1,5 @@
 mixin menu-toggle()
-	+b.toggle-mnu.toggle-mnu-1
+	+b.toggle-menu-mobile--js
 		p меню
 		span
 mixin mob-mnu()
@@ -14,7 +14,8 @@ mixin mob-mnu()
 	//- h1= dataJson['lala'] 
 	+b.menu-mobile--js
 		+e.inner
-			+mnu()
+			+mnu().d-block.d-lg-none
+			//- +topLine().d-block.d-lg-none
 	//  мобильное меню
 mixin top-nav() 
 	// start top-nav
@@ -26,7 +27,7 @@ mixin top-nav()
 						+logo
 				+e.col.col.col-lg-auto.d-none.d-lg-block
 					+input("Поиск авто: audi, поло, минивен, двухдверный, черный")
-				+e.col.col.d-none.d-lg-block
+				+e.col--2.col.d-none.d-lg-block
 					.menu-mobile.menu-mobile--js
 						.menu-mobile__inner
 							//- +menu-toggle()
@@ -37,5 +38,6 @@ mixin top-nav()
 						| Войти
 				+e.col.col-auto.ml-auto
 					+menu-toggle()
+					//- +mob-mnu()
 			//- .row
 	// end top-nav
