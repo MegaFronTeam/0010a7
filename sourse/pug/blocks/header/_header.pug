@@ -17,7 +17,7 @@ mixin header()
 									p Дата начала
 									<input id="datepicker" width="215" />
 								.dash
-								+e.date-item
+								+e.date-item--2
 									p Дата окончания
 									<input id="datepicker2" width="215" />
 							+e.BUTTON.submit(type="submit").btn.btn-primary подобрать
@@ -28,10 +28,11 @@ mixin header()
 								+e.slide.swiper-slide
 									+img('img/slider-car.png', 'bg')
 								+e.slide.swiper-slide
-									+img('img/artical-1.jpg', 'bg')
+									+img('img/slider-car.png', 'bg').revert
 								+e.slide.swiper-slide
 									+img('img/slider-car.png', 'bg')
 								+e.slide.swiper-slide
-									+img('img/slider-car.png', 'bg')
+									+img('img/slider-car.png', 'bg').revert
 						+arrow()
+						.swiper-pagination
 	// end header

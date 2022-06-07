@@ -2,7 +2,7 @@
 <html lang="ru">
 	<head></head>
 	<meta charset="utf-8">
-	<title>тест dffsdf dfsdтест 2222</title>
+	<title>Главная</title>
 	<meta name="description" content="о чем страница">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" meta="meta" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -15,7 +15,7 @@
 		
 	</style>
 	<link href="libs/swiper/swiper-bundle.min.css" rel="stylesheet"/>
-	<link href="libs/@fancyapps/ui/fancybox.css" rel="stylesheet"/>
+	<link href="libs/@fancyapps/ui/fancybox.css" rel="stylesheet"/><link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
 	<link href="css/main.min.all.css" rel="stylesheet"/>
 	<link href="css/main2.min.css" rel="stylesheet"/>
 	<body class="main-page">
@@ -253,7 +253,7 @@
 											<p>Дата начала</p><input id="datepicker" width="215" />
 										</div>
 										<div class="dash"></div>
-										<div class="form-wrap__date-item">
+										<div class="form-wrap__date-item form-wrap__date-item--2">
 											<p>Дата окончания</p><input id="datepicker2" width="215" />
 										</div>
 									</div>
@@ -268,11 +268,11 @@
 									<div class="swiper-wrapper">
 										<div class="header2__slide swiper-slide"><img class="object-fit-js" src="img/slider-car.png" alt="" loading="lazy"/>
 										</div>
-										<div class="header2__slide swiper-slide"><img class="object-fit-js" src="img/artical-1.jpg" alt="" loading="lazy"/>
+										<div class="header2__slide swiper-slide"><img class="object-fit-js revert" src="img/slider-car.png" alt="" loading="lazy"/>
 										</div>
 										<div class="header2__slide swiper-slide"><img class="object-fit-js" src="img/slider-car.png" alt="" loading="lazy"/>
 										</div>
-										<div class="header2__slide swiper-slide"><img class="object-fit-js" src="img/slider-car.png" alt="" loading="lazy"/>
+										<div class="header2__slide swiper-slide"><img class="object-fit-js revert" src="img/slider-car.png" alt="" loading="lazy"/>
 										</div>
 									</div>
 								</div>
@@ -286,6 +286,7 @@
 										<use xlink:href="img/svg/sprite.svg#chevron-right"></use>
 									</svg>
 								</div>
+								<div class="swiper-pagination"></div>
 							</div>
 						</div>
 					</div>
@@ -386,7 +387,7 @@
 				</div>
 			</footer>
 		</div>
-		<!--  start modals--><a class="link-modal-js" href="modal-call">modal-call </a>
+		<!--  start modals--><a class="popup-with-move-anim" href="#modal-call">modal-call </a>
 		<div id="modal-call" style="display: none">
 			<div class="modal-win">
 				<div class="form-wrap">

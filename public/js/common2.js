@@ -367,18 +367,24 @@ function eventHandler() {
 
   const header2Swiper = new Swiper('.header2__slider--js', {
 		slidesPerView: 1,
-    effect: 'fade',
+		effect: 'fade',
+		loop: true,
+		autoplay: {
+			delay: '4500',
+			disableOnInteraction: true,
+		},
     fadeEffect: {
-      crossFade: true
+      crossFade: true,
     },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    breakpoints: {
-      992: {
-      }
-    }
+    pagination: {
+			el: '.swiper-pagination',
+			type: 'bullets',
+			clickable: true,
+		},
 	});
 
   var today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
