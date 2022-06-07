@@ -21,13 +21,84 @@
 	<body class="main-page">
 		<div class="main-wrapper">
 			<div class="menu-mobile menu-mobile--js">
-				<div class="menu-mobile__inner">
-					<ul class="menu d-block d-lg-none" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+				<div class="menu-mobile__inner"> 
+					<div class="menu-mobile__wrap d-block d-lg-none">
+						<div class="menu-mobile__input-wrap form-group"><input class="menu-mobile__input form-control" name="text" type="text" placeholder="Поиск авто"/>
+						</div>
+						<!-- +e.input-wrap-->
+						<a class="menu-mobile__buy text-center" href="#">Купить франшизу за 99 т.р.
+						</a>
+						<div class="menu-mobile__indent">
+							<a class="menu-mobile__sell-auto" href="#">
+								<svg class="icon icon-vehicle_car_regular ">
+									<use xlink:href="img/svg/sprite.svg#vehicle_car_regular"></use>
+								</svg>Сдать свой авто
+							</a>
+						</div>
+						<div class="menu-mobile__indent">
+							<a class="menu-mobile__invest" href="#">
+								<svg class="icon icon-analysis_graph ">
+									<use xlink:href="img/svg/sprite.svg#analysis_graph"></use>
+								</svg>Инвестировать
+							</a>
+						</div>
+						<div class="menu-mobile__indent">
+							<a class="menu-mobile__login-in" href="#">
+								<svg class="icon icon-account ">
+									<use xlink:href="img/svg/sprite.svg#account"></use>
+								</svg>Войти
+							</a>
+						</div>
+						<div class="menu-mobile__indent">
+							<a class="menu-mobile__online-pay" href="#">Онлайн-оплата
+							</a>
+						</div>
+						<div class="menu-mobile__indent menu-mobile__indent--2">
+							<a class="menu-mobile__num" href="tel:+74951384388">+7 495 138 43 88
+							</a>
+							<div class="soc">
+								<a class="soc__item" href="#" target="_blank">
+									<svg class="icon icon-whatsapp ">
+										<use xlink:href="img/svg/sprite.svg#whatsapp"></use>
+									</svg>
+								</a>
+								<a class="soc__item" href="#" target="_blank">
+									<svg class="icon icon-telegram ">
+										<use xlink:href="img/svg/sprite.svg#telegram"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="menu-mobile__indent menu-mobile__indent--2">
+							<a class="menu-mobile__get-call" href="#">Заказать звонок
+							</a>
+						</div>
+						<div class="menu-mobile__indent menu-mobile__indent--2">
+							<a class="menu-mobile__mail" href="mailtp:info@a7.rent">info@a7.rent
+							</a>
+						</div>
+					</div>
+					<ul class="menu d-block d-xl-none" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
 						<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Условия</a></li>
 						<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Цены</a></li>
 						<li class="menu-item active" itemprop="item"><a href="#" itemprop="url">Новости</a></li>
 						<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Контакты</a></li>
-						<li class="menu-item" itemprop="item"><a class="text-success" href="#" itemprop="url">Онлайн-оплата</a></li>
+						<li class="menu-item d-none d-lg-block" itemprop="item"><a class="text-success" href="#" itemprop="url">Онлайн-оплата</a></li>
+					</ul>
+					<ul class="trop__list">
+						<li class="trop__list-item first active"> <a class="trop__list-link" href="#">Главная</a></li>
+						<li class="trop__list-item"><a class="trop__list-link" href="#">Доставка</a></li>
+						<li class="trop__list-item"><a class="trop__list-link" href="#">Франшиза</a></li>
+						<li class="trop__list-item"><a class="trop__list-link" href="#">Сдать авто в аренду</a></li>
+						<li class="trop__list-item"><a class="trop__list-link" href="#">Автоломбард</a></li>
+						<li class="trop__list-item"><a class="trop__list-link" href="#">О компании</a></li>
+						<li class="trop__list-item"><a class="trop__list-link" href="#">Отзывы</a></li>
+						<li class="trop__list-item"><a class="trop__list-link" href="#">Новости</a></li>
+						<li class="trop__list-item"><a class="trop__list-link" href="#">Условия аренды</a></li>
+						<li class="trop__list-item"><a class="trop__list-link" href="#">Контакты</a></li>
+						<li class="trop__list-item"><a class="trop__list-link" href="#">Проверка</a></li>
+						<li class="trop__list-item"><a class="trop__list-link" href="#">Карта сайта</a></li>
+						<li class="trop__list-item last"> <a class="trop__list-link" href="#">Публичная оферта</a></li>
 					</ul>
 				</div>
 			</div>
@@ -123,27 +194,23 @@
 							</div>
 							<!-- +e.input-wrap-->
 						</div>
-						<div class="top-nav__col top-nav__col--2 col d-none d-lg-block">
-							<div class="menu-mobile menu-mobile--js">
-								<div class="menu-mobile__inner">
-									<ul class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-										<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Условия</a></li>
-										<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Цены</a></li>
-										<li class="menu-item active" itemprop="item"><a href="#" itemprop="url">Новости</a></li>
-										<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Контакты</a></li>
-										<li class="menu-item" itemprop="item"><a class="text-success" href="#" itemprop="url">Онлайн-оплата</a></li>
-									</ul>
-								</div>
-							</div>
+						<div class="top-nav__col top-nav__col--2 col d-none d-xl-block">
+							<ul class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+								<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Условия</a></li>
+								<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Цены</a></li>
+								<li class="menu-item active" itemprop="item"><a href="#" itemprop="url">Новости</a></li>
+								<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Контакты</a></li>
+								<li class="menu-item d-none d-lg-block" itemprop="item"><a class="text-success" href="#" itemprop="url">Онлайн-оплата</a></li>
+							</ul>
 						</div>
-						<div class="top-nav__col col-auto d-none d-lg-block">
+						<div class="top-nav__col col-auto d-none d-lg-block ml-auto">
 							<a class="top-nav__login-in" href="#">
 								<svg class="icon icon-account ">
 									<use xlink:href="img/svg/sprite.svg#account"></use>
 								</svg>Войти
 							</a>
 						</div>
-						<div class="top-nav__col col-auto ml-auto">
+						<div class="top-nav__col col-auto ml-auto ml-lg-0">
 							<div class="toggle-menu-mobile toggle-menu-mobile--js">
 								<p>меню</p><span></span>
 							</div>

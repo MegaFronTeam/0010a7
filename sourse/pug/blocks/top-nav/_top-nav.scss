@@ -1,7 +1,7 @@
 .top-nav {
 	// background: svg-load('../svg/check.svg',  stroke=$primary); 
 	// 
-	position: relative;
+	position: relative !important;
 	border-bottom: none;
 	z-index: 1001;
 	&__row {

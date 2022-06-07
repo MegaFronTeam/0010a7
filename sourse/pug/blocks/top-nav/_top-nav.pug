@@ -2,6 +2,36 @@ mixin menu-toggle()
 	+b.toggle-menu-mobile--js
 		p меню
 		span
+
+mixin trop-list()
+	ul.trop__list
+		li.trop__list-item.first.active 
+			a.trop__list-link(href='#') Главная
+		li.trop__list-item
+			a.trop__list-link(href='#') Доставка
+		li.trop__list-item
+			a.trop__list-link(href='#') Франшиза
+		li.trop__list-item
+			a.trop__list-link(href='#') Сдать авто в аренду
+		li.trop__list-item
+			a.trop__list-link(href='#') Автоломбард
+		li.trop__list-item
+			a.trop__list-link(href='#') О компании
+		li.trop__list-item
+			a.trop__list-link(href='#') Отзывы
+		li.trop__list-item
+			a.trop__list-link(href='#') Новости
+		li.trop__list-item
+			a.trop__list-link(href='#') Условия аренды
+		li.trop__list-item
+			a.trop__list-link(href='#') Контакты
+		li.trop__list-item
+			a.trop__list-link(href='#') Проверка
+		li.trop__list-item
+			a.trop__list-link(href='#') Карта сайта
+		li.trop__list-item.last 
+			a.trop__list-link(href='#') Публичная оферта
+
 mixin mob-mnu()
 	-
 		//- let path = require('path');
@@ -13,8 +43,36 @@ mixin mob-mnu()
 		//- let dataJson = JSON.parse(json);
 	//- h1= dataJson['lala'] 
 	+b.menu-mobile--js
-		+e.inner
-			+mnu().d-block.d-lg-none
+		+e.inner 
+			//- .container
+			+e.wrap.d-block.d-lg-none
+				+input("Поиск авто")
+				+e.buy.text-center(href="#") Купить франшизу за 99 т.р.
+				+e.indent
+					+e.sell-auto(href="#")
+						+icon('vehicle_car_regular')
+						| Сдать свой авто
+				+e.indent
+					+e.invest(href="#")
+						+icon('analysis_graph')
+						| Инвестировать
+				+e.indent
+					+e.login-in(href="#")
+						+icon('account')
+						| Войти
+				+e.indent
+					+e.online-pay(href="#") Онлайн-оплата
+				+e.indent--2
+					+e.num(href="tel:+74951384388") +7 495 138 43 88
+					+soc()
+						+item-sos('whatsapp')
+						+item-sos('telegram')
+				+e.indent--2
+					+e.get-call(href="#") Заказать звонок
+				+e.indent--2
+					+e.mail(href="mailtp:info@a7.rent") info@a7.rent
+			+mnu().d-block.d-xl-none
+			+trop-list
 			//- +topLine().d-block.d-lg-none
 	//  мобильное меню
 mixin top-nav() 
@@ -27,16 +85,16 @@ mixin top-nav()
 						+logo
 				+e.col.col.col-lg-auto.d-none.d-lg-block
 					+input("Поиск авто: audi, поло, минивен, двухдверный, черный")
-				+e.col--2.col.d-none.d-lg-block
-					.menu-mobile.menu-mobile--js
-						.menu-mobile__inner
+				+e.col--2.col.d-none.d-xl-block
+					//- .menu-mobile.menu-mobile--js
+					//- 	.menu-mobile__inner
 							//- +menu-toggle()
-							+mnu()
-				+e.col.col-auto.d-none.d-lg-block
+					+mnu()
+				+e.col.col-auto.d-none.d-lg-block.ml-auto
 					+e.login-in(href="#")
 						+icon('account')
 						| Войти
-				+e.col.col-auto.ml-auto
+				+e.col.col-auto.ml-auto.ml-lg-0
 					+menu-toggle()
 					//- +mob-mnu()
 			//- .row
