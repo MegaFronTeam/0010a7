@@ -4,7 +4,7 @@
 	position: relative;
 	border-bottom: none;
 	background-color: $gray-100;
-	z-index: 1001;
+	z-index: 1002;
 	&__row {
 		--bs-gutter-x: #{rem(30)};
 		align-items: center;
@@ -16,6 +16,7 @@
 		}
 	}
 	&__indent {
+		position: relative;
 		padding-top: rem(10);
 		padding-bottom: rem(10);
 	}
@@ -25,6 +26,7 @@
 		}
 	}
 	&__city {
+		cursor: pointer;
 		font-size: rem(14);
 		color: $gray-900;
 		display: flex;
@@ -98,7 +100,103 @@
 		background-color: $gray-900;
 		display: block;
 		&:hover {
-			color: #19BB70;
+			color: #f6ee25;
+		}
+	}
+	&__city-content {
+		@include mt;
+		// display: none;
+		padding: rem(20) rem(18);
+		position: absolute;
+		top: calc(100% + 10px);
+		left: 0;
+		background-color: #fff;
+		box-shadow: 0px 5px 25px rgba(29, 29, 27, 0.25);
+		border-radius: 8px;
+		width: 330px;
+		z-index: 2;
+		@include media-breakpoint-down(sm) {
+			width: calc(100vw - 15px);
+			left: -15px;
+			top: calc(100% + 3px);
+			border-radius: 0;
+			box-shadow: none;
+		}
+		&:not(.active) {
+			@include media-breakpoint-down(sm) {
+				transform: translateY(-150%);
+			}
+			@include media-breakpoint-up(sm) {
+				opacity: 0;
+				pointer-events: none;
+			}
+		}
+		&:before {
+			@include media-breakpoint-up(sm) {
+				content: '';
+				position: absolute;
+				display: block;
+				width: 20px;
+				height: 20px;
+				background-color: #fff;
+				clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+				top: -10px;
+				left: 42px;
+			}
+		}
+		p {
+			margin-bottom: 0;
+			font-size: rem(16);
+			margin-bottom: rem(9);
+			span {
+				font-weight: 600;
+			}
+		}
+		a {
+			font-size: rem(14);
+			font-weight: 400;
+			line-height: 1.40em;
+			padding: rem(12.5);
+			width: 100%;
+			max-width: rem(140);
+			border-radius: 8px;
+			@include media-breakpoint-down(sm) {
+				max-width: rem(132);
+			}
+		}
+	}
+	&__btn-wrap {
+		display: flex;
+    justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	&__another-else {
+		&:not(:hover) {
+			border-color: #E3E3E3;
+		}
+	}
+	&__cross {
+		cursor: pointer;
+		position: absolute;
+		top: 17px;
+		right: 18px;
+		width: 20px;
+		height: 20px;
+		&::before, &::after {
+			content: '';
+			position: absolute;
+			display: block;
+			width: 20px;
+			height: 2px;
+			background-color: #E3E3E3;
+			top: 50%;
+			left: 0;
+		}
+		&::before {
+			transform: translateY(-50%) rotate(-45deg);
+		}
+		&::after {
+			transform: translateY(-50%) rotate(45deg);
 		}
 	}
 	@include media-breakpoint-up(xl) {}
