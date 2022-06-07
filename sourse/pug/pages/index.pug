@@ -7,6 +7,7 @@ include ../blocks/headerBlock/_headerBlock.pug
 include ../blocks/sForm/_sForm.pug
 include ../blocks/sContent/_sContent.pug
 include ../blocks/s-catalog-filter/_s-catalog-filter.pug
+include ../blocks/sCatalog/_sCatalog.pug
  
 include ../blocks/sContact/_sContact.pug
 include ../blocks/sForm/_sForm.pug
@@ -26,8 +27,9 @@ block pagecontent
 	
 	+topLine
 	+top-nav()
-	//- +s-catalog-filter
+	+s-catalog-filter
 	+header()
+	+sCatalog()
 	+footer()
       
 
