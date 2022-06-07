@@ -170,6 +170,10 @@
 	&__inner {
 		height: 100%;
 	}
+	@include media-breakpoint-up(xl) {
+		height: auto;
+		padding-bottom: 30px;
+	}
 	.trop {
 		&__list {
 			@include media-breakpoint-up(xl) {
@@ -195,7 +199,7 @@
 		background-color: $gray-900;
 		display: block;
 		&:hover {
-			color: #19BB70;
+			color: #f6ee25;
 		}
 	}
 	&__input-wrap {
@@ -302,7 +306,15 @@
 		color: $gray-600;
 	}
 	.menu {
+		height: auto;
 		padding-top: 12.5px;
+		li {
+			@include media-breakpoint-up(lg) {
+				max-width: max-content;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
 		a {
 			padding: 7.5px 10px;
 		}

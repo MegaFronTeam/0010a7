@@ -424,12 +424,18 @@ function eventHandler() {
   $('#datepicker2').datepicker({
     uiLibrary: 'bootstrap4'
   });
-  console.log(
-    $('#datepicker').datepicker({
-      uiLibrary: 'bootstrap4'
-    })
-  );
 };
+
+	$('.top_line2__city').on('click', function() {
+		$('.top_line2__city-content').addClass('active');
+	});
+	$('.top_line2__cross').on('click', function() {
+		$('.top_line2__city-content').removeClass('active');
+	});
+	$('.top_line2__confrim').on('click', function() {
+		$('.top_line2__city-content').removeClass('active');
+	});
+
 if (document.readyState !== 'loading') {
 	eventHandler();
 } else {

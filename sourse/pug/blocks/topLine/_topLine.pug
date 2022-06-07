@@ -8,6 +8,13 @@ mixin topLine()
 						+e.city
 							+icon('map-point')
 							| Москва
+						+e.city-content
+							+e.cross
+							p Ваш город 
+								span Москва ?
+							+e.btn-wrap
+								+e.confrim(href="#").btn.btn-primary Да, верно
+								+e.another-else(href="#").btn.btn-outline-primary Нет, другой
 				.col-auto.ml-auto.ml-lg-0
 					+e.indent
 						+e.num(href="tel:+74951384388") +7 495 138 43 88
