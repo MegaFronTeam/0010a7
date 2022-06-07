@@ -48,7 +48,7 @@ mixin sCatalog(data)
 							+catalogItem('5','Kia RIO','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;6&nbsp;суток','16&nbsp;530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽')
 						.col.col-md-auto
 							+catalogItem('6','Volkswagen POLO','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;6&nbsp;суток','16&nbsp;530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽')
-						col-auto
+						.col-auto.col-md-auto
 							+catalogItem('1','Ravon NEXIA&nbsp;R3','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;6&nbsp;суток','16&nbsp;530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽')
 						.col.col-md-auto
 							+catalogItem('2','Renault SYMBOL','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;30&nbsp;суток','99 530&nbsp;₽','1540&nbsp;₽ от&nbsp;30&nbsp;сут.')
@@ -60,7 +60,7 @@ mixin sCatalog(data)
 							+catalogItem('5','Kia RIO','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;6&nbsp;суток','16&nbsp;530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽')
 						.col.col-md-auto
 							+catalogItem('6','Volkswagen POLO','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;6&nbsp;суток','16&nbsp;530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽')
-						col-auto
+						.col-auto.col-md-auto
 							+catalogItem('1','Ravon NEXIA&nbsp;R3','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;6&nbsp;суток','16&nbsp;530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽')
 						.col.col-md-auto
 							+catalogItem('2','Renault SYMBOL','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;30&nbsp;суток','99 530&nbsp;₽','1540&nbsp;₽ от&nbsp;30&nbsp;сут.')
@@ -72,4 +72,87 @@ mixin sCatalog(data)
 							+catalogItem('5','Kia RIO','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;6&nbsp;суток','16&nbsp;530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽')
 						.col.col-md-auto
 							+catalogItem('6','Volkswagen POLO','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;6&nbsp;суток','16&nbsp;530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽')
+				.col-lg-3
+					+b.catalog-summary
+						+e.title Весь парк A7 RENT
+						+e.reset(href="#") Сбросить
+						+e.list.DL
+							+e.list-row(href="#")
+								dt Без залога
+								dd 876
+						+e.list.DL
+							+e.list-row.--chosen(href="#")
+								dt На механике
+								dd 259
+							+e.list-row(href="#")
+								dt На автомате
+								dd 215
+						+e.list.DL
+							+e.list-row(href="#")
+								dt Эконом
+								dd 563
+							+e.list-row(href="#")
+								dt Бизнес
+								dd 185
+							+e.list-row(href="#")
+								dt Премиум
+								dd 29
+						+e.list.DL
+							+e.list-row(href="#")
+								dt 
+									+img('img/sedan.png')
+									| Седан
+								dd 563
+							+e.list-row(href="#")
+								dt 
+									+img('img/hatchback.png')
+									| Хэтчбек
+								dd 563
+							+e.list-row(href="#")
+								dt 
+									+img('img/minivan.png')
+									| Минивен
+								dd 563
+							+e.list-row(href="#")
+								dt 
+									+img('img/suv.png')
+									| Внедорожник
+								dd 563
+							+e.list-row(href="#")
+								dt 
+									+img('img/coupe.png')
+									| Купе
+								dd 563
+							+e.list-row(href="#")
+								dt 
+									+img('img/pickup-truck.png')
+									| Пикап
+								dd 563
+							+e.list-row(href="#")
+								dt 
+									+img('img/roadster.png')
+									| Родстер
+								dd 563
+							+e.list-row(href="#")
+								dt 
+									+img('img/station-wagon.png')
+									| Универсал
+								dd 563
+							+e.list-row(href="#")
+								dt 
+									+img('img/van.png')
+									| Фургон
+								dd 563
+						+e.list.DL
+							+e.list-row(href="#")
+								dt 
+									+img('img/audi.png')
+									| Audi
+								dd 876
+							+e.list-row(href="#")
+								dt 
+									+img('img/bmw.png')
+									| BMW
+								dd 259
+
 	// end sCatalog
