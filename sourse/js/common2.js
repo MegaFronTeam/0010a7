@@ -381,6 +381,15 @@ function eventHandler() {
     }
 	});
 
+	const catalogItemSlider = new Swiper('.catalog-item-slider--js', {
+		slidesPerView: 1,
+    pagination: {
+			el: '.catalog-item-slider .swiper-pagination',
+			type: 'bullets',
+			clickable: true,
+		},
+	});
+
   var today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
 
 	$(".date-picker-block-js").each(function () {
