@@ -23,6 +23,7 @@ html{
 }
 
 body {
+	min-width: auto;
 	&.fixed,
 	&.fancybox-active{
 		.header{ 
