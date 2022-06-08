@@ -367,18 +367,23 @@ function eventHandler() {
 
   const header2Swiper = new Swiper('.header2__slider--js', {
 		slidesPerView: 1,
-    effect: 'fade',
+		effect: 'fade',
+		loop: true,
+		autoplay: {
+			delay: '4500',
+		},
     fadeEffect: {
-      crossFade: true
+      crossFade: true,
     },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    breakpoints: {
-      992: {
-      }
-    }
+    pagination: {
+			el: '.swiper-pagination',
+			type: 'bullets',
+			clickable: true,
+		},
 	});
 
 	const catalogItemSlider = new Swiper('.catalog-item-slider--js', {
@@ -389,43 +394,6 @@ function eventHandler() {
 			clickable: true,
 		},
 	});
-
-  var today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
-
-	$(".date-picker-block-js").each(function () {
-
-		var th = $(this);
-
-		th.find('.startDate').datepicker({
-			locale: 'ru-ru',
-			uiLibrary: 'bootstrap4',
-			// iconsLibrary: 'fontawesome',
-			format: 'dd.mm.yyyy',
-			minDate: today,
-			maxDate: function () {
-				return th.find('.endDate').val();
-			}
-		});
-		th.find('.endDate').datepicker({
-			locale: 'ru-ru',
-			uiLibrary: 'bootstrap4',
-			// iconsLibrary: 'fontawesome',
-			format: 'dd.mm.yyyy',
-			minDate: function () {
-				return th.find('.startDate').val();
-			}
-		});
-	});
-	$('.datepicker-date').datepicker({
-		locale: 'ru-ru',
-		uiLibrary: 'bootstrap4',
-		format: 'dd.mm.yyyy',
-
-	});
-
-	$(".label-date-picker-js  input").click(function () {
-		$(this).next().click();
-	})
 
   $('#datepicker').datepicker({
     uiLibrary: 'bootstrap4'

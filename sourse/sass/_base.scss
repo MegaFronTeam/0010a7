@@ -23,6 +23,7 @@ html{
 }
 
 body {
+	min-width: auto;
 	&.fixed,
 	&.fancybox-active{
 		.header{ 
@@ -512,9 +513,4 @@ iframe {
 	-moz-print-color-adjust: exact;
 	vertical-align: top;
 	width: 1.6em;
-}
-
-.gj-picker {
-	position: absolute;
-	background-color: #fff;
 }

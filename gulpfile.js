@@ -71,7 +71,7 @@ function pugFiles() {
 }
 
 function cleanlibs() {
-    return del([publicPath + '/libs'], { force: true })
+    return del([publicPath + '/libs2'], { force: true })
 }
 
 function copyLibs() {
