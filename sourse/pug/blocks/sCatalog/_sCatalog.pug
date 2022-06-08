@@ -33,46 +33,106 @@ mixin sCatalog(data)
 		.container
 			+b.section-title.text-center
 				h2 Посуточная аренда авто без водителя в&nbsp;Москве				
+			+e.filter-row
+				+form-wrap.--row
+					.properties-row
+						+in-c('checkbox','Все').--all
+						+in-c('checkbox','Механика')
+						+in-c('checkbox','Автомат')
+					.properties-row
+						+in-c('checkbox','Все').--all
+						+in-c('checkbox','Седан')
+						+in-c('checkbox','Хэтчбек')
+						+in-c('checkbox','Минивен')
+						+in-c('checkbox','Внедорожник')
+						+in-c('checkbox','Купе')
+						+in-c('checkbox','Пикап')
+						+in-c('checkbox','Родстер')
+						+in-c('checkbox','Универсал')
+						+in-c('checkbox','Фургон')
+					.properties-row
+						+in-c('checkbox','Все').--all
+						+in-c('checkbox','Lada')
+						+in-c('checkbox','Kia')
+						+in-c('checkbox','Hyundai')
+						+in-c('checkbox','Renault')
+						+in-c('checkbox','Toyota')
+						+in-c('checkbox','Volkswagen').--chosen
+						+in-c('checkbox','Audi')
+						+in-c('checkbox','BMW')
+						+in-c('checkbox','Mercedes Benz')
+					.properties-select.d-block.d-lg-none
+						+select('','Любая коробка','Механика','Автомат')
+						+select('','Любой кузов','Седан','Хэтчбек','Минивен','Внедорожник')
+						+select('','Любая марка')
+					+b.filter-result
+						+e.left
+							+e.all(href="#") 
+								+e.all-text Все фильтры
+								+e.all-number 9
+							+e.reset(href="#") Сбросить
+							+e.founded 
+								+e.founded-text Найдено 68 авто из 876
+								+e.founded-sort.d-block.d-lg-none 
+									button.active
+										+icon('arrow-down')
+									button
+										+icon('arrow-up')
+						+e.right
+							+e.price-filter
+								button.active По убыванию цены
+								button По возрастанию цены
+							+e.display.d-none.d-lg-block
+								button.active
+									+icon('square')
+								button
+									+icon('stroke')
+								button
+									+icon('lines')
+
 			+e.catalog-row.row
-				.col-12.col-lg-9
+				+e.left.col-12.col-lg-9
 					+e.items-row.row
-						.col.col-md-auto
+						+e.catalog-item-col.col.col-md-auto
 							+catalogItem('1','Ravon NEXIA&nbsp;R3','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;6&nbsp;суток','16&nbsp;530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽')
-						.col.col-md-auto
+						+e.catalog-item-col.col.col-md-auto
 							+catalogItem('2','Renault SYMBOL','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;30&nbsp;суток','99 530&nbsp;₽','1540&nbsp;₽ от&nbsp;30&nbsp;сут.')
-						.col.col-md-auto
+						+e.catalog-item-col.col.col-md-auto
 							+catalogItem('3','Lada VESTA','2013, МТ, 1.6&nbsp;л.','Выкуп за&nbsp;36&nbsp;мес','900&nbsp;₽','900&nbsp;&mdash; 2560&nbsp;₽')
-						.col.col-md-auto
+						+e.catalog-item-col.col.col-md-auto
 							+catalogItem('4','Chevrolet CRUZE','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;3+1 часа (включено 100&nbsp;км)','99 530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽')
-						.col.col-md-auto
+						+e.catalog-item-col.col.col-md-auto
 							+catalogItem('5','Kia RIO','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;6&nbsp;суток','16&nbsp;530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽')
-						.col.col-md-auto
+						+e.catalog-item-col.col.col-md-auto
 							+catalogItem('6','Volkswagen POLO','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;6&nbsp;суток','16&nbsp;530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽')
-						.col.col-md-auto
+						+e.catalog-item-col.col.col-md-auto
 							+catalogItem('1','Ravon NEXIA&nbsp;R3','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;6&nbsp;суток','16&nbsp;530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽')
-						.col.col-md-auto
+						+e.catalog-item-col.col.col-md-auto
 							+catalogItem('2','Renault SYMBOL','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;30&nbsp;суток','99 530&nbsp;₽','1540&nbsp;₽ от&nbsp;30&nbsp;сут.')
-						.col.col-md-auto
+						+e.catalog-item-col.col.col-md-auto
 							+catalogItem('3','Lada VESTA','2013, МТ, 1.6&nbsp;л.','Выкуп за&nbsp;36&nbsp;мес','900&nbsp;₽','900&nbsp;&mdash; 2560&nbsp;₽')
-						.col.col-md-auto
+						+e.catalog-item-col.col.col-md-auto
 							+catalogItem('4','Chevrolet CRUZE','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;3+1 часа (включено 100&nbsp;км)','99 530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽')
-						.col.col-md-auto
+						+e.catalog-item-col.col.col-md-auto
 							+catalogItem('5','Kia RIO','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;6&nbsp;суток','16&nbsp;530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽')
-						.col.col-md-auto
+						+e.catalog-item-col.col.col-md-auto
 							+catalogItem('6','Volkswagen POLO','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;6&nbsp;суток','16&nbsp;530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽')
-						.col.col-md-auto
+						+e.catalog-item-col.col.col-md-auto
 							+catalogItem('1','Ravon NEXIA&nbsp;R3','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;6&nbsp;суток','16&nbsp;530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽')
-						.col.col-md-auto
+						+e.catalog-item-col.col.col-md-auto
 							+catalogItem('2','Renault SYMBOL','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;30&nbsp;суток','99 530&nbsp;₽','1540&nbsp;₽ от&nbsp;30&nbsp;сут.')
-						.col.col-md-auto
+						+e.catalog-item-col.col.col-md-auto
 							+catalogItem('3','Lada VESTA','2013, МТ, 1.6&nbsp;л.','Выкуп за&nbsp;36&nbsp;мес','900&nbsp;₽','900&nbsp;&mdash; 2560&nbsp;₽')
-						.col.col-md-auto
+						+e.catalog-item-col.col.col-md-auto
 							+catalogItem('4','Chevrolet CRUZE','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;3+1 часа (включено 100&nbsp;км)','99 530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽')
-						.col.col-md-auto
+						+e.catalog-item-col.col.col-md-auto
 							+catalogItem('5','Kia RIO','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;6&nbsp;суток','16&nbsp;530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽')
-						.col.col-md-auto
+						+e.catalog-item-col.col.col-md-auto
 							+catalogItem('6','Volkswagen POLO','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;6&nbsp;суток','16&nbsp;530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽')
-				.col-lg-3
+					+e.show-more.BUTTUN.btn
+						+icon('reload')
+						| Показать еще авто
+				+e.right.col-lg-3
 					+b.catalog-summary
 						+e.title Весь парк A7 RENT
 						+e.reset(href="#") Сбросить
