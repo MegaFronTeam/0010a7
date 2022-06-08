@@ -409,8 +409,13 @@ function eventHandler() {
 	$('.top_line2__cross').on('click', function() {
 		$('.top_line2__city-content').removeClass('active');
 	});
-	$('.top_line2__confrim').on('click', function() {
+	$('.top_line2__btn-wrap a').on('click', function() {
 		$('.top_line2__city-content').removeClass('active');
+	});
+
+	$('.popup-with-move-anim').magnificPopup({
+		type:'inline',
+		midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
 	});
 
 if (document.readyState !== 'loading') {

@@ -207,6 +207,18 @@
 		max-width: calc(100% - 20px);
 		margin-left: auto;
 		margin-right: auto;
+		color: $gray-600;
+		position: relative;
+		.icon {
+			position: absolute;
+			fill: none;
+			stroke: currentColor;
+			stroke-width: 2px;
+			font-size: rem(20);
+			right: 15px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
 	}
 	&__input {
 		padding: rem(10) rem(15);
@@ -339,7 +351,7 @@
 			}
 		}
 		&:not(.active){
-			transform: translate3d(120%, 0,0);
+			transform: translate3d(0, -120%,0);
 			--opacity: 0;
 			.toggle-menu-mobile{
 				opacity: 0;
@@ -367,7 +379,7 @@
 		right: 0;
 		background-color: $body-bg;
 		&:not(.active){
-			transform: translate3d(120%, 0,0);
+			transform: translate3d(0, -120%,0);
 			--opacity: 0;
 			.toggle-menu-mobile{
 				opacity: 0;

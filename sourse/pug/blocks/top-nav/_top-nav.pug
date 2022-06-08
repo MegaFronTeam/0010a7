@@ -47,6 +47,7 @@ mixin mob-mnu()
 			//- .container
 			+e.wrap.d-block.d-lg-none
 				+input("Поиск авто")
+					+icon('search')
 				+e.buy.text-center(href="#") Купить франшизу за 99 т.р.
 				+e.indent
 					+e.sell-auto(href="#")
@@ -85,6 +86,7 @@ mixin top-nav()
 						+logo
 				+e.col.col.col-lg-auto.d-none.d-lg-block
 					+input("Поиск авто: audi, поло, минивен, двухдверный, черный")
+						+icon('search')
 				+e.col--2.col.d-none.d-xl-block
 					//- .menu-mobile.menu-mobile--js
 					//- 	.menu-mobile__inner
