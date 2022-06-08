@@ -1,0 +1,240 @@
+mixin card-head(data)
+	// start card-head
+	+b.SECTION.card-head.section#card-head&attributes(attributes)
+		.container
+			.row
+				+e.main-col.col-xl-8
+					+e.block
+						+e.head.text-lg-left.text-center
+							.row
+								.col-lg
+									h1.mb-0.page-title.ttu(itemprop='name')
+										| KIA RIO  
+										span.text-gray-700 AT
+									+e.subtitle.text-gray-700.d-none.d-md-block Реальные фотографии автомобиля
+								.col-lg-auto
+									+e.num.text-body.tdn(href='tel:+7 (495) 138-43-88') +7 (495) 138-43-88
+						.d-block.d-xl-none
+							+e.btn.btn.btn-primary.btn-block.popup-with-move-anim(href='#') Арендовать
+						+e.slider--main.gallery-top.gal
+							.swiper-container
+								+e.slide--lg.swiper-slide
+									+e.img-wrap--lg.img-bg.d-block(href="img/card-slide-1.png" style='background-image: url("img/card-slide-1.png");')
+										img.res-i.lazy-bg(itemprop='image' src='img/card-slide-1.png' data-src='img/card-slide-1.png' alt='Аренда Kia Rio AT недорого' title='Kia Rio AT от 1450 на прокат')
+								//- -for(i=1; i<=4; i++)
+						+e.slider--thumbs.gal(style='margin-top: 0.5em;')
+							-for(i=1; i<=4; i++)
+								+e.slide--sm.swiper-slide
+									+e.img-wrap--sm.img-bg.d-block(href=`img/card-slide-${i}.png` style=`background-image: url("img/card-slide-${i}.png");`)
+										img.res-i.lazy-bg(src=`/img/card-slide-${i}.png` data-src=`/img/card-slide-${i}.png` alt='Аренда Kia Rio AT недорого' title='Kia Rio AT от 1450 на прокат')
+							-for(i=1; i<=4; i++)
+								+e.slide--sm.swiper-slide
+									+e.img-wrap--sm.img-bg.d-block(href=`img/card-slide-${i}.png` style=`background-image: url("img/card-slide-${i}.png");`)
+										img.res-i.lazy-bg(src=`/img/card-slide-${i}.png` data-src=`/img/card-slide-${i}.png` alt='Аренда Kia Rio AT недорого' title='Kia Rio AT от 1450 на прокат')
+						+e.title.h5.pb-1 Характеристики:
+						+e.char.row
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Цвет: 
+								| коричневый
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Коробка: 
+								| Автомат
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Кузов: 
+								| Седан
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Салон: кожа
+								| кожа
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 КОНДИЦИОНЕР
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 CD
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Привод: 
+								| Передний
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Тип двигателя: 
+								| Бензин
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 V двигателя: 
+								| 1.6 л.
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Мощность: 
+								| 123 л.с.
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Расход: 
+								|  8 л/100км
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 V багажника: 
+								| 500 л.
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Клиренс: 
+								| 160 мм.
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Бак: 
+								| 43 л.
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Люк: 
+								| нет
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Фаркоп: 
+								| нет
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Рейлинги: 
+								| нет
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Ширина: 
+								| 1700 мм.
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Высота: 
+								| 1470 мм.
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Длина: 
+								| 4370 мм.
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Дверей: 
+								| 4
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Мест: 
+								| 5
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Снар. масса: 
+								| 1151 кг.
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Полная масса: 
+								| 1565 кг.
+				+e.main-col.col-xl-4
+					+e.block
+						.row
+							.col-xl-12.col-lg-6(itemprop='offers' itemscope='' itemtype='http://schema.org/Offer')
+								+e.link-wrap.text-center
+									a.popup-with-move-anim.text-gray-700.tdu.popup-with-move-anim(href='#modal-tarif') &Pcy;&ocy;&scy;&mcy;&ocy;&tcy;&rcy;&iecy;&tcy;&softcy; &tcy;&acy;&rcy;&icy;&fcy;&ycy; &ncy;&acy; &dcy;&ocy;&scy;&tcy;&acy;&vcy;&kcy;&ucy;
+								+e.title-table.h5
+									| &Scy;&tcy;&ocy;&icy;&mcy;&ocy;&scy;&tcy;&softcy; &acy;&rcy;&iecy;&ncy;&dcy;&ycy; &vcy; &scy;&ucy;&tcy;&kcy;&icy;
+								+e.table.no-gutters
+									+e.table-item
+										.row.no-gutters
+											.col
+												.row.row--small
+													+e.col-title.col-auto
+														+e.td-inner
+															| 1-2  
+															span.d-none.d-xl-inline &scy;&ucy;&tcy;&ocy;&kcy;
+															span.d-xl-none &scy;&ucy;&tcy;.
+											.col-auto 1760 &#x20BD;
+									meta(itemprop='price' content='1760')
+									meta(itemprop='priceCurrency' content='RUB')
+									+e.table-item
+										.row.no-gutters
+											.col
+												.row.row--small
+													+e.col-title.col-auto
+														+e.td-inner
+															| 3-5  
+															span.d-none.d-xl-inline &scy;&ucy;&tcy;&ocy;&kcy;
+															span.d-xl-none &scy;&ucy;&tcy;.
+											.col-auto 1680 &#x20BD;
+									+e.table-item
+										.row.no-gutters
+											.col
+												.row.row--small
+													+e.col-title.col-auto
+														+e.td-inner
+															| 6-13  
+															span.d-none.d-xl-inline &scy;&ucy;&tcy;&ocy;&kcy;
+															span.d-xl-none &scy;&ucy;&tcy;.
+											.col-auto 1600 &#x20BD;
+									+e.table-item
+										.row.no-gutters
+											.col
+												.row.row--small
+													.col-auto
+														+e.td-inner
+															| 14-29 
+															span.d-none.d-xl-inline &scy;&ucy;&tcy;&ocy;&kcy;
+															span.d-xl-none &scy;&ucy;&tcy;.
+											.col-auto 1520 &#x20BD;
+									+e.table-item
+										.row.no-gutters
+											.col
+												.row.row--small
+													+e.col-title.col-auto
+														+e.td-inner
+															| &ocy;&tcy; 30  
+															span.d-none.d-xl-inline &scy;&ucy;&tcy;&ocy;&kcy;
+															span.d-xl-none &scy;&ucy;&tcy;.
+											.col-auto 1450 &#x20BD;
+								+e.label--gray.h4
+									| &Bcy;&iecy;&zcy; &zcy;&acy;&lcy;&ocy;&gcy;&acy;
+								.row
+									.col
+										+e.title-table.h5
+											| &Ucy;&scy;&lcy;&ocy;&vcy;&icy;&yacy; &acy;&rcy;&iecy;&ncy;&dcy;&ycy;
+									.col-auto
+										a.tdu.text-gray-700(target='blank' href='usloviya-arendy') &Vcy;&scy;&iecy; &ucy;&scy;&lcy;&ocy;&vcy;&icy;&yacy;
+							.col-xl-12.col-lg-6
+								+e.table.no-gutters
+									+e.table-item
+										.row.no-gutters
+											.col
+												.row.row--small
+													+e.col-title.col-auto
+														+e.td-inner
+															| &Vcy;&ocy;&zcy;&rcy;&acy;&scy;&tcy;
+											.col-auto  &ocy;&tcy; 23 &lcy;&iecy;&tcy;
+									+e.table-item
+										.row.no-gutters
+											.col
+												.row.row--small
+													+e.col-title.col-auto
+														+e.td-inner
+															| &Scy;&tcy;&acy;&zhcy;
+											.col-auto  &ocy;&tcy; 3 &lcy;&iecy;&tcy;
+									+e.table-item
+										.row.no-gutters
+											.col
+												+e.td-inner &Dcy;&iecy;&pcy;&ocy;&zcy;&icy;&tcy; &ncy;&acy; &shcy;&tcy;&rcy;&acy;&fcy;&ycy;
+											.col-auto 2500 &#x20BD;
+									+e.table-item
+										.row.no-gutters
+											.col
+												+e.td-inner(style='color: #e03f2d')
+													| *&Fcy;&rcy;&acy;&ncy;&shcy;&icy;&zcy;&acy; &pcy;&rcy;&icy; &dcy;&tcy;&pcy;
+													.dop-block__btn-p.my-button.popover-js(style='left: 195px;' data-content='Страховая франшиза-это лимит финансовой ответственности клиента. При любом ущербе для автомобиля, вы оплатите сумму, не превышающую франшизу.' data-original-title='' title='')
+														| ?
+											.col-auto(style='color: #e03f2d') 40300 &#x20BD;
+									+e.table-item
+										.row.no-gutters
+											.col
+												+e.td-inner(style='color: #e03f2d')
+													| *&Fcy;&rcy;&acy;&ncy;&shcy;&icy;&zcy;&acy; &pcy;&rcy;&icy; &ucy;&gcy;&ocy;&ncy;&iecy;
+													.dop-block__btn-p.my-button.popover-js(style='left: 195px;' data-content='Страховая франшиза-это лимит финансовой ответственности клиента. При любом ущербе для автомобиля, вы оплатите сумму, не превышающую франшизу.' data-original-title='' title='')
+														| ?
+											.col-auto(style='color: #e03f2d') 100750 &#x20BD;
+									+e.table-item
+										.row.no-gutters
+											.col
+												+e.td-inner(style='color: #e03f2d')
+													| *&Fcy;&rcy;&acy;&ncy;&shcy;&icy;&zcy;&acy; &pcy;&rcy;&icy; &tcy;&ocy;&tcy;&acy;&lcy;&iecy;
+													.dop-block__btn-p.my-button.popover-js(style='left: 195px;' data-content='Страховая франшиза-это лимит финансовой ответственности клиента. При любом ущербе для автомобиля, вы оплатите сумму, не превышающую франшизу.' data-original-title='' title='')
+														| ?
+											.col-auto(style='color: #e03f2d') 86360 &#x20BD;
+									+e.table-item
+										.row.no-gutters
+											.col
+												+e.td-inner *&Tcy;&acy;&rcy;&icy;&fcy; &bcy;&iecy;&zcy; &fcy;&rcy;&acy;&ncy;&shcy;&icy;&zcy;&ycy;
+											.col-auto +610 &#x20BD;/&scy;&ucy;&tcy;.
+								+e.label--gray.h4
+									| &Bcy;&iecy;&zcy; &ocy;&gcy;&rcy;&acy;&ncy;&icy;&chcy;&iecy;&ncy;&icy;&yacy; &pcy;&ocy; &tcy;&iecy;&rcy;&rcy;&icy;&tcy;&ocy;&rcy;&icy;&icy;
+								+e.foot.text-center
+									+e.title-table.h5
+										| &Acy;&vcy;&tcy;&ocy; &ncy;&acy;&khcy;&ocy;&dcy;&icy;&tcy;&scy;&yacy; &ncy;&acy; &scy;&tcy;&ocy;&yacy;&ncy;&kcy;&iecy;:
+									.h6 &Rcy;&ocy;&scy;&scy;&icy;&yacy;, &Mcy;&ocy;&scy;&kcy;&vcy;&acy;, &bcy;&ucy;&lcy;&softcy;&vcy;&acy;&rcy; &Dcy;&mcy;&icy;&tcy;&rcy;&icy;&yacy; &Dcy;&ocy;&ncy;&scy;&kcy;&ocy;&gcy;&ocy;, 2&kcy;1 
+									.text-gray-700 &IEcy;&zhcy;&iecy;&dcy;&ncy;&iecy;&vcy;&ncy;&ocy; &scy; 10:00 &dcy;&ocy; 22:00
+									.h30
+										a.text-body.tdn(href='tel:+7 (495) 138-43-88') +7 (495) 138-43-88
+									+e.btn.btn.btn-primary.btn-block.popup-with-move-anim(href='#modal-zakaz') &#x9;&Acy;&rcy;&iecy;&ncy;&dcy;&ocy;&vcy;&acy;&tcy;&softcy; 
+									div
+										a.tdu.text-gray-700.popup-with-move-anim(href='#modal-offer') &#x9;&Pcy;&ocy;&lcy;&ucy;&chcy;&icy;&tcy;&softcy; &kcy;&ocy;&mcy;&mcy;&iecy;&rcy;&chcy;&iecy;&scy;&kcy;&ocy;&iecy; &pcy;&rcy;&iecy;&dcy;&lcy;&ocy;&zhcy;&iecy;&ncy;&icy;&iecy;
+
+	// end card-head

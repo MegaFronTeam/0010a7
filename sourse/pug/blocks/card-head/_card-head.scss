@@ -1,0 +1,89 @@
+// start .card-head
+.card-head {
+	--sPT: #{rem(0)};
+	--sPB: #{rem(0)};
+	// --sTPB: #{rem()};
+	&__row{
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+
+	}
+	.section-title{
+		
+	}
+	&__col{
+
+	}
+	&__item{
+
+	}
+	h1 {
+		font-size: rem(24);
+		margin-bottom: rem(5);
+		@include media-breakpoint-up(lg) {
+			font-size: rem(30);
+		}
+	}
+	&__title {
+		font-size: rem(16);
+		margin-bottom: rem(20);
+		font-weight: 600;
+		@include media-breakpoint-up(lg) {
+			font-size: rem(24);
+		}
+	}
+	&__num {
+		font-size: rem(24);
+		@include media-breakpoint-up(lg) {
+			font-size: rem(30);
+		}
+	}
+	&__subtitle {
+		font-size: rem(14);
+	}
+	&__btn {
+		font-weight: 400;
+		font-size: rem(14);
+		text-transform: uppercase;
+	}
+	&__char-col {
+		font-size: rem(14);
+		margin-bottom: rem(10);
+	}
+	&__slider {
+		&--main {
+			margin-bottom: rem(15);
+		}
+		&--thumbs {
+			margin-bottom: rem(19);
+		}
+	}
+	&__head {
+		margin-bottom: rem(15);
+	}
+	&__block {
+		border-radius: 8px;
+		@include media-breakpoint-up(md) {
+			border: 1px solid #E8E8E8;
+		}
+	}
+	&__link-wrap {
+		margin-bottom: rem(18);
+		font-size: rem(14);
+	}
+	&__title-table {
+		font-size: rem(16);
+		font-weight: 600;
+		margin-bottom: rem(14);
+	}
+	&__td-inner {
+		font-size: rem(14);
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.card-head

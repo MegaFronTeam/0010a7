@@ -418,6 +418,22 @@ function eventHandler() {
 		midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
 	});
 
+	const  sSimilarProductsSlider = new Swiper('.sSimilarProducts .sSimilarProducts__slider--js', {
+		slidesPerView: 4,
+		spaceBetween: 30,
+		loop: true,
+    pagination: {
+			el: '.sSimilarProducts .swiper-pagination',
+			type: 'bullets',
+			clickable: true,
+		},
+		breakpoints: {
+			1200: {
+				slidesPerView: 3,
+			},
+		},
+	});
+
 if (document.readyState !== 'loading') {
 	eventHandler();
 } else {

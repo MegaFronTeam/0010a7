@@ -1,0 +1,25 @@
+mixin sSimilarProducts(data)
+	// start sSimilarProducts
+	+b.SECTION.sSimilarProducts.section#sSimilarProducts.d-none.d-lg-block&attributes(attributes)
+		.container
+			h4 Похожие автомобили
+			+e.slider--js.swiper-container
+				.swiper-wrapper
+					+e.slide.swiper-slide
+						+catalogItem('1','Ravon NEXIA&nbsp;R3','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;6&nbsp;суток','16&nbsp;530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽')
+					+e.slide.swiper-slide
+						+catalogItem('2','Renault SYMBOL','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;30&nbsp;суток','99 530&nbsp;₽','1540&nbsp;₽ от&nbsp;30&nbsp;сут.')
+					+e.slide.swiper-slide
+						+catalogItem('3','Lada VESTA','2013, МТ, 1.6&nbsp;л.','Выкуп за&nbsp;36&nbsp;мес','900&nbsp;₽','900&nbsp;&mdash; 2560&nbsp;₽')
+					+e.slide.swiper-slide
+						+catalogItem('4','Chevrolet CRUZE','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;3+1 часа (включено 100&nbsp;км)','99 530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽')
+					+e.slide.swiper-slide
+						+catalogItem('1','Ravon NEXIA&nbsp;R3','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;6&nbsp;суток','16&nbsp;530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽')
+					+e.slide.swiper-slide
+						+catalogItem('2','Renault SYMBOL','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;30&nbsp;суток','99 530&nbsp;₽','1540&nbsp;₽ от&nbsp;30&nbsp;сут.')
+					+e.slide.swiper-slide
+						+catalogItem('3','Lada VESTA','2013, МТ, 1.6&nbsp;л.','Выкуп за&nbsp;36&nbsp;мес','900&nbsp;₽','900&nbsp;&mdash; 2560&nbsp;₽')
+					+e.slide.swiper-slide
+						+catalogItem('4','Chevrolet CRUZE','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;3+1 часа (включено 100&nbsp;км)','99 530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽')
+				+e.pagination.swiper-pagination
+	// end sSimilarProducts
