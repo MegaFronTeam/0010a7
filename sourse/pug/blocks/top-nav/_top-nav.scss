@@ -18,10 +18,23 @@
 	}
 	&__input-wrap {
 		margin-bottom: 0;
+		color: $gray-600;
+		position: relative;
+		.icon {
+			position: absolute;
+			fill: none;
+			stroke: currentColor;
+			stroke-width: 2px;
+			font-size: rem(20);
+			right: 15px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
 	}
 	&__input {
-		padding: rem(10) rem(15);
+		padding: rem(10) rem(64) rem(10) rem(15);
 		border-radius: 8px;
+		font-size: rem(14);
 		@include media-breakpoint-only(lg) {
 			width: rem(309);
 		}
