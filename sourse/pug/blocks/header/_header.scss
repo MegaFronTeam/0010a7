@@ -247,6 +247,8 @@
 	}
 	&__slider {
 		max-width: rem(572);
+		margin-left: auto;
+		margin-right: auto;
 	}
 	&__slide {
 		@include block(572, 260);
