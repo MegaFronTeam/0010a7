@@ -1,0 +1,459 @@
+mixin right-side()
+	+e.block
+		.row
+			.col-xl-12.col-lg-6(itemprop='offers' itemscope='' itemtype='http://schema.org/Offer')
+				+e.link-wrap.text-center
+					a.popup-with-move-anim.text-gray-700.tdu.popup-with-move-anim(href='#modal-tarif') Посмотреть тарифы на доставку
+				+e.title-table.h5
+					| Стоимость аренды в сутки
+				+e.table.no-gutters
+					+e.table-item
+						.row.no-gutters
+							.col
+								.row.row--small
+									+e.col-title.col-auto
+										+e.td-inner
+											| 1-2  
+											span.d-none.d-xl-inline суток
+											span.d-xl-none сут.
+							+e.price.col-auto 1760 ₽
+					meta(itemprop='price' content='1760')
+					meta(itemprop='priceCurrency' content='RUB')
+					+e.table-item
+						.row.no-gutters
+							.col
+								.row.row--small
+									+e.col-title.col-auto
+										+e.td-inner
+											| 3-5  
+											span.d-none.d-xl-inline суток
+											span.d-xl-none сут.
+							+e.price.col-auto 1680 ₽
+					+e.table-item
+						.row.no-gutters
+							.col
+								.row.row--small
+									+e.col-title.col-auto
+										+e.td-inner
+											| 6-13  
+											span.d-none.d-xl-inline суток
+											span.d-xl-none сут.
+							+e.price.col-auto 1600 ₽
+					+e.table-item
+						.row.no-gutters
+							.col
+								.row.row--small
+									.col-auto
+										+e.td-inner
+											| 14-29 
+											span.d-none.d-xl-inline суток
+											span.d-xl-none сут.
+							+e.price.col-auto 1520 ₽
+					+e.table-item
+						.row.no-gutters
+							.col
+								.row.row--small
+									+e.col-title.col-auto
+										+e.td-inner
+											| &ocy;&tcy; 30  
+											span.d-none.d-xl-inline суток
+											span.d-xl-none сут.
+							+e.price.col-auto 1450 ₽
+				+e.label--gray.h4
+					| БЕЗ ЗАЛОГА
+				.row
+					.col
+						+e.title-table.h5
+							| Условия аренды
+					.col-auto
+						+e.link.tdu.text-gray-700(target='blank' href='usloviya-arendy') Все условия
+			.col-xl-12.col-lg-6
+				+e.table.no-gutters
+					+e.table-item
+						.row.no-gutters
+							.col
+								.row.row--small
+									+e.col-title.col-auto
+										+e.td-inner
+											| Возраст
+							+e.price.col-auto от 23 лет
+					+e.table-item
+						.row.no-gutters
+							.col
+								.row.row--small
+									+e.col-title.col-auto
+										+e.td-inner
+											| Стаж
+							+e.price.col-auto  от 3 лет
+					+e.table-item
+						.row.no-gutters
+							.col
+								+e.td-inner Депозит на штрафы
+							+e.price.col-auto 2500 ₽
+					+e.table-item
+						.row.no-gutters
+							.col
+								+e.td-inner(style='color: #e03f2d')
+									| *Франшиза при дтп
+									.dop-block__btn-p.my-button.popover-js(style='left: 167px;' data-content='Страховая франшиза-это лимит финансовой ответственности клиента. При любом ущербе для автомобиля, вы оплатите сумму, не превышающую франшизу.' data-original-title='' title='')
+										| ?
+							+e.price.col-auto(style='color: #e03f2d') 40300 ₽
+					+e.table-item
+						.row.no-gutters
+							.col
+								+e.td-inner(style='color: #e03f2d')
+									| *Франшиза при угоне
+									.dop-block__btn-p.my-button.popover-js(style='left: 167px;' data-content='Страховая франшиза-это лимит финансовой ответственности клиента. При любом ущербе для автомобиля, вы оплатите сумму, не превышающую франшизу.' data-original-title='' title='')
+										| ?
+							+e.price.col-auto(style='color: #e03f2d') 100750 ₽
+					+e.table-item
+						.row.no-gutters
+							.col
+								+e.td-inner(style='color: #e03f2d')
+									| *Франшиза при тотале
+									.dop-block__btn-p.my-button.popover-js(style='left: 167px;' data-content='Страховая франшиза-это лимит финансовой ответственности клиента. При любом ущербе для автомобиля, вы оплатите сумму, не превышающую франшизу.' data-original-title='' title='')
+										| ?
+							+e.price.col-auto(style='color: #e03f2d') 86360 ₽
+					+e.table-item
+						.row.no-gutters
+							.col
+								+e.td-inner *Тариф без франшизы
+							+e.price.col-auto +610 ₽/сут.
+				+e.label--gray.h4
+					| БЕЗ ОГРАНИЧЕНИЯ ПО ТЕРРИТОРИИ
+				+e.foot.text-center
+					+e.title-table.h5
+						| Авто находится на стоянке:
+					+e.adress.h6 Россия, Москва, бульвар Дмитрия Донского, 2к1
+					+e.time.text-gray-700 Ежедневно с 10:00 до 22:00
+					+e.tel.text-body.tdn(href='tel:+7 (495) 138-43-88') +7 (495) 138-43-88
+					+e.btn.btn.btn-primary.btn-block.popup-with-move-anim(href='#modal-zakaz') Арендовать
+					div
+						+e.link.tdu.text-gray-700.popup-with-move-anim(href='#modal-offer') Получить коммерческое предложение
+
+mixin right-side2()
+	+e.block
+		.row
+			.col-xl-12.col-lg-6(itemprop='offers' itemscope='' itemtype='http://schema.org/Offer')
+				+e.link-wrap.text-center
+					a.popup-with-move-anim.text-gray-700.tdu.popup-with-move-anim(href='#modal-tarif') Посмотреть тарифы на доставку
+				+e.content-wrap.text-center
+					+e.title-table Стоимость аренды в месяц
+					+e.title 25 500 ₽ 
+					p Включено пробега: 7500 км
+				+e.label--gray.h4
+					| БЕЗ ЗАЛОГА
+				.row
+					.col
+						+e.title-table.h5
+							| Условия аренды
+					.col-auto
+						+e.link.tdu.text-gray-700(target='blank' href='usloviya-arendy') Все условия
+			.col-xl-12.col-lg-6
+				+e.table.no-gutters
+					+e.table-item
+						.row.no-gutters
+							.col
+								.row.row--small
+									+e.col-title.col-auto
+										+e.td-inner
+											| Возраст
+							+e.price.col-auto от 23 лет
+					+e.table-item
+						.row.no-gutters
+							.col
+								.row.row--small
+									+e.col-title.col-auto
+										+e.td-inner
+											| Стаж
+							+e.price.col-auto  от 3 лет
+					+e.table-item
+						.row.no-gutters
+							.col
+								+e.td-inner Депозит на штрафы
+							+e.price.col-auto 2500 ₽
+					+e.table-item
+						.row.no-gutters
+							.col
+								+e.td-inner(style='color: #e03f2d')
+									| *Франшиза при дтп
+									.dop-block__btn-p.my-button.popover-js(style='left: 167px;' data-content='Страховая франшиза-это лимит финансовой ответственности клиента. При любом ущербе для автомобиля, вы оплатите сумму, не превышающую франшизу.' data-original-title='' title='')
+										| ?
+							+e.price.col-auto(style='color: #e03f2d') 40300 ₽
+					+e.table-item
+						.row.no-gutters
+							.col
+								+e.td-inner(style='color: #e03f2d')
+									| *Франшиза при угоне
+									.dop-block__btn-p.my-button.popover-js(style='left: 167px;' data-content='Страховая франшиза-это лимит финансовой ответственности клиента. При любом ущербе для автомобиля, вы оплатите сумму, не превышающую франшизу.' data-original-title='' title='')
+										| ?
+							+e.price.col-auto(style='color: #e03f2d') 100750 ₽
+					+e.table-item
+						.row.no-gutters
+							.col
+								+e.td-inner(style='color: #e03f2d')
+									| *Франшиза при тотале
+									.dop-block__btn-p.my-button.popover-js(style='left: 167px;' data-content='Страховая франшиза-это лимит финансовой ответственности клиента. При любом ущербе для автомобиля, вы оплатите сумму, не превышающую франшизу.' data-original-title='' title='')
+										| ?
+							+e.price.col-auto(style='color: #e03f2d') 86360 ₽
+					+e.table-item
+						.row.no-gutters
+							.col
+								+e.td-inner *Тариф без франшизы
+							+e.price.col-auto +610 ₽/сут.
+				+e.label--gray.h4
+					| БЕЗ ОГРАНИЧЕНИЯ ПО ТЕРРИТОРИИ
+				+e.foot.text-center
+					+e.title-table.h5
+						| Авто находится на стоянке:
+					+e.adress.h6 Россия, Москва, бульвар Дмитрия Донского, 2к1
+					+e.time.text-gray-700 Ежедневно с 10:00 до 22:00
+					+e.tel.text-body.tdn(href='tel:+7 (495) 138-43-88') +7 (495) 138-43-88
+					+e.btn.btn.btn-primary.btn-block.popup-with-move-anim(href='#modal-zakaz') Арендовать
+					div
+						+e.link.tdu.text-gray-700.popup-with-move-anim(href='#modal-offer') Получить коммерческое предложение
+
+mixin right-side3()
+	+e.block
+		.row
+			.col-xl-12.col-lg-6(itemprop='offers' itemscope='' itemtype='http://schema.org/Offer')
+				+e.link-wrap.text-center
+					a.popup-with-move-anim.text-gray-700.tdu.popup-with-move-anim(href='#modal-tarif') Посмотреть тарифы на доставку
+				.row
+					.col
+						+e.title-table.h5
+							| Стоимость суток при выкупе
+			.col-xl-12.col-lg-6
+				+e.table.no-gutters
+					+e.table-item
+						.row.no-gutters
+							.col
+								.row.row--small
+									+e.col-title.col-auto
+										+e.td-inner
+											| 12 месяцев
+							+e.price.col-auto 1500 ₽/сутки
+					+e.table-item
+						.row.no-gutters
+							.col
+								.row.row--small
+									+e.col-title.col-auto
+										+e.td-inner
+											| 24 месяца
+							+e.price.col-auto 1000 ₽/сутки 
+					+e.table-item
+						.row.no-gutters
+							.col
+								.row.row--small
+									+e.col-title.col-auto
+										+e.td-inner
+											| 36 месяцев
+							+e.price.col-auto 900 ₽/сутки 
+				+e.label--gray.h4
+					| БЕЗ ЗАЛОГА
+				.row
+					.col
+						+e.title-table.h5
+							| Условия аренды
+					.col-auto
+						+e.link.tdu.text-gray-700(target='blank' href='usloviya-arendy') Все условия
+			.col-xl-12.col-lg-6
+				+e.table.no-gutters
+					+e.table-item
+						.row.no-gutters
+							.col
+								.row.row--small
+									+e.col-title.col-auto
+										+e.td-inner
+											| Возраст
+							+e.price.col-auto от 23 лет
+					+e.table-item
+						.row.no-gutters
+							.col
+								.row.row--small
+									+e.col-title.col-auto
+										+e.td-inner
+											| Стаж
+							+e.price.col-auto  от 3 лет
+					+e.table-item
+						.row.no-gutters
+							.col
+								+e.td-inner Депозит на штрафы
+							+e.price.col-auto 2500 ₽
+				+e.label--gray.h4
+					| БЕЗ ОГРАНИЧЕНИЯ ПО ТЕРРИТОРИИ
+				+e.foot.text-center
+					+e.title-table.h5
+						| Авто находится на стоянке:
+					+e.adress.h6 Россия, Москва, бульвар Дмитрия Донского, 2к1
+					+e.time.text-gray-700 Ежедневно с 10:00 до 22:00
+					+e.tel.text-body.tdn(href='tel:+7 (495) 138-43-88') +7 (495) 138-43-88
+					+e.btn.btn.btn-primary.btn-block.popup-with-move-anim(href='#modal-zakaz') Арендовать
+					div
+						+e.link.tdu.text-gray-700.popup-with-move-anim(href='#modal-offer') Получить коммерческое предложение
+
+mixin right-side4()
+	+e.block
+		.row
+			.col-xl-12.col-lg-6(itemprop='offers' itemscope='' itemtype='http://schema.org/Offer')
+				+e.link-wrap.text-center
+					a.popup-with-move-anim.text-gray-700.tdu.popup-with-move-anim(href='#modal-tarif') Посмотреть тарифы на доставку
+				+e.content-wrap.text-center
+					+e.title-table Стоимость аренды с водителем
+					+e.title 1 500 ₽/сутки
+			.col-xl-12.col-lg-6
+				+e.table--2.no-gutters
+					+e.table-item
+						.row.no-gutters
+							.col
+								.row.row--small
+									+e.col-title.col-auto
+										+e.td-inner
+											| Минимальный заказ
+							+e.price.col-auto 3+1 (вкл. 100км)
+					+e.table-item
+						.row.no-gutters
+							.col
+								.row.row--small
+									+e.col-title.col-auto
+										+e.td-inner
+											| 1 час
+							+e.price.col-auto 25 км пробега
+					+e.table-item
+						.row.no-gutters
+							.col
+								.row.row--small
+									+e.col-title.col-auto
+										+e.td-inner
+											| Перепробег
+							+e.price.col-auto 6 ₽/км 
+			.col-xl-12.col-lg-6
+				+e.foot.text-center
+					+e.time.text-gray-700 Ежедневно с 10:00 до 22:00
+					+e.tel.text-body.tdn(href='tel:+7 (495) 138-43-88') +7 (495) 138-43-88
+					+e.btn.btn.btn-primary.btn-block.popup-with-move-anim(href='#modal-zakaz') Арендовать
+					div
+						+e.link.tdu.text-gray-700.popup-with-move-anim(href='#modal-offer') Получить коммерческое предложение
+
+mixin card-head(data)
+	// start card-head
+	+b.SECTION.card-head.section#card-head&attributes(attributes)
+		.container
+			.row
+				+e.main-col.col-xl-8
+					+e.block
+						+e.head.text-lg-left.text-center
+							.row
+								.col-lg
+									h1.mb-0.page-title.ttu(itemprop='name')
+										| KIA RIO  
+										span.text-gray-700 AT
+									+e.subtitle.text-gray-700.d-none.d-md-block Реальные фотографии автомобиля
+								.col-lg-auto
+									+e.num.text-body.tdn(href='tel:+7 (495) 138-43-88') +7 (495) 138-43-88
+						.d-block.d-xl-none
+							+e.btn.btn.btn-primary.btn-block.popup-with-move-anim(href='#') Арендовать
+						+e.slider--main.gallery-top.gal
+							.swiper-container
+								+e.slide--lg.swiper-slide
+									+e.img-wrap--lg.img-bg.d-block(href="img/card-slide-1.png" style='background-image: url("img/card-slide-1.png");')
+										img.res-i.lazy-bg(itemprop='image' src='img/card-slide-1.png' data-src='img/card-slide-1.png' alt='Аренда Kia Rio AT недорого' title='Kia Rio AT от 1450 на прокат')
+								//- -for(i=1; i<=4; i++)
+						+e.slider--thumbs.gal(style='margin-top: 0.5em;')
+							-for(i=1; i<=4; i++)
+								+e.slide--sm.swiper-slide
+									+e.img-wrap--sm.img-bg.d-block(href=`img/card-slide-${i}.png` style=`background-image: url("img/card-slide-${i}.png");`)
+										img.res-i.lazy-bg(src=`img/card-slide-${i}.png` data-src=`img/card-slide-${i}.png` alt='Аренда Kia Rio AT недорого' title='Kia Rio AT от 1450 на прокат')
+							-for(i=1; i<=4; i++)
+								+e.slide--sm.swiper-slide
+									+e.img-wrap--sm.img-bg.d-block(href=`img/card-slide-${i}.png` style=`background-image: url("img/card-slide-${i}.png");`)
+										img.res-i.lazy-bg(src=`img/card-slide-${i}.png` data-src=`img/card-slide-${i}.png` alt='Аренда Kia Rio AT недорого' title='Kia Rio AT от 1450 на прокат')
+						+e.newSlider--js.swiper-container.gallery-top.gal
+						//- 	.swiper-wrapper
+						//- 		-for(i=1; i<=4; i++)
+						//- 			+e.slide.swiper-slide
+						//- 				+e.img-wrap--lg.img-bg.d-block(href="img/card-slide-1.png" style='background-image: url("img/card-slide-1.png");')
+						//- 					img.res-i.lazy-bg(itemprop='image' src='img/card-slide-1.png' data-src='img/card-slide-1.png' alt='Аренда Kia Rio AT недорого' title='Kia Rio AT от 1450 на прокат')
+						//- 	//- +arrow
+						//- +e.newSlider--thumbs.swiper-container.gal(style='margin-top: 0.5em;')
+						//- 	.swiper-wrapper
+						//- 		-for(i=1; i<=4; i++)
+						//- 			+e.slide--sm.swiper-slide
+						//- 				+e.img-wrap--sm.img-bg.d-block(href=`img/card-slide-${i}.png` style=`background-image: url("img/card-slide-${i}.png");`)
+						//- 					img.res-i.lazy-bg(src=`/img/card-slide-${i}.png` data-src=`/img/card-slide-${i}.png` alt='Аренда Kia Rio AT недорого' title='Kia Rio AT от 1450 на прокат')
+						+e.title.h5.pb-1 Характеристики:
+						+e.char.row
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Цвет: 
+								| коричневый
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Коробка: 
+								| Автомат
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Кузов: 
+								| Седан
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Салон: кожа
+								| кожа
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 КОНДИЦИОНЕР
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 CD
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Привод: 
+								| Передний
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Тип двигателя: 
+								| Бензин
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 V двигателя: 
+								| 1.6 л.
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Мощность: 
+								| 123 л.с.
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Расход: 
+								|  8 л/100км
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 V багажника: 
+								| 500 л.
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Клиренс: 
+								| 160 мм.
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Бак: 
+								| 43 л.
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Люк: 
+								| нет
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Фаркоп: 
+								| нет
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Рейлинги: 
+								| нет
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Ширина: 
+								| 1700 мм.
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Высота: 
+								| 1470 мм.
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Длина: 
+								| 4370 мм.
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Дверей: 
+								| 4
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Мест: 
+								| 5
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Снар. масса: 
+								| 1151 кг.
+							+e.char-col.col-md-4.col-6
+								span.text-gray-700 Полная масса: 
+								| 1565 кг.
+				+e.main-col.col-xl-4
+					block
+
+	// end card-head

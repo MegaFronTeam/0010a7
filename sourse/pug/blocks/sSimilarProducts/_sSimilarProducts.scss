@@ -1,0 +1,52 @@
+// start .sSimilarProducts
+.sSimilarProducts {
+	--sPT: #{rem(30)};
+	--sPB: #{rem(30)};
+	// --sTPB: #{rem()};
+	h4 {
+		margin-bottom: rem(30);
+		@include media-breakpoint-up(md) {
+			font-size: rem(24);
+		}
+	}
+	&__row{
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+
+	}
+	.section-title{
+		
+	}
+	&__col{
+
+	}
+	&__slider{
+		overflow: hidden;
+		position: relative;
+		padding-bottom: rem(48);
+	}
+	&__slide{
+		height: auto;
+	}
+	&__pagination {
+		bottom: 0 !important;
+		.swiper-pagination-bullet {
+			width: 10px;
+			height: 10px;
+			background-color: #E8E8E8;
+			&-active {
+				background-color: #f6ee25;
+			}
+		}
+	}
+	.catalog-item {
+		
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sSimilarProducts

@@ -8,9 +8,6 @@ include ../blocks/sForm/_sForm.pug
 include ../blocks/sContent/_sContent.pug
 include ../blocks/s-catalog-filter/_s-catalog-filter.pug
 include ../blocks/sCatalog/_sCatalog.pug
-include ../blocks/sSimilarProducts/_sSimilarProducts.pug
-include ../blocks/card-head/_card-head.pug
-include ../blocks/s-content/_s-content.pug
  
 include ../blocks/sContact/_sContact.pug
 include ../blocks/sForm/_sForm.pug
@@ -18,11 +15,11 @@ include ../blocks/sForm/_sForm.pug
 include ../blocks/footer/_footer.pug
 
 block variables
-	- let  mainPage= 'catalog' 
+	- let  mainPage= 'main-page' 
 	- let  bg= null
 
 block title
-	- let  title= 'Карточка товара'
+	- let  title= 'Главная'
 	title= title
 block pagecontent
 	+mob-mnu()
@@ -31,13 +28,8 @@ block pagecontent
 	+topLine
 	+top-nav()
 	//- +s-catalog-filter
-	//- +header()
-	//- +sCatalog()
-	+page-head('Главная', 'KIA', 'KIA RIO')
-	+card-head()
-		+right-side()
-	+sSimilarProducts()
-	+s-content
+	+header()
+	+sCatalog('','','string')
 	+footer()
       
 

@@ -77,3 +77,28 @@
 		}
 	}
 }
+
+.page-head {
+	border-top: 1px solid #E8E8E8;
+	&__container {
+		@include media-breakpoint-down(sm) {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+	&__btn {
+		// display: flex;
+		align-items: center;
+		font-size: 12px;
+		background-color: #F6EE25;
+		border-radius: 35px;
+		padding: 7px 11px;
+		margin-right: 9px;
+		.icon {
+			font-size: 12px;
+			flex: 0 0 auto;
+			margin-right: rem(4);
+		}
+	}
+}

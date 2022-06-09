@@ -291,9 +291,9 @@ function eventHandler() {
 	JSCCommon.modalCall();
 	// JSCCommon.tabscostume('tabs');
 	JSCCommon.mobileMenu();
-	JSCCommon.inputMask();
+	// JSCCommon.inputMask();
 	// JSCCommon.sendForm();
-	JSCCommon.heightwindow();
+	// JSCCommon.heightwindow();
 	JSCCommon.makeDDGroup();
 	// JSCCommon.toggleShow(".catalog-block__toggle--desctop", '.catalog-block__dropdown');
 	// JSCCommon.animateScroll();
@@ -424,11 +424,11 @@ function eventHandler() {
       crossFade: true,
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.header2 .swiper-button-next',
+      prevEl: '.header2  .swiper-button-prev',
     },
     pagination: {
-			el: '.swiper-pagination',
+			el: '.header2  .swiper-pagination',
 			type: 'bullets',
 			clickable: true,
 		},
@@ -469,6 +469,41 @@ function eventHandler() {
 		type:'inline',
 		midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
 	});
+
+	const  sSimilarProductsSlider = new Swiper('.sSimilarProducts .sSimilarProducts__slider--js', {
+		slidesPerView: 4,
+		spaceBetween: 30,
+		loop: true,
+    pagination: {
+			el: '.sSimilarProducts .swiper-pagination',
+			type: 'bullets',
+			clickable: true,
+		},
+		breakpoints: {
+			1200: {
+				slidesPerView: 3,
+			},
+		},
+	});
+
+	// var cardHeadSwiper = new Swiper("card-head__newSslider--thumbs", {
+	// 	loop: true,
+	// 	spaceBetween: 10,
+	// 	slidesPerView: 4,
+	// 	freeMode: true,
+	// 	watchSlidesProgress: true,
+	// });
+	// var cardHeadSwiper2 = new Swiper(".card-head__newSslider--js", {
+	// 	loop: true,
+	// 	spaceBetween: 10,
+	// 	navigation: {
+	// 		nextEl: ".swiper-button-next",
+	// 		prevEl: ".swiper-button-prev",
+	// 	},
+	// 	thumbs: {
+	// 		swiper: cardHeadSwiper,
+	// 	},
+	// });
 
 if (document.readyState !== 'loading') {
 	eventHandler();

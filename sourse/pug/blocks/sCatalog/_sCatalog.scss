@@ -19,21 +19,30 @@
 	&__item{
 
 	}
-	table {
+	&__table-wrap{
+		border: 1px solid #E8E8E8;
+  	border-radius: 8px;
 		margin-bottom: rem(30);
+	}
+	table {
 		font-size: 14px;
 		text-align: center;
 		vertical-align: middle; 
+		border-radius: 8px;
+		overflow: hidden;
+		margin-bottom: 0;
 	}
 	th {
 		background: #F8F8F8;
 		vertical-align: middle !important; 
 		border-width: 1px !important;
 	}
-	tr {
-		@include mt;
-		&:hover {
-			box-shadow: 0px 5px 25px rgba(29, 29, 27, 0.25);
+	tbody {
+		tr {
+			@include mt;
+			&:hover {
+				box-shadow: 0px 5px 25px rgba(29, 29, 27, 0.25);
+			}
 		}
 	}
 	td {
@@ -126,6 +135,10 @@
 		text-transform: uppercase;
 		background-color: $gray-100;
 		border-radius: 8px;
+		@include mt;
+		&:hover {
+			background-color: #e5e4e4;
+		}
 		.icon {
 			margin-right: 10px;
 			font-size: 18px;
@@ -425,15 +438,22 @@
 		justify-content: space-between;
 		align-items: center;
 		padding: 8px 10px;
+		width: 100%;
 		margin-bottom: 5px;
 		border-radius: 8px;
+		background-color: transparent;
 		border: 1px solid transparent;
 		@include mt;
 		&:hover {
 			background: #FDFBCD;
 			border: 1px solid #F6EE25;
 		}
-		&--chosen {
+		&:focus {
+			background: #FDFBCD;
+			border: 1px solid #F6EE25;
+			outline: none;
+		}
+		&--chosen, &:active {
 			background-color: #F6EE25;
 		}
 	}
@@ -628,7 +648,7 @@
 	pointer-events: none;
 }
 
-.t-tabs__content, .display-tabs__content {
+.t-tabs__content {
 	display: none;
 	&--active {
 		display: block;
