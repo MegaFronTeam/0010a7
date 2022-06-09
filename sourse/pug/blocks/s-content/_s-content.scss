@@ -1,0 +1,116 @@
+// start .s-content
+.s-content {
+	--sPT: #{rem(0)};
+	--sPB: #{rem(100)};
+	// --sTPB: #{rem()};
+	&__row{
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+	}
+	.section-title{
+		
+	}
+	&__col{
+
+	}
+	&__item{
+
+	}
+	&__title {
+		font-size: rem(24);
+		margin-bottom: rem(27);
+		padding: 0;
+	}
+	.form-wrap {
+		margin-bottom: rem(28);
+		&__inc-wrap {
+			display: flex;
+			border-radius: 8px;
+			overflow: hidden;
+			margin-bottom: rem(15);
+			@include media-breakpoint-up(lg) {
+				border: 1px solid #E8E8E8;
+			}
+			@include media-breakpoint-down(lg) {
+				// border-radius: 12px;
+				flex-wrap: wrap;
+			}
+			&--2 {
+				@include media-breakpoint-down(lg) {
+					row-gap: 5px;
+				}
+			}
+		}
+		.custom-input {
+			background-color: #fff;
+			padding: rem(7) rem(10);
+			margin-bottom: 0;
+			// border: 1px solid #E8E8E8;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+			width: 50%;
+			margin: unset;
+			@include media-breakpoint-down(lg) {
+				width: calc(50% - 5px);
+				border-radius: 8px;
+				border: 1px solid #E8E8E8;
+			}
+			span {
+				font-size: rem(14);
+				position: relative;
+				z-index: 123;
+			}
+			&:not(:last-child) {
+				border-right: 1px solid #E8E8E8;
+				@include media-breakpoint-down(lg) {
+					margin-right: 5px;
+				}
+			}
+			&__input {
+				pointer-events: none;
+				position: absolute;
+				width: 100%;
+				height: calc(100% + 0px);
+				z-index: 2;
+				border: 1px solid transparent;
+				opacity: 1;
+				margin-top: 0;
+				margin-left: 0;
+				top: -1px;
+				left: 0;
+				background-color: transparent;
+				&:checked {
+					border-color: #F6EE25;
+					background-color: #FDFBCD;
+				}
+			}
+			&__wrap {
+				display: flex;
+				justify-content: space-between;
+				width: 100%;
+				align-items: center;
+				&--2 {
+					@include media-breakpoint-down(lg) {
+						flex-direction: column;
+					}
+				}
+			}
+			&__text {
+				color: #1D1D1B;
+			}
+			&__num {
+				text-align: right;
+				color: #7C7C7C;
+			}
+		}
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.s-content

@@ -565,6 +565,11 @@ iframe {
 
 .catalog {
 	background-color: $gray-100;
+	.mfp-content {
+		.mfp-close {
+			display: none;
+		}
+	}
 }
 
 .swiper-pagination {

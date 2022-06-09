@@ -434,6 +434,25 @@ function eventHandler() {
 		},
 	});
 
+	// var cardHeadSwiper = new Swiper("card-head__newSslider--thumbs", {
+	// 	loop: true,
+	// 	spaceBetween: 10,
+	// 	slidesPerView: 4,
+	// 	freeMode: true,
+	// 	watchSlidesProgress: true,
+	// });
+	// var cardHeadSwiper2 = new Swiper(".card-head__newSslider--js", {
+	// 	loop: true,
+	// 	spaceBetween: 10,
+	// 	navigation: {
+	// 		nextEl: ".swiper-button-next",
+	// 		prevEl: ".swiper-button-prev",
+	// 	},
+	// 	thumbs: {
+	// 		swiper: cardHeadSwiper,
+	// 	},
+	// });
+
 if (document.readyState !== 'loading') {
 	eventHandler();
 } else {
