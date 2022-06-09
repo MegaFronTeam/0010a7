@@ -365,6 +365,54 @@ function eventHandler() {
 	});
 	// modal window
 
+	//tariff tabs
+
+	const tabs = document.querySelector('.t-tabs');
+  const tabsBtn = document.querySelectorAll('.t-tabs__btn');
+  const tabsContent = document.querySelectorAll('.t-tabs__content');
+
+  if (tabs) {
+    tabs.addEventListener('click', (e) => {
+      if (e.target.classList.contains('t-tabs__btn')) {
+        const tabsPath = e.target.dataset.tabsPath;
+        tabsBtn.forEach(el => {el.classList.remove('t-tabs__btn--active')});
+        document.querySelector(`[data-tabs-path="${tabsPath}"]`).classList.add('t-tabs__btn--active');
+        tabsHandler(tabsPath);
+      }
+    });
+  }
+
+  const tabsHandler = (path) => {
+    tabsContent.forEach(el => {el.classList.remove('t-tabs__content--active')});
+    document.querySelector(`[data-tabs-target="${path}"]`).classList.add('t-tabs__content--active');
+  };
+
+	// /tariff tabs
+
+	//display tabs
+
+	const displayTabs = document.querySelector('.display-tabs');
+  const displayTabsBtn = document.querySelectorAll('.display-tabs__btn');
+  const displayTabsContent = document.querySelectorAll('.display-tabs__content');
+
+  if (displayTabs) {
+    displayTabs.addEventListener('click', (e) => {
+      if (e.target.classList.contains('display-tabs__btn')) {
+        const tabsPath = e.target.dataset.tabsPath;
+        displayTabsBtn.forEach(el => {el.classList.remove('display-tabs__btn--active')});
+        document.querySelector(`[data-tabs-path="${tabsPath}"]`).classList.add('display-tabs__btn--active');
+        displayTabsHandler(tabsPath);
+      }
+    });
+  }
+
+  const displayTabsHandler = (path) => {
+    displayTabsContent.forEach(el => {el.classList.remove('display-tabs__content--active')});
+    document.querySelector(`[data-tabs-target="${path}"]`).classList.add('display-tabs__content--active');
+  };
+
+	// /display tabs
+
   const header2Swiper = new Swiper('.header2__slider--js', {
 		slidesPerView: 1,
 		effect: 'fade',
@@ -394,6 +442,10 @@ function eventHandler() {
 			clickable: true,
 		},
 	});
+
+	$('.catalog-item-slider .swiper-pagination-bullet').hover(function() {
+		$( this ).trigger( "click" );
+ });
 
   $('#datepicker').datepicker({
     uiLibrary: 'bootstrap4'

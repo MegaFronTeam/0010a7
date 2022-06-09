@@ -302,7 +302,7 @@
 			<!-- end header-->
 			<!-- start sCatalog-->
 			<section class="sCatalog section" id="sCatalog">
-				<div class="container">
+				<div class="container display-tabs display-tabs--js">
 					<div class="section-title text-center">
 						<h2>Посуточная аренда авто без водителя в&nbsp;Москве				</h2>
 					</div>
@@ -423,17 +423,17 @@
 											<button>По возрастанию цены</button>
 										</div>
 										<div class="filter-result__display d-none d-lg-block">
-											<button class="active">
+											<button class="display-tabs__btn display-tabs__btn--active" data-tabs-path="tile">
 												<svg class="icon icon-square ">
 													<use xlink:href="img/svg/sprite.svg#square"></use>
 												</svg>
 											</button>
-											<button>
+											<button class="display-tabs__btn" data-tabs-path="string">
 												<svg class="icon icon-stroke ">
 													<use xlink:href="img/svg/sprite.svg#stroke"></use>
 												</svg>
 											</button>
-											<button>
+											<button class="display-tabs__btn" data-tabs-path="table">
 												<svg class="icon icon-lines ">
 													<use xlink:href="img/svg/sprite.svg#lines"></use>
 												</svg>
@@ -446,10 +446,10 @@
 					</div>
 					<div class="sCatalog__catalog-row row">
 						<div class="sCatalog__left col-12 col-lg-9">
-							<div class="sCatalog__items-row row">
+							<div class="sCatalog__tile row display-tabs__content" data-tabs-target="tile">
 								<div class="sCatalog__catalog-item-col col col-md-auto">
-									<div class="catalog-item">
-										<div class="catalog-item__img-wrap">
+									<div class="catalog-tile-item">
+										<div class="catalog-tile-item__img-wrap">
 											<div class="swiper catalog-item-slider catalog-item-slider--js">
 												<div class="swiper-wrapper">
 													<div class="swiper-slide"><img src="img/catalog-1.jpg" alt="" loading="lazy"/>
@@ -466,33 +466,33 @@
 												<div class="swiper-pagination"></div>
 											</div>
 										</div>
-										<div class="catalog-item__text-wrap">
-											<div class="catalog-item__about">
-												<div class="catalog-item__name">Ravon NEXIA&nbsp;R3
+										<div class="catalog-tile-item__text-wrap">
+											<div class="catalog-tile-item__about">
+												<div class="catalog-tile-item__name">Ravon NEXIA&nbsp;R3
 												</div>
-												<div class="catalog-item__transmission">2013, МТ, 1.6&nbsp;л.
-												</div>
-											</div>
-											<div class="catalog-item__total">
-												<div class="catalog-item__period">Итого за&nbsp;6&nbsp;суток
-												</div>
-												<div class="catalog-item__price">16&nbsp;530&nbsp;₽
+												<div class="catalog-tile-item__transmission">2013, МТ, 1.6&nbsp;л.
 												</div>
 											</div>
-											<div class="catalog-item__more">
-												<div class="catalog-item__cost">1540&nbsp;&mdash; 1880&nbsp;₽
+											<div class="catalog-tile-item__total">
+												<div class="catalog-tile-item__period">Итого за&nbsp;6&nbsp;суток
 												</div>
-												<a class="catalog-item__details" href="#">Подробнее
+												<div class="catalog-tile-item__price">16&nbsp;530&nbsp;₽
+												</div>
+											</div>
+											<div class="catalog-tile-item__more">
+												<div class="catalog-tile-item__cost">1540&nbsp;&mdash; 1880&nbsp;₽
+												</div>
+												<a class="catalog-tile-item__details" href="#">Подробнее
 												</a>
 											</div>
-											<a class="catalog-item__btn btn btn-primary" href="#">Заказать в 1 клик
+											<a class="catalog-tile-item__btn btn btn-primary" href="#">Заказать в 1 клик
 											</a>
 										</div>
 									</div>
 								</div>
 								<div class="sCatalog__catalog-item-col col col-md-auto">
-									<div class="catalog-item">
-										<div class="catalog-item__img-wrap">
+									<div class="catalog-tile-item">
+										<div class="catalog-tile-item__img-wrap">
 											<div class="swiper catalog-item-slider catalog-item-slider--js">
 												<div class="swiper-wrapper">
 													<div class="swiper-slide"><img src="img/catalog-2.jpg" alt="" loading="lazy"/>
@@ -509,33 +509,33 @@
 												<div class="swiper-pagination"></div>
 											</div>
 										</div>
-										<div class="catalog-item__text-wrap">
-											<div class="catalog-item__about">
-												<div class="catalog-item__name">Renault SYMBOL
+										<div class="catalog-tile-item__text-wrap">
+											<div class="catalog-tile-item__about">
+												<div class="catalog-tile-item__name">Renault SYMBOL
 												</div>
-												<div class="catalog-item__transmission">2013, МТ, 1.6&nbsp;л.
-												</div>
-											</div>
-											<div class="catalog-item__total">
-												<div class="catalog-item__period">Итого за&nbsp;30&nbsp;суток
-												</div>
-												<div class="catalog-item__price">99 530&nbsp;₽
+												<div class="catalog-tile-item__transmission">2013, МТ, 1.6&nbsp;л.
 												</div>
 											</div>
-											<div class="catalog-item__more">
-												<div class="catalog-item__cost">1540&nbsp;₽ от&nbsp;30&nbsp;сут.
+											<div class="catalog-tile-item__total">
+												<div class="catalog-tile-item__period">Итого за&nbsp;30&nbsp;суток
 												</div>
-												<a class="catalog-item__details" href="#">Подробнее
+												<div class="catalog-tile-item__price">99 530&nbsp;₽
+												</div>
+											</div>
+											<div class="catalog-tile-item__more">
+												<div class="catalog-tile-item__cost">1540&nbsp;₽ от&nbsp;30&nbsp;сут.
+												</div>
+												<a class="catalog-tile-item__details" href="#">Подробнее
 												</a>
 											</div>
-											<a class="catalog-item__btn btn btn-primary" href="#">Заказать в 1 клик
+											<a class="catalog-tile-item__btn btn btn-primary" href="#">Заказать в 1 клик
 											</a>
 										</div>
 									</div>
 								</div>
 								<div class="sCatalog__catalog-item-col col col-md-auto">
-									<div class="catalog-item">
-										<div class="catalog-item__img-wrap">
+									<div class="catalog-tile-item">
+										<div class="catalog-tile-item__img-wrap">
 											<div class="swiper catalog-item-slider catalog-item-slider--js">
 												<div class="swiper-wrapper">
 													<div class="swiper-slide"><img src="img/catalog-3.jpg" alt="" loading="lazy"/>
@@ -552,33 +552,33 @@
 												<div class="swiper-pagination"></div>
 											</div>
 										</div>
-										<div class="catalog-item__text-wrap">
-											<div class="catalog-item__about">
-												<div class="catalog-item__name">Lada VESTA
+										<div class="catalog-tile-item__text-wrap">
+											<div class="catalog-tile-item__about">
+												<div class="catalog-tile-item__name">Lada VESTA
 												</div>
-												<div class="catalog-item__transmission">2013, МТ, 1.6&nbsp;л.
-												</div>
-											</div>
-											<div class="catalog-item__total">
-												<div class="catalog-item__period">Выкуп за&nbsp;36&nbsp;мес
-												</div>
-												<div class="catalog-item__price">900&nbsp;₽
+												<div class="catalog-tile-item__transmission">2013, МТ, 1.6&nbsp;л.
 												</div>
 											</div>
-											<div class="catalog-item__more">
-												<div class="catalog-item__cost">900&nbsp;&mdash; 2560&nbsp;₽
+											<div class="catalog-tile-item__total">
+												<div class="catalog-tile-item__period">Выкуп за&nbsp;36&nbsp;мес
 												</div>
-												<a class="catalog-item__details" href="#">Подробнее
+												<div class="catalog-tile-item__price">900&nbsp;₽
+												</div>
+											</div>
+											<div class="catalog-tile-item__more">
+												<div class="catalog-tile-item__cost">900&nbsp;&mdash; 2560&nbsp;₽
+												</div>
+												<a class="catalog-tile-item__details" href="#">Подробнее
 												</a>
 											</div>
-											<a class="catalog-item__btn btn btn-primary" href="#">Заказать в 1 клик
+											<a class="catalog-tile-item__btn btn btn-primary" href="#">Заказать в 1 клик
 											</a>
 										</div>
 									</div>
 								</div>
 								<div class="sCatalog__catalog-item-col col col-md-auto">
-									<div class="catalog-item">
-										<div class="catalog-item__img-wrap">
+									<div class="catalog-tile-item">
+										<div class="catalog-tile-item__img-wrap">
 											<div class="swiper catalog-item-slider catalog-item-slider--js">
 												<div class="swiper-wrapper">
 													<div class="swiper-slide"><img src="img/catalog-4.jpg" alt="" loading="lazy"/>
@@ -595,33 +595,33 @@
 												<div class="swiper-pagination"></div>
 											</div>
 										</div>
-										<div class="catalog-item__text-wrap">
-											<div class="catalog-item__about">
-												<div class="catalog-item__name">Chevrolet CRUZE
+										<div class="catalog-tile-item__text-wrap">
+											<div class="catalog-tile-item__about">
+												<div class="catalog-tile-item__name">Chevrolet CRUZE
 												</div>
-												<div class="catalog-item__transmission">2013, МТ, 1.6&nbsp;л.
-												</div>
-											</div>
-											<div class="catalog-item__total">
-												<div class="catalog-item__period">Итого за&nbsp;3+1 часа (включено 100&nbsp;км)
-												</div>
-												<div class="catalog-item__price">99 530&nbsp;₽
+												<div class="catalog-tile-item__transmission">2013, МТ, 1.6&nbsp;л.
 												</div>
 											</div>
-											<div class="catalog-item__more">
-												<div class="catalog-item__cost">1540&nbsp;&mdash; 1880&nbsp;₽
+											<div class="catalog-tile-item__total">
+												<div class="catalog-tile-item__period">Итого за&nbsp;3+1 часа (включено 100&nbsp;км)
 												</div>
-												<a class="catalog-item__details" href="#">Подробнее
+												<div class="catalog-tile-item__price">99 530&nbsp;₽
+												</div>
+											</div>
+											<div class="catalog-tile-item__more">
+												<div class="catalog-tile-item__cost">1540&nbsp;&mdash; 1880&nbsp;₽
+												</div>
+												<a class="catalog-tile-item__details" href="#">Подробнее
 												</a>
 											</div>
-											<a class="catalog-item__btn btn btn-primary" href="#">Заказать в 1 клик
+											<a class="catalog-tile-item__btn btn btn-primary" href="#">Заказать в 1 клик
 											</a>
 										</div>
 									</div>
 								</div>
 								<div class="sCatalog__catalog-item-col col col-md-auto">
-									<div class="catalog-item">
-										<div class="catalog-item__img-wrap">
+									<div class="catalog-tile-item">
+										<div class="catalog-tile-item__img-wrap">
 											<div class="swiper catalog-item-slider catalog-item-slider--js">
 												<div class="swiper-wrapper">
 													<div class="swiper-slide"><img src="img/catalog-5.jpg" alt="" loading="lazy"/>
@@ -638,33 +638,33 @@
 												<div class="swiper-pagination"></div>
 											</div>
 										</div>
-										<div class="catalog-item__text-wrap">
-											<div class="catalog-item__about">
-												<div class="catalog-item__name">Kia RIO
+										<div class="catalog-tile-item__text-wrap">
+											<div class="catalog-tile-item__about">
+												<div class="catalog-tile-item__name">Kia RIO
 												</div>
-												<div class="catalog-item__transmission">2013, МТ, 1.6&nbsp;л.
-												</div>
-											</div>
-											<div class="catalog-item__total">
-												<div class="catalog-item__period">Итого за&nbsp;6&nbsp;суток
-												</div>
-												<div class="catalog-item__price">16&nbsp;530&nbsp;₽
+												<div class="catalog-tile-item__transmission">2013, МТ, 1.6&nbsp;л.
 												</div>
 											</div>
-											<div class="catalog-item__more">
-												<div class="catalog-item__cost">1540&nbsp;&mdash; 1880&nbsp;₽
+											<div class="catalog-tile-item__total">
+												<div class="catalog-tile-item__period">Итого за&nbsp;6&nbsp;суток
 												</div>
-												<a class="catalog-item__details" href="#">Подробнее
+												<div class="catalog-tile-item__price">16&nbsp;530&nbsp;₽
+												</div>
+											</div>
+											<div class="catalog-tile-item__more">
+												<div class="catalog-tile-item__cost">1540&nbsp;&mdash; 1880&nbsp;₽
+												</div>
+												<a class="catalog-tile-item__details" href="#">Подробнее
 												</a>
 											</div>
-											<a class="catalog-item__btn btn btn-primary" href="#">Заказать в 1 клик
+											<a class="catalog-tile-item__btn btn btn-primary" href="#">Заказать в 1 клик
 											</a>
 										</div>
 									</div>
 								</div>
 								<div class="sCatalog__catalog-item-col col col-md-auto">
-									<div class="catalog-item">
-										<div class="catalog-item__img-wrap">
+									<div class="catalog-tile-item">
+										<div class="catalog-tile-item__img-wrap">
 											<div class="swiper catalog-item-slider catalog-item-slider--js">
 												<div class="swiper-wrapper">
 													<div class="swiper-slide"><img src="img/catalog-6.jpg" alt="" loading="lazy"/>
@@ -681,33 +681,33 @@
 												<div class="swiper-pagination"></div>
 											</div>
 										</div>
-										<div class="catalog-item__text-wrap">
-											<div class="catalog-item__about">
-												<div class="catalog-item__name">Volkswagen POLO
+										<div class="catalog-tile-item__text-wrap">
+											<div class="catalog-tile-item__about">
+												<div class="catalog-tile-item__name">Volkswagen POLO
 												</div>
-												<div class="catalog-item__transmission">2013, МТ, 1.6&nbsp;л.
-												</div>
-											</div>
-											<div class="catalog-item__total">
-												<div class="catalog-item__period">Итого за&nbsp;6&nbsp;суток
-												</div>
-												<div class="catalog-item__price">16&nbsp;530&nbsp;₽
+												<div class="catalog-tile-item__transmission">2013, МТ, 1.6&nbsp;л.
 												</div>
 											</div>
-											<div class="catalog-item__more">
-												<div class="catalog-item__cost">1540&nbsp;&mdash; 1880&nbsp;₽
+											<div class="catalog-tile-item__total">
+												<div class="catalog-tile-item__period">Итого за&nbsp;6&nbsp;суток
 												</div>
-												<a class="catalog-item__details" href="#">Подробнее
+												<div class="catalog-tile-item__price">16&nbsp;530&nbsp;₽
+												</div>
+											</div>
+											<div class="catalog-tile-item__more">
+												<div class="catalog-tile-item__cost">1540&nbsp;&mdash; 1880&nbsp;₽
+												</div>
+												<a class="catalog-tile-item__details" href="#">Подробнее
 												</a>
 											</div>
-											<a class="catalog-item__btn btn btn-primary" href="#">Заказать в 1 клик
+											<a class="catalog-tile-item__btn btn btn-primary" href="#">Заказать в 1 клик
 											</a>
 										</div>
 									</div>
 								</div>
 								<div class="sCatalog__catalog-item-col col col-md-auto">
-									<div class="catalog-item">
-										<div class="catalog-item__img-wrap">
+									<div class="catalog-tile-item">
+										<div class="catalog-tile-item__img-wrap">
 											<div class="swiper catalog-item-slider catalog-item-slider--js">
 												<div class="swiper-wrapper">
 													<div class="swiper-slide"><img src="img/catalog-1.jpg" alt="" loading="lazy"/>
@@ -724,33 +724,33 @@
 												<div class="swiper-pagination"></div>
 											</div>
 										</div>
-										<div class="catalog-item__text-wrap">
-											<div class="catalog-item__about">
-												<div class="catalog-item__name">Ravon NEXIA&nbsp;R3
+										<div class="catalog-tile-item__text-wrap">
+											<div class="catalog-tile-item__about">
+												<div class="catalog-tile-item__name">Ravon NEXIA&nbsp;R3
 												</div>
-												<div class="catalog-item__transmission">2013, МТ, 1.6&nbsp;л.
-												</div>
-											</div>
-											<div class="catalog-item__total">
-												<div class="catalog-item__period">Итого за&nbsp;6&nbsp;суток
-												</div>
-												<div class="catalog-item__price">16&nbsp;530&nbsp;₽
+												<div class="catalog-tile-item__transmission">2013, МТ, 1.6&nbsp;л.
 												</div>
 											</div>
-											<div class="catalog-item__more">
-												<div class="catalog-item__cost">1540&nbsp;&mdash; 1880&nbsp;₽
+											<div class="catalog-tile-item__total">
+												<div class="catalog-tile-item__period">Итого за&nbsp;6&nbsp;суток
 												</div>
-												<a class="catalog-item__details" href="#">Подробнее
+												<div class="catalog-tile-item__price">16&nbsp;530&nbsp;₽
+												</div>
+											</div>
+											<div class="catalog-tile-item__more">
+												<div class="catalog-tile-item__cost">1540&nbsp;&mdash; 1880&nbsp;₽
+												</div>
+												<a class="catalog-tile-item__details" href="#">Подробнее
 												</a>
 											</div>
-											<a class="catalog-item__btn btn btn-primary" href="#">Заказать в 1 клик
+											<a class="catalog-tile-item__btn btn btn-primary" href="#">Заказать в 1 клик
 											</a>
 										</div>
 									</div>
 								</div>
 								<div class="sCatalog__catalog-item-col col col-md-auto">
-									<div class="catalog-item">
-										<div class="catalog-item__img-wrap">
+									<div class="catalog-tile-item">
+										<div class="catalog-tile-item__img-wrap">
 											<div class="swiper catalog-item-slider catalog-item-slider--js">
 												<div class="swiper-wrapper">
 													<div class="swiper-slide"><img src="img/catalog-2.jpg" alt="" loading="lazy"/>
@@ -767,33 +767,33 @@
 												<div class="swiper-pagination"></div>
 											</div>
 										</div>
-										<div class="catalog-item__text-wrap">
-											<div class="catalog-item__about">
-												<div class="catalog-item__name">Renault SYMBOL
+										<div class="catalog-tile-item__text-wrap">
+											<div class="catalog-tile-item__about">
+												<div class="catalog-tile-item__name">Renault SYMBOL
 												</div>
-												<div class="catalog-item__transmission">2013, МТ, 1.6&nbsp;л.
-												</div>
-											</div>
-											<div class="catalog-item__total">
-												<div class="catalog-item__period">Итого за&nbsp;30&nbsp;суток
-												</div>
-												<div class="catalog-item__price">99 530&nbsp;₽
+												<div class="catalog-tile-item__transmission">2013, МТ, 1.6&nbsp;л.
 												</div>
 											</div>
-											<div class="catalog-item__more">
-												<div class="catalog-item__cost">1540&nbsp;₽ от&nbsp;30&nbsp;сут.
+											<div class="catalog-tile-item__total">
+												<div class="catalog-tile-item__period">Итого за&nbsp;30&nbsp;суток
 												</div>
-												<a class="catalog-item__details" href="#">Подробнее
+												<div class="catalog-tile-item__price">99 530&nbsp;₽
+												</div>
+											</div>
+											<div class="catalog-tile-item__more">
+												<div class="catalog-tile-item__cost">1540&nbsp;₽ от&nbsp;30&nbsp;сут.
+												</div>
+												<a class="catalog-tile-item__details" href="#">Подробнее
 												</a>
 											</div>
-											<a class="catalog-item__btn btn btn-primary" href="#">Заказать в 1 клик
+											<a class="catalog-tile-item__btn btn btn-primary" href="#">Заказать в 1 клик
 											</a>
 										</div>
 									</div>
 								</div>
 								<div class="sCatalog__catalog-item-col col col-md-auto">
-									<div class="catalog-item">
-										<div class="catalog-item__img-wrap">
+									<div class="catalog-tile-item">
+										<div class="catalog-tile-item__img-wrap">
 											<div class="swiper catalog-item-slider catalog-item-slider--js">
 												<div class="swiper-wrapper">
 													<div class="swiper-slide"><img src="img/catalog-3.jpg" alt="" loading="lazy"/>
@@ -810,33 +810,33 @@
 												<div class="swiper-pagination"></div>
 											</div>
 										</div>
-										<div class="catalog-item__text-wrap">
-											<div class="catalog-item__about">
-												<div class="catalog-item__name">Lada VESTA
+										<div class="catalog-tile-item__text-wrap">
+											<div class="catalog-tile-item__about">
+												<div class="catalog-tile-item__name">Lada VESTA
 												</div>
-												<div class="catalog-item__transmission">2013, МТ, 1.6&nbsp;л.
-												</div>
-											</div>
-											<div class="catalog-item__total">
-												<div class="catalog-item__period">Выкуп за&nbsp;36&nbsp;мес
-												</div>
-												<div class="catalog-item__price">900&nbsp;₽
+												<div class="catalog-tile-item__transmission">2013, МТ, 1.6&nbsp;л.
 												</div>
 											</div>
-											<div class="catalog-item__more">
-												<div class="catalog-item__cost">900&nbsp;&mdash; 2560&nbsp;₽
+											<div class="catalog-tile-item__total">
+												<div class="catalog-tile-item__period">Выкуп за&nbsp;36&nbsp;мес
 												</div>
-												<a class="catalog-item__details" href="#">Подробнее
+												<div class="catalog-tile-item__price">900&nbsp;₽
+												</div>
+											</div>
+											<div class="catalog-tile-item__more">
+												<div class="catalog-tile-item__cost">900&nbsp;&mdash; 2560&nbsp;₽
+												</div>
+												<a class="catalog-tile-item__details" href="#">Подробнее
 												</a>
 											</div>
-											<a class="catalog-item__btn btn btn-primary" href="#">Заказать в 1 клик
+											<a class="catalog-tile-item__btn btn btn-primary" href="#">Заказать в 1 клик
 											</a>
 										</div>
 									</div>
 								</div>
 								<div class="sCatalog__catalog-item-col col col-md-auto">
-									<div class="catalog-item">
-										<div class="catalog-item__img-wrap">
+									<div class="catalog-tile-item">
+										<div class="catalog-tile-item__img-wrap">
 											<div class="swiper catalog-item-slider catalog-item-slider--js">
 												<div class="swiper-wrapper">
 													<div class="swiper-slide"><img src="img/catalog-4.jpg" alt="" loading="lazy"/>
@@ -853,33 +853,33 @@
 												<div class="swiper-pagination"></div>
 											</div>
 										</div>
-										<div class="catalog-item__text-wrap">
-											<div class="catalog-item__about">
-												<div class="catalog-item__name">Chevrolet CRUZE
+										<div class="catalog-tile-item__text-wrap">
+											<div class="catalog-tile-item__about">
+												<div class="catalog-tile-item__name">Chevrolet CRUZE
 												</div>
-												<div class="catalog-item__transmission">2013, МТ, 1.6&nbsp;л.
-												</div>
-											</div>
-											<div class="catalog-item__total">
-												<div class="catalog-item__period">Итого за&nbsp;3+1 часа (включено 100&nbsp;км)
-												</div>
-												<div class="catalog-item__price">99 530&nbsp;₽
+												<div class="catalog-tile-item__transmission">2013, МТ, 1.6&nbsp;л.
 												</div>
 											</div>
-											<div class="catalog-item__more">
-												<div class="catalog-item__cost">1540&nbsp;&mdash; 1880&nbsp;₽
+											<div class="catalog-tile-item__total">
+												<div class="catalog-tile-item__period">Итого за&nbsp;3+1 часа (включено 100&nbsp;км)
 												</div>
-												<a class="catalog-item__details" href="#">Подробнее
+												<div class="catalog-tile-item__price">99 530&nbsp;₽
+												</div>
+											</div>
+											<div class="catalog-tile-item__more">
+												<div class="catalog-tile-item__cost">1540&nbsp;&mdash; 1880&nbsp;₽
+												</div>
+												<a class="catalog-tile-item__details" href="#">Подробнее
 												</a>
 											</div>
-											<a class="catalog-item__btn btn btn-primary" href="#">Заказать в 1 клик
+											<a class="catalog-tile-item__btn btn btn-primary" href="#">Заказать в 1 клик
 											</a>
 										</div>
 									</div>
 								</div>
 								<div class="sCatalog__catalog-item-col col col-md-auto">
-									<div class="catalog-item">
-										<div class="catalog-item__img-wrap">
+									<div class="catalog-tile-item">
+										<div class="catalog-tile-item__img-wrap">
 											<div class="swiper catalog-item-slider catalog-item-slider--js">
 												<div class="swiper-wrapper">
 													<div class="swiper-slide"><img src="img/catalog-5.jpg" alt="" loading="lazy"/>
@@ -896,33 +896,33 @@
 												<div class="swiper-pagination"></div>
 											</div>
 										</div>
-										<div class="catalog-item__text-wrap">
-											<div class="catalog-item__about">
-												<div class="catalog-item__name">Kia RIO
+										<div class="catalog-tile-item__text-wrap">
+											<div class="catalog-tile-item__about">
+												<div class="catalog-tile-item__name">Kia RIO
 												</div>
-												<div class="catalog-item__transmission">2013, МТ, 1.6&nbsp;л.
-												</div>
-											</div>
-											<div class="catalog-item__total">
-												<div class="catalog-item__period">Итого за&nbsp;6&nbsp;суток
-												</div>
-												<div class="catalog-item__price">16&nbsp;530&nbsp;₽
+												<div class="catalog-tile-item__transmission">2013, МТ, 1.6&nbsp;л.
 												</div>
 											</div>
-											<div class="catalog-item__more">
-												<div class="catalog-item__cost">1540&nbsp;&mdash; 1880&nbsp;₽
+											<div class="catalog-tile-item__total">
+												<div class="catalog-tile-item__period">Итого за&nbsp;6&nbsp;суток
 												</div>
-												<a class="catalog-item__details" href="#">Подробнее
+												<div class="catalog-tile-item__price">16&nbsp;530&nbsp;₽
+												</div>
+											</div>
+											<div class="catalog-tile-item__more">
+												<div class="catalog-tile-item__cost">1540&nbsp;&mdash; 1880&nbsp;₽
+												</div>
+												<a class="catalog-tile-item__details" href="#">Подробнее
 												</a>
 											</div>
-											<a class="catalog-item__btn btn btn-primary" href="#">Заказать в 1 клик
+											<a class="catalog-tile-item__btn btn btn-primary" href="#">Заказать в 1 клик
 											</a>
 										</div>
 									</div>
 								</div>
 								<div class="sCatalog__catalog-item-col col col-md-auto">
-									<div class="catalog-item">
-										<div class="catalog-item__img-wrap">
+									<div class="catalog-tile-item">
+										<div class="catalog-tile-item__img-wrap">
 											<div class="swiper catalog-item-slider catalog-item-slider--js">
 												<div class="swiper-wrapper">
 													<div class="swiper-slide"><img src="img/catalog-6.jpg" alt="" loading="lazy"/>
@@ -939,33 +939,33 @@
 												<div class="swiper-pagination"></div>
 											</div>
 										</div>
-										<div class="catalog-item__text-wrap">
-											<div class="catalog-item__about">
-												<div class="catalog-item__name">Volkswagen POLO
+										<div class="catalog-tile-item__text-wrap">
+											<div class="catalog-tile-item__about">
+												<div class="catalog-tile-item__name">Volkswagen POLO
 												</div>
-												<div class="catalog-item__transmission">2013, МТ, 1.6&nbsp;л.
-												</div>
-											</div>
-											<div class="catalog-item__total">
-												<div class="catalog-item__period">Итого за&nbsp;6&nbsp;суток
-												</div>
-												<div class="catalog-item__price">16&nbsp;530&nbsp;₽
+												<div class="catalog-tile-item__transmission">2013, МТ, 1.6&nbsp;л.
 												</div>
 											</div>
-											<div class="catalog-item__more">
-												<div class="catalog-item__cost">1540&nbsp;&mdash; 1880&nbsp;₽
+											<div class="catalog-tile-item__total">
+												<div class="catalog-tile-item__period">Итого за&nbsp;6&nbsp;суток
 												</div>
-												<a class="catalog-item__details" href="#">Подробнее
+												<div class="catalog-tile-item__price">16&nbsp;530&nbsp;₽
+												</div>
+											</div>
+											<div class="catalog-tile-item__more">
+												<div class="catalog-tile-item__cost">1540&nbsp;&mdash; 1880&nbsp;₽
+												</div>
+												<a class="catalog-tile-item__details" href="#">Подробнее
 												</a>
 											</div>
-											<a class="catalog-item__btn btn btn-primary" href="#">Заказать в 1 клик
+											<a class="catalog-tile-item__btn btn btn-primary" href="#">Заказать в 1 клик
 											</a>
 										</div>
 									</div>
 								</div>
 								<div class="sCatalog__catalog-item-col col col-md-auto">
-									<div class="catalog-item">
-										<div class="catalog-item__img-wrap">
+									<div class="catalog-tile-item">
+										<div class="catalog-tile-item__img-wrap">
 											<div class="swiper catalog-item-slider catalog-item-slider--js">
 												<div class="swiper-wrapper">
 													<div class="swiper-slide"><img src="img/catalog-1.jpg" alt="" loading="lazy"/>
@@ -982,33 +982,33 @@
 												<div class="swiper-pagination"></div>
 											</div>
 										</div>
-										<div class="catalog-item__text-wrap">
-											<div class="catalog-item__about">
-												<div class="catalog-item__name">Ravon NEXIA&nbsp;R3
+										<div class="catalog-tile-item__text-wrap">
+											<div class="catalog-tile-item__about">
+												<div class="catalog-tile-item__name">Ravon NEXIA&nbsp;R3
 												</div>
-												<div class="catalog-item__transmission">2013, МТ, 1.6&nbsp;л.
-												</div>
-											</div>
-											<div class="catalog-item__total">
-												<div class="catalog-item__period">Итого за&nbsp;6&nbsp;суток
-												</div>
-												<div class="catalog-item__price">16&nbsp;530&nbsp;₽
+												<div class="catalog-tile-item__transmission">2013, МТ, 1.6&nbsp;л.
 												</div>
 											</div>
-											<div class="catalog-item__more">
-												<div class="catalog-item__cost">1540&nbsp;&mdash; 1880&nbsp;₽
+											<div class="catalog-tile-item__total">
+												<div class="catalog-tile-item__period">Итого за&nbsp;6&nbsp;суток
 												</div>
-												<a class="catalog-item__details" href="#">Подробнее
+												<div class="catalog-tile-item__price">16&nbsp;530&nbsp;₽
+												</div>
+											</div>
+											<div class="catalog-tile-item__more">
+												<div class="catalog-tile-item__cost">1540&nbsp;&mdash; 1880&nbsp;₽
+												</div>
+												<a class="catalog-tile-item__details" href="#">Подробнее
 												</a>
 											</div>
-											<a class="catalog-item__btn btn btn-primary" href="#">Заказать в 1 клик
+											<a class="catalog-tile-item__btn btn btn-primary" href="#">Заказать в 1 клик
 											</a>
 										</div>
 									</div>
 								</div>
 								<div class="sCatalog__catalog-item-col col col-md-auto">
-									<div class="catalog-item">
-										<div class="catalog-item__img-wrap">
+									<div class="catalog-tile-item">
+										<div class="catalog-tile-item__img-wrap">
 											<div class="swiper catalog-item-slider catalog-item-slider--js">
 												<div class="swiper-wrapper">
 													<div class="swiper-slide"><img src="img/catalog-2.jpg" alt="" loading="lazy"/>
@@ -1025,33 +1025,33 @@
 												<div class="swiper-pagination"></div>
 											</div>
 										</div>
-										<div class="catalog-item__text-wrap">
-											<div class="catalog-item__about">
-												<div class="catalog-item__name">Renault SYMBOL
+										<div class="catalog-tile-item__text-wrap">
+											<div class="catalog-tile-item__about">
+												<div class="catalog-tile-item__name">Renault SYMBOL
 												</div>
-												<div class="catalog-item__transmission">2013, МТ, 1.6&nbsp;л.
-												</div>
-											</div>
-											<div class="catalog-item__total">
-												<div class="catalog-item__period">Итого за&nbsp;30&nbsp;суток
-												</div>
-												<div class="catalog-item__price">99 530&nbsp;₽
+												<div class="catalog-tile-item__transmission">2013, МТ, 1.6&nbsp;л.
 												</div>
 											</div>
-											<div class="catalog-item__more">
-												<div class="catalog-item__cost">1540&nbsp;₽ от&nbsp;30&nbsp;сут.
+											<div class="catalog-tile-item__total">
+												<div class="catalog-tile-item__period">Итого за&nbsp;30&nbsp;суток
 												</div>
-												<a class="catalog-item__details" href="#">Подробнее
+												<div class="catalog-tile-item__price">99 530&nbsp;₽
+												</div>
+											</div>
+											<div class="catalog-tile-item__more">
+												<div class="catalog-tile-item__cost">1540&nbsp;₽ от&nbsp;30&nbsp;сут.
+												</div>
+												<a class="catalog-tile-item__details" href="#">Подробнее
 												</a>
 											</div>
-											<a class="catalog-item__btn btn btn-primary" href="#">Заказать в 1 клик
+											<a class="catalog-tile-item__btn btn btn-primary" href="#">Заказать в 1 клик
 											</a>
 										</div>
 									</div>
 								</div>
 								<div class="sCatalog__catalog-item-col col col-md-auto">
-									<div class="catalog-item">
-										<div class="catalog-item__img-wrap">
+									<div class="catalog-tile-item">
+										<div class="catalog-tile-item__img-wrap">
 											<div class="swiper catalog-item-slider catalog-item-slider--js">
 												<div class="swiper-wrapper">
 													<div class="swiper-slide"><img src="img/catalog-3.jpg" alt="" loading="lazy"/>
@@ -1068,33 +1068,33 @@
 												<div class="swiper-pagination"></div>
 											</div>
 										</div>
-										<div class="catalog-item__text-wrap">
-											<div class="catalog-item__about">
-												<div class="catalog-item__name">Lada VESTA
+										<div class="catalog-tile-item__text-wrap">
+											<div class="catalog-tile-item__about">
+												<div class="catalog-tile-item__name">Lada VESTA
 												</div>
-												<div class="catalog-item__transmission">2013, МТ, 1.6&nbsp;л.
-												</div>
-											</div>
-											<div class="catalog-item__total">
-												<div class="catalog-item__period">Выкуп за&nbsp;36&nbsp;мес
-												</div>
-												<div class="catalog-item__price">900&nbsp;₽
+												<div class="catalog-tile-item__transmission">2013, МТ, 1.6&nbsp;л.
 												</div>
 											</div>
-											<div class="catalog-item__more">
-												<div class="catalog-item__cost">900&nbsp;&mdash; 2560&nbsp;₽
+											<div class="catalog-tile-item__total">
+												<div class="catalog-tile-item__period">Выкуп за&nbsp;36&nbsp;мес
 												</div>
-												<a class="catalog-item__details" href="#">Подробнее
+												<div class="catalog-tile-item__price">900&nbsp;₽
+												</div>
+											</div>
+											<div class="catalog-tile-item__more">
+												<div class="catalog-tile-item__cost">900&nbsp;&mdash; 2560&nbsp;₽
+												</div>
+												<a class="catalog-tile-item__details" href="#">Подробнее
 												</a>
 											</div>
-											<a class="catalog-item__btn btn btn-primary" href="#">Заказать в 1 клик
+											<a class="catalog-tile-item__btn btn btn-primary" href="#">Заказать в 1 клик
 											</a>
 										</div>
 									</div>
 								</div>
 								<div class="sCatalog__catalog-item-col col col-md-auto">
-									<div class="catalog-item">
-										<div class="catalog-item__img-wrap">
+									<div class="catalog-tile-item">
+										<div class="catalog-tile-item__img-wrap">
 											<div class="swiper catalog-item-slider catalog-item-slider--js">
 												<div class="swiper-wrapper">
 													<div class="swiper-slide"><img src="img/catalog-4.jpg" alt="" loading="lazy"/>
@@ -1111,33 +1111,33 @@
 												<div class="swiper-pagination"></div>
 											</div>
 										</div>
-										<div class="catalog-item__text-wrap">
-											<div class="catalog-item__about">
-												<div class="catalog-item__name">Chevrolet CRUZE
+										<div class="catalog-tile-item__text-wrap">
+											<div class="catalog-tile-item__about">
+												<div class="catalog-tile-item__name">Chevrolet CRUZE
 												</div>
-												<div class="catalog-item__transmission">2013, МТ, 1.6&nbsp;л.
-												</div>
-											</div>
-											<div class="catalog-item__total">
-												<div class="catalog-item__period">Итого за&nbsp;3+1 часа (включено 100&nbsp;км)
-												</div>
-												<div class="catalog-item__price">99 530&nbsp;₽
+												<div class="catalog-tile-item__transmission">2013, МТ, 1.6&nbsp;л.
 												</div>
 											</div>
-											<div class="catalog-item__more">
-												<div class="catalog-item__cost">1540&nbsp;&mdash; 1880&nbsp;₽
+											<div class="catalog-tile-item__total">
+												<div class="catalog-tile-item__period">Итого за&nbsp;3+1 часа (включено 100&nbsp;км)
 												</div>
-												<a class="catalog-item__details" href="#">Подробнее
+												<div class="catalog-tile-item__price">99 530&nbsp;₽
+												</div>
+											</div>
+											<div class="catalog-tile-item__more">
+												<div class="catalog-tile-item__cost">1540&nbsp;&mdash; 1880&nbsp;₽
+												</div>
+												<a class="catalog-tile-item__details" href="#">Подробнее
 												</a>
 											</div>
-											<a class="catalog-item__btn btn btn-primary" href="#">Заказать в 1 клик
+											<a class="catalog-tile-item__btn btn btn-primary" href="#">Заказать в 1 клик
 											</a>
 										</div>
 									</div>
 								</div>
 								<div class="sCatalog__catalog-item-col col col-md-auto">
-									<div class="catalog-item">
-										<div class="catalog-item__img-wrap">
+									<div class="catalog-tile-item">
+										<div class="catalog-tile-item__img-wrap">
 											<div class="swiper catalog-item-slider catalog-item-slider--js">
 												<div class="swiper-wrapper">
 													<div class="swiper-slide"><img src="img/catalog-5.jpg" alt="" loading="lazy"/>
@@ -1154,33 +1154,33 @@
 												<div class="swiper-pagination"></div>
 											</div>
 										</div>
-										<div class="catalog-item__text-wrap">
-											<div class="catalog-item__about">
-												<div class="catalog-item__name">Kia RIO
+										<div class="catalog-tile-item__text-wrap">
+											<div class="catalog-tile-item__about">
+												<div class="catalog-tile-item__name">Kia RIO
 												</div>
-												<div class="catalog-item__transmission">2013, МТ, 1.6&nbsp;л.
-												</div>
-											</div>
-											<div class="catalog-item__total">
-												<div class="catalog-item__period">Итого за&nbsp;6&nbsp;суток
-												</div>
-												<div class="catalog-item__price">16&nbsp;530&nbsp;₽
+												<div class="catalog-tile-item__transmission">2013, МТ, 1.6&nbsp;л.
 												</div>
 											</div>
-											<div class="catalog-item__more">
-												<div class="catalog-item__cost">1540&nbsp;&mdash; 1880&nbsp;₽
+											<div class="catalog-tile-item__total">
+												<div class="catalog-tile-item__period">Итого за&nbsp;6&nbsp;суток
 												</div>
-												<a class="catalog-item__details" href="#">Подробнее
+												<div class="catalog-tile-item__price">16&nbsp;530&nbsp;₽
+												</div>
+											</div>
+											<div class="catalog-tile-item__more">
+												<div class="catalog-tile-item__cost">1540&nbsp;&mdash; 1880&nbsp;₽
+												</div>
+												<a class="catalog-tile-item__details" href="#">Подробнее
 												</a>
 											</div>
-											<a class="catalog-item__btn btn btn-primary" href="#">Заказать в 1 клик
+											<a class="catalog-tile-item__btn btn btn-primary" href="#">Заказать в 1 клик
 											</a>
 										</div>
 									</div>
 								</div>
 								<div class="sCatalog__catalog-item-col col col-md-auto">
-									<div class="catalog-item">
-										<div class="catalog-item__img-wrap">
+									<div class="catalog-tile-item">
+										<div class="catalog-tile-item__img-wrap">
 											<div class="swiper catalog-item-slider catalog-item-slider--js">
 												<div class="swiper-wrapper">
 													<div class="swiper-slide"><img src="img/catalog-6.jpg" alt="" loading="lazy"/>
@@ -1197,26 +1197,505 @@
 												<div class="swiper-pagination"></div>
 											</div>
 										</div>
-										<div class="catalog-item__text-wrap">
-											<div class="catalog-item__about">
-												<div class="catalog-item__name">Volkswagen POLO
+										<div class="catalog-tile-item__text-wrap">
+											<div class="catalog-tile-item__about">
+												<div class="catalog-tile-item__name">Volkswagen POLO
 												</div>
-												<div class="catalog-item__transmission">2013, МТ, 1.6&nbsp;л.
-												</div>
-											</div>
-											<div class="catalog-item__total">
-												<div class="catalog-item__period">Итого за&nbsp;6&nbsp;суток
-												</div>
-												<div class="catalog-item__price">16&nbsp;530&nbsp;₽
+												<div class="catalog-tile-item__transmission">2013, МТ, 1.6&nbsp;л.
 												</div>
 											</div>
-											<div class="catalog-item__more">
-												<div class="catalog-item__cost">1540&nbsp;&mdash; 1880&nbsp;₽
+											<div class="catalog-tile-item__total">
+												<div class="catalog-tile-item__period">Итого за&nbsp;6&nbsp;суток
 												</div>
-												<a class="catalog-item__details" href="#">Подробнее
+												<div class="catalog-tile-item__price">16&nbsp;530&nbsp;₽
+												</div>
+											</div>
+											<div class="catalog-tile-item__more">
+												<div class="catalog-tile-item__cost">1540&nbsp;&mdash; 1880&nbsp;₽
+												</div>
+												<a class="catalog-tile-item__details" href="#">Подробнее
 												</a>
 											</div>
-											<a class="catalog-item__btn btn btn-primary" href="#">Заказать в 1 клик
+											<a class="catalog-tile-item__btn btn btn-primary" href="#">Заказать в 1 клик
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="sCatalog__tabular display-tabs__content" data-tabs-target="table">
+								<table class="table table-bordered align-middle">
+									<thead>
+										<tr>
+											<th>Автомобиль</th>
+											<th>Описание</th>
+											<th>1-2 сут.</th>
+											<th>3-5 сут.</th>
+											<th>6-13 сут.</th>
+											<th>14-29 сут.</th>
+											<th>от 30 сут.</th>
+											<th>Итого на 6 сут.</th>
+											<th> </th>
+										</tr>
+									</thead>
+									<tbody>
+												<tr>
+													<td>Mercedes Benz SLK Classe</td>
+													<td>2013, MT, 1.6</td>
+													<td>2900 ₽</td>
+													<td>2755 ₽</td>
+													<td>2610 ₽</td>
+													<td>2320 ₽</td>
+													<td>2175 ₽</td>
+													<td>16530 ₽</td>
+													<td class="action-td"> <a class="td-details" href="#">Подробнее</a>
+														<button class="btn btn-primary">Заказать в 1 клик</button>
+													</td>
+												</tr>
+												<tr>
+													<td>Mercedes Benz SLK Classe</td>
+													<td>2013, MT, 1.6</td>
+													<td>2900 ₽</td>
+													<td>2755 ₽</td>
+													<td>2610 ₽</td>
+													<td>2320 ₽</td>
+													<td>2175 ₽</td>
+													<td>16530 ₽</td>
+													<td class="action-td"> <a class="td-details" href="#">Подробнее</a>
+														<button class="btn btn-primary">Заказать в 1 клик</button>
+													</td>
+												</tr>
+												<tr>
+													<td>Mercedes Benz SLK Classe</td>
+													<td>2013, MT, 1.6</td>
+													<td>2900 ₽</td>
+													<td>2755 ₽</td>
+													<td>2610 ₽</td>
+													<td>2320 ₽</td>
+													<td>2175 ₽</td>
+													<td>16530 ₽</td>
+													<td class="action-td"> <a class="td-details" href="#">Подробнее</a>
+														<button class="btn btn-primary">Заказать в 1 клик</button>
+													</td>
+												</tr>
+												<tr>
+													<td>Mercedes Benz SLK Classe</td>
+													<td>2013, MT, 1.6</td>
+													<td>2900 ₽</td>
+													<td>2755 ₽</td>
+													<td>2610 ₽</td>
+													<td>2320 ₽</td>
+													<td>2175 ₽</td>
+													<td>16530 ₽</td>
+													<td class="action-td"> <a class="td-details" href="#">Подробнее</a>
+														<button class="btn btn-primary">Заказать в 1 клик</button>
+													</td>
+												</tr>
+									</tbody>
+								</table>
+								<table class="table table-bordered align-middle">
+									<thead>
+										<tr>
+											<th>Автомобиль</th>
+											<th>Описание</th>
+											<th>Цена в сутки (от 30 суток)</th>
+											<th>Итого в месяц</th>
+											<th></th>
+										</tr>
+									</thead>
+									<tbody>
+												<tr>
+													<td>Mercedes Benz SLK Classe</td>
+													<td>2013, MT, 1.6</td>
+													<td>16530 ₽</td>
+													<td>16530 ₽</td>
+													<td class="action-td"> <a class="td-details" href="#">Подробнее</a>
+														<button class="btn btn-primary">Заказать в 1 клик</button>
+													</td>
+												</tr>
+												<tr>
+													<td>Mercedes Benz SLK Classe</td>
+													<td>2013, MT, 1.6</td>
+													<td>16530 ₽</td>
+													<td>16530 ₽</td>
+													<td class="action-td"> <a class="td-details" href="#">Подробнее</a>
+														<button class="btn btn-primary">Заказать в 1 клик</button>
+													</td>
+												</tr>
+												<tr>
+													<td>Mercedes Benz SLK Classe</td>
+													<td>2013, MT, 1.6</td>
+													<td>16530 ₽</td>
+													<td>16530 ₽</td>
+													<td class="action-td"> <a class="td-details" href="#">Подробнее</a>
+														<button class="btn btn-primary">Заказать в 1 клик</button>
+													</td>
+												</tr>
+												<tr>
+													<td>Mercedes Benz SLK Classe</td>
+													<td>2013, MT, 1.6</td>
+													<td>16530 ₽</td>
+													<td>16530 ₽</td>
+													<td class="action-td"> <a class="td-details" href="#">Подробнее</a>
+														<button class="btn btn-primary">Заказать в 1 клик</button>
+													</td>
+												</tr>
+									</tbody>
+								</table>
+								<table class="table table-bordered align-middle">
+									<thead>
+										<tr>
+											<th>Автомобиль</th>
+											<th>Описание</th>
+											<th>Выкуп за 12 мес.</th>
+											<th>Выкуп за 24 мес.</th>
+											<th>Выкуп за 36 мес.</th>
+											<th>Первый взнос</th>
+											<th>Итого в сутки на 36 мес.</th>
+											<th></th>
+										</tr>
+									</thead>
+									<tbody>
+												<tr>
+													<td>Mercedes Benz SLK Classe</td>
+													<td>2013, MT, 1.6</td>
+													<td>2560 ₽/сут.</td>
+													<td>2560 ₽/сут.</td>
+													<td>2560 ₽/сут.</td>
+													<td>0 ₽</td>
+													<td>900 ₽/сут.</td>
+													<td class="action-td"> <a class="td-details" href="#">Подробнее</a>
+														<button class="btn btn-primary">Заказать в 1 клик</button>
+													</td>
+												</tr>
+												<tr>
+													<td>Mercedes Benz SLK Classe</td>
+													<td>2013, MT, 1.6</td>
+													<td>2560 ₽/сут.</td>
+													<td>2560 ₽/сут.</td>
+													<td>2560 ₽/сут.</td>
+													<td>0 ₽</td>
+													<td>900 ₽/сут.</td>
+													<td class="action-td"> <a class="td-details" href="#">Подробнее</a>
+														<button class="btn btn-primary">Заказать в 1 клик</button>
+													</td>
+												</tr>
+												<tr>
+													<td>Mercedes Benz SLK Classe</td>
+													<td>2013, MT, 1.6</td>
+													<td>2560 ₽/сут.</td>
+													<td>2560 ₽/сут.</td>
+													<td>2560 ₽/сут.</td>
+													<td>0 ₽</td>
+													<td>900 ₽/сут.</td>
+													<td class="action-td"> <a class="td-details" href="#">Подробнее</a>
+														<button class="btn btn-primary">Заказать в 1 клик</button>
+													</td>
+												</tr>
+												<tr>
+													<td>Mercedes Benz SLK Classe</td>
+													<td>2013, MT, 1.6</td>
+													<td>2560 ₽/сут.</td>
+													<td>2560 ₽/сут.</td>
+													<td>2560 ₽/сут.</td>
+													<td>0 ₽</td>
+													<td>900 ₽/сут.</td>
+													<td class="action-td"> <a class="td-details" href="#">Подробнее</a>
+														<button class="btn btn-primary">Заказать в 1 клик</button>
+													</td>
+												</tr>
+									</tbody>
+								</table>
+								<table class="table table-bordered align-middle">
+									<thead>
+										<tr>
+											<th>Автомобиль</th>
+											<th>Описание</th>
+											<th>Цена в час</th>
+											<th>Мин. заказ</th>
+											<th>Включено пробега</th>
+											<th>Перепробег</th>
+											<th>Итого 3+1 (вкл. 100 км)</th>
+											<th></th>
+										</tr>
+									</thead>
+									<tbody>
+												<tr>
+													<td>Mercedes Benz SLK Classe</td>
+													<td>2013, MT, 1.6</td>
+													<td>1500 ₽</td>
+													<td>3+1 час</td>
+													<td>25 км/час</td>
+													<td>6 ₽/км</td>
+													<td>6000 ₽</td>
+													<td class="action-td"><a class="td-details" href="#">Подробнее</a>
+														<button class="btn btn-primary">Заказать в 1 клик</button>
+													</td>
+												</tr>
+												<tr>
+													<td>Mercedes Benz SLK Classe</td>
+													<td>2013, MT, 1.6</td>
+													<td>1500 ₽</td>
+													<td>3+1 час</td>
+													<td>25 км/час</td>
+													<td>6 ₽/км</td>
+													<td>6000 ₽</td>
+													<td class="action-td"><a class="td-details" href="#">Подробнее</a>
+														<button class="btn btn-primary">Заказать в 1 клик</button>
+													</td>
+												</tr>
+												<tr>
+													<td>Mercedes Benz SLK Classe</td>
+													<td>2013, MT, 1.6</td>
+													<td>1500 ₽</td>
+													<td>3+1 час</td>
+													<td>25 км/час</td>
+													<td>6 ₽/км</td>
+													<td>6000 ₽</td>
+													<td class="action-td"><a class="td-details" href="#">Подробнее</a>
+														<button class="btn btn-primary">Заказать в 1 клик</button>
+													</td>
+												</tr>
+												<tr>
+													<td>Mercedes Benz SLK Classe</td>
+													<td>2013, MT, 1.6</td>
+													<td>1500 ₽</td>
+													<td>3+1 час</td>
+													<td>25 км/час</td>
+													<td>6 ₽/км</td>
+													<td>6000 ₽</td>
+													<td class="action-td"><a class="td-details" href="#">Подробнее</a>
+														<button class="btn btn-primary">Заказать в 1 клик</button>
+													</td>
+												</tr>
+												<tr>
+													<td>Mercedes Benz SLK Classe</td>
+													<td>2013, MT, 1.6</td>
+													<td>1500 ₽</td>
+													<td>3+1 час</td>
+													<td>25 км/час</td>
+													<td>6 ₽/км</td>
+													<td>6000 ₽</td>
+													<td class="action-td"><a class="td-details" href="#">Подробнее</a>
+														<button class="btn btn-primary">Заказать в 1 клик</button>
+													</td>
+												</tr>
+												<tr>
+													<td>Mercedes Benz SLK Classe</td>
+													<td>2013, MT, 1.6</td>
+													<td>1500 ₽</td>
+													<td>3+1 час</td>
+													<td>25 км/час</td>
+													<td>6 ₽/км</td>
+													<td>6000 ₽</td>
+													<td class="action-td"><a class="td-details" href="#">Подробнее</a>
+														<button class="btn btn-primary">Заказать в 1 клик</button>
+													</td>
+												</tr>
+												<tr>
+													<td>Mercedes Benz SLK Classe</td>
+													<td>2013, MT, 1.6</td>
+													<td>1500 ₽</td>
+													<td>3+1 час</td>
+													<td>25 км/час</td>
+													<td>6 ₽/км</td>
+													<td>6000 ₽</td>
+													<td class="action-td"><a class="td-details" href="#">Подробнее</a>
+														<button class="btn btn-primary">Заказать в 1 клик</button>
+													</td>
+												</tr>
+												<tr>
+													<td>Mercedes Benz SLK Classe</td>
+													<td>2013, MT, 1.6</td>
+													<td>1500 ₽</td>
+													<td>3+1 час</td>
+													<td>25 км/час</td>
+													<td>6 ₽/км</td>
+													<td>6000 ₽</td>
+													<td class="action-td"><a class="td-details" href="#">Подробнее</a>
+														<button class="btn btn-primary">Заказать в 1 клик</button>
+													</td>
+												</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="sCatalog__string display-tabs__content" data-tabs-target="string">
+								<div class="string-item">
+									<div class="string-item__slider">
+										<div class="swiper catalog-item-slider catalog-item-slider--js">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide"><img src="img/catalog-1.jpg" alt="" loading="lazy"/>
+												</div>
+												<div class="swiper-slide"><img src="img/catalog-1.jpg" alt="" loading="lazy"/>
+												</div>
+												<div class="swiper-slide"><img src="img/catalog-1.jpg" alt="" loading="lazy"/>
+												</div>
+												<div class="swiper-slide"><img src="img/catalog-1.jpg" alt="" loading="lazy"/>
+												</div>
+												<div class="swiper-slide"><img src="img/catalog-1.jpg" alt="" loading="lazy"/>
+												</div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="string-item__features">
+										<div class="string-item__name">Ravon NEXIA R3
+										</div>
+										<div class="string-item__caption">2013, внедорожник, цвет белый
+										</div>
+										<div class="string-item__descr">Автомат, бензин (3.0/250), задний, дверей 5, мест 5, люк, фаркоп, рейлинги, тонировка
+										</div>
+										<div class="string-item__tariff t-tabs">
+											<div class="string-item__tariff-caption t-tabs__list">Тариф
+												<div class="t-tabs__btn" data-tabs-path="1">1</div>
+												<div class="t-tabs__btn t-tabs__btn--active" data-tabs-path="2">2</div>
+												<div class="t-tabs__btn" data-tabs-path="3">3</div>
+												<div class="t-tabs__btn" data-tabs-path="4">4</div>
+												<div class="t-tabs__btn" data-tabs-path="5">5</div>
+											</div>
+											<div class="t-tabs__content" data-tabs-target="1">1 900 ₽</div>
+											<div class="t-tabs__content t-tabs__content--active" data-tabs-target="2">2 900 ₽</div>
+											<div class="t-tabs__content" data-tabs-target="3">3 900 ₽</div>
+											<div class="t-tabs__content" data-tabs-target="4">4 900 ₽</div>
+											<div class="t-tabs__content" data-tabs-target="5">5 900 ₽</div>
+										</div>
+										<div class="string-item__note">Аренда от 3 до 5 суток
+										</div>
+									</div>
+									<div class="string-item__price-block">
+										<div class="string-item__price">
+											<div class="string-item__price-title">22755 ₽ в&nbsp;сутки
+											</div>
+											<div class="string-item__price-items">Без залога
+											</div>
+											<div class="string-item__price-items">Только паспорт и права
+											</div>
+											<div class="string-item__price-items">Проверка 20 минут
+											</div>
+										</div>
+										<div class="string-item__total">
+											<div class="string-item__period">Итого за 6 суток
+											</div>
+											<div class="string-item__total-price">16 530 ₽
+											</div>
+											<a class="string-item__btn btn btn-primary" href="#">Заказать в 1 клик
+											</a>
+											<a class="string-item__details" href="#">Подробнее
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="string-item">
+									<div class="string-item__slider">
+										<div class="swiper catalog-item-slider catalog-item-slider--js">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide"><img src="img/catalog-1.jpg" alt="" loading="lazy"/>
+												</div>
+												<div class="swiper-slide"><img src="img/catalog-1.jpg" alt="" loading="lazy"/>
+												</div>
+												<div class="swiper-slide"><img src="img/catalog-1.jpg" alt="" loading="lazy"/>
+												</div>
+												<div class="swiper-slide"><img src="img/catalog-1.jpg" alt="" loading="lazy"/>
+												</div>
+												<div class="swiper-slide"><img src="img/catalog-1.jpg" alt="" loading="lazy"/>
+												</div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="string-item__features">
+										<div class="string-item__name">Ravon NEXIA R3
+										</div>
+										<div class="string-item__caption">2013, внедорожник, цвет белый
+										</div>
+										<div class="string-item__descr">Автомат, бензин (3.0/250), задний, дверей 5, мест 5, люк, фаркоп, рейлинги, тонировка
+										</div>
+									</div>
+									<div class="string-item__price-block">
+										<div class="string-item__price">
+											<div class="string-item__price-title">22755 ₽ в&nbsp;сутки
+											</div>
+											<div class="string-item__price-items">Без залога
+											</div>
+											<div class="string-item__price-items">Только паспорт и права
+											</div>
+											<div class="string-item__price-items">Проверка 20 минут
+											</div>
+										</div>
+										<div class="string-item__total">
+											<div class="string-item__period">Итого за 30 суток
+											</div>
+											<div class="string-item__total-price">16 530 ₽
+											</div>
+											<a class="string-item__btn btn btn-primary" href="#">Заказать в 1 клик
+											</a>
+											<a class="string-item__details" href="#">Подробнее
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="string-item">
+									<div class="string-item__slider">
+										<div class="swiper catalog-item-slider catalog-item-slider--js">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide"><img src="img/catalog-1.jpg" alt="" loading="lazy"/>
+												</div>
+												<div class="swiper-slide"><img src="img/catalog-1.jpg" alt="" loading="lazy"/>
+												</div>
+												<div class="swiper-slide"><img src="img/catalog-1.jpg" alt="" loading="lazy"/>
+												</div>
+												<div class="swiper-slide"><img src="img/catalog-1.jpg" alt="" loading="lazy"/>
+												</div>
+												<div class="swiper-slide"><img src="img/catalog-1.jpg" alt="" loading="lazy"/>
+												</div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="string-item__features">
+										<div class="string-item__name">Ravon NEXIA R3
+										</div>
+										<div class="string-item__caption">2013, внедорожник, цвет белый
+										</div>
+										<div class="string-item__descr">Автомат, бензин (3.0/250), задний, дверей 5, мест 5, люк, фаркоп, рейлинги, тонировка
+										</div>
+										<div class="string-item__tariff t-tabs">
+											<div class="string-item__tariff-caption t-tabs__list">Тариф
+												<div class="t-tabs__btn" data-tabs-path="1">1</div>
+												<div class="t-tabs__btn t-tabs__btn--active" data-tabs-path="2">2</div>
+												<div class="t-tabs__btn" data-tabs-path="3">3</div>
+												<div class="t-tabs__btn" data-tabs-path="4">4</div>
+												<div class="t-tabs__btn" data-tabs-path="5">5</div>
+											</div>
+											<div class="t-tabs__content" data-tabs-target="1">1 900 ₽</div>
+											<div class="t-tabs__content t-tabs__content--active" data-tabs-target="2">2 900 ₽</div>
+											<div class="t-tabs__content" data-tabs-target="3">3 900 ₽</div>
+											<div class="t-tabs__content" data-tabs-target="4">4 900 ₽</div>
+											<div class="t-tabs__content" data-tabs-target="5">5 900 ₽</div>
+										</div>
+										<div class="string-item__note">Выкуп за 24 месяца
+										</div>
+									</div>
+									<div class="string-item__price-block">
+										<div class="string-item__price">
+											<div class="string-item__price-title">от 900 ₽ в&nbsp;сутки
+											</div>
+											<div class="string-item__price-items">Первый взнос 0 ₽ 
+											</div>
+											<div class="string-item__price-items">Без залога
+											</div>
+											<div class="string-item__price-items">Только паспорт и права
+											</div>
+											<div class="string-item__price-items">Проверка 20 минут
+											</div>
+										</div>
+										<div class="string-item__total">
+											<div class="string-item__period">Итого в&nbsp;сутки при выкупе на 24 мес.
+											</div>
+											<div class="string-item__total-price">900 ₽
+											</div>
+											<a class="string-item__btn btn btn-primary" href="#">Заказать в 1 клик
+											</a>
+											<a class="string-item__details" href="#">Подробнее
 											</a>
 										</div>
 									</div>
@@ -1229,7 +1708,7 @@
 							</buttun>
 						</div>
 						<div class="sCatalog__right col-lg-3">
-							<div class="catalog-summary">
+							<div class="catalog-summary d-none d-lg-flex">
 								<div class="catalog-summary__title">Весь парк A7 RENT
 								</div>
 								<a class="catalog-summary__reset" href="#">Сбросить
