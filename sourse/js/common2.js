@@ -291,9 +291,9 @@ function eventHandler() {
 	JSCCommon.modalCall();
 	// JSCCommon.tabscostume('tabs');
 	JSCCommon.mobileMenu();
-	JSCCommon.inputMask();
+	// JSCCommon.inputMask();
 	// JSCCommon.sendForm();
-	JSCCommon.heightwindow();
+	// JSCCommon.heightwindow();
 	JSCCommon.makeDDGroup();
 	// JSCCommon.toggleShow(".catalog-block__toggle--desctop", '.catalog-block__dropdown');
 	// JSCCommon.animateScroll();
@@ -376,11 +376,11 @@ function eventHandler() {
       crossFade: true,
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.header2 .swiper-button-next',
+      prevEl: '.header2  .swiper-button-prev',
     },
     pagination: {
-			el: '.swiper-pagination',
+			el: '.header2  .swiper-pagination',
 			type: 'bullets',
 			clickable: true,
 		},
