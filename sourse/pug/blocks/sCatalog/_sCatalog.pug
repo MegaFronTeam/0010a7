@@ -30,7 +30,7 @@ mixin catalogTileItem(img,name,transmission,period,price,cost)
 mixin sCatalog(tile,table,string)
 	// start sCatalog
 	+b.SECTION.sCatalog.section#sCatalog&attributes(attributes)
-		.container.display-tabs.display-tabs--js
+		.container
 			+b.section-title.text-center
 				h2 Посуточная аренда авто без водителя в&nbsp;Москве				
 			+e.filter-row
@@ -83,17 +83,17 @@ mixin sCatalog(tile,table,string)
 								button.active По убыванию цены
 								button По возрастанию цены
 							+e.display.d-none.d-lg-block
-								button.display-tabs__btn.display-tabs__btn--active(data-tabs-path="tile")
+								button.active
 									+icon('square')
-								button.display-tabs__btn(data-tabs-path="string")
+								button
 									+icon('stroke')
-								button.display-tabs__btn(data-tabs-path="table")
+								button
 									+icon('lines')
 
 			+e.catalog-row.row
 				+e.left.col-12.col-lg-9
 					if tile 
-						+e.tile.row.display-tabs__content(data-tabs-target="tile")
+						+e.tile.row
 							+e.catalog-item-col.col.col-md-auto
 								+catalogTileItem('1','Ravon NEXIA&nbsp;R3','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;6&nbsp;суток','16&nbsp;530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽')
 							+e.catalog-item-col.col.col-md-auto
@@ -249,7 +249,7 @@ mixin sCatalog(tile,table,string)
 										+rentHourlyTr
 										+rentHourlyTr
 					if string
-						+e.string.display-tabs__content(data-tabs-target="string")
+						+e.string
 							mixin catalogStringItem(img,name,caption,descr,tariff,note,price,period,totalPrice,...priceItems)
 								+b.string-item
 									+e.slider
@@ -308,86 +308,121 @@ mixin sCatalog(tile,table,string)
 						+icon('reload')
 						| Показать еще авто
 				+e.right.col-lg-3
-					+b.catalog-summary.d-none.d-lg-flex
+					+b.catalog-summary.d-none.d-lg-flex.FORM
 						+e.title Весь парк A7 RENT
 						+e.reset(href="#") Сбросить
-						+e.list.DL
-							+e.list-row.BUTTON
-								dt Без залога
-								dd 876
-						+e.list.DL
-							+e.list-row.--chosen(href="#")
-								dt На механике
-								dd 259
-							+e.list-row.BUTTON
-								dt На автомате
-								dd 215
-						+e.list.DL
-							+e.list-row.BUTTON
-								dt Эконом
-								dd 563
-							+e.list-row.BUTTON
-								dt Бизнес
-								dd 185
-							+e.list-row.BUTTON
-								dt Премиум
-								dd 29
-						+e.list.DL
-							+e.list-row.BUTTON
-								dt 
-									+img('img/sedan.png')
-									| Седан
-								dd 563
-							+e.list-row.BUTTON
-								dt 
-									+img('img/hatchback.png')
-									| Хэтчбек
-								dd 563
-							+e.list-row.BUTTON
-								dt 
-									+img('img/minivan.png')
-									| Минивен
-								dd 563
-							+e.list-row.BUTTON
-								dt 
-									+img('img/suv.png')
-									| Внедорожник
-								dd 563
-							+e.list-row.BUTTON
-								dt 
-									+img('img/coupe.png')
-									| Купе
-								dd 563
-							+e.list-row.BUTTON
-								dt 
-									+img('img/pickup-truck.png')
-									| Пикап
-								dd 563
-							+e.list-row.BUTTON
-								dt 
-									+img('img/roadster.png')
-									| Родстер
-								dd 563
-							+e.list-row.BUTTON
-								dt 
-									+img('img/station-wagon.png')
-									| Универсал
-								dd 563
-							+e.list-row.BUTTON
-								dt 
-									+img('img/van.png')
-									| Фургон
-								dd 563
-						+e.list.DL
-							+e.list-row.BUTTON
-								dt 
-									+img('img/audi.png')
-									| Audi
-								dd 876
-							+e.list-row.BUTTON
-								dt 
-									+img('img/bmw.png')
-									| BMW
-								dd 259
+						+e.list
+							+e.item
+								label.custom-input.form-check
+									input.custom-input__input.form-check-input(type="checkbox")
+									span.custom-input__text.form-check-label Без залога
+								div 876
+						+e.list
+							+e.item
+								label.custom-input.form-check
+									input.custom-input__input.form-check-input(type="checkbox")
+									span.custom-input__text.form-check-label На механике
+								div 259
+							+e.item
+								label.custom-input.form-check
+									input.custom-input__input.form-check-input(type="checkbox")
+									span.custom-input__text.form-check-label На автомате
+								div 215
+						+e.list
+							+e.item
+								label.custom-input.form-check
+									input.custom-input__input.form-check-input(type="checkbox")
+									span.custom-input__text.form-check-label Эконом
+								div 563
+							+e.item
+								label.custom-input.form-check
+									input.custom-input__input.form-check-input(type="checkbox")
+									span.custom-input__text.form-check-label Бизнес
+								div 185
+							+e.item
+								label.custom-input.form-check
+									input.custom-input__input.form-check-input(type="checkbox")
+									span.custom-input__text.form-check-label Премиум
+								div 29
+						+e.list
+							+e.item
+								+img('img/sedan.png')
+								label.custom-input.form-check
+									input.custom-input__input.form-check-input(type="checkbox")
+									span.custom-input__text.form-check-label Седан
+								div 563
+							+e.item
+								+img('img/hatchback.png')
+								label.custom-input.form-check
+									input.custom-input__input.form-check-input(type="checkbox")
+									span.custom-input__text.form-check-label Хэтчбек
+								div 563
+							+e.item
+								+img('img/minivan.png')
+								label.custom-input.form-check
+									input.custom-input__input.form-check-input(type="checkbox")
+									span.custom-input__text.form-check-label Минивен
+								div 563
+							+e.item
+								+img('img/suv.png')
+								label.custom-input.form-check
+									input.custom-input__input.form-check-input(type="checkbox")
+									span.custom-input__text.form-check-label Внедорожник
+								div 563
+							+e.item
+								+img('img/coupe.png')
+								label.custom-input.form-check
+									input.custom-input__input.form-check-input(type="checkbox")
+									span.custom-input__text.form-check-label Купе
+								div 563
+							+e.item
+								+img('img/pickup-truck.png')
+								label.custom-input.form-check
+									input.custom-input__input.form-check-input(type="checkbox")
+									span.custom-input__text.form-check-label Пикап
+								div 563
+							+e.item
+								+img('img/roadster.png')
+								label.custom-input.form-check
+									input.custom-input__input.form-check-input(type="checkbox")
+									span.custom-input__text.form-check-label Родстер
+								div 563
+							+e.item
+								+img('img/station-wagon.png')
+								label.custom-input.form-check
+									input.custom-input__input.form-check-input(type="checkbox")
+									span.custom-input__text.form-check-label Универсал
+								div 563
+							+e.item
+								+img('img/van.png')
+								label.custom-input.form-check
+									input.custom-input__input.form-check-input(type="checkbox")
+									span.custom-input__text.form-check-label Фургон
+								div 563
+						+e.list
+							+e.item
+								+img('img/audi.png')
+								label.custom-input.form-check
+									input.custom-input__input.form-check-input(type="checkbox")
+									span.custom-input__text.form-check-label Audi
+								div 876
+							+e.item
+								+img('img/bmw.png')
+								label.custom-input.form-check
+									input.custom-input__input.form-check-input(type="checkbox")
+									span.custom-input__text.form-check-label BMW
+								div 876
+							+e.item
+								+img('img/audi.png')
+								label.custom-input.form-check
+									input.custom-input__input.form-check-input(type="checkbox")
+									span.custom-input__text.form-check-label Audi
+								div 876
+							+e.item
+								+img('img/bmw.png')
+								label.custom-input.form-check
+									input.custom-input__input.form-check-input(type="checkbox")
+									span.custom-input__text.form-check-label BMW
+								div 876
 
 	// end sCatalog
