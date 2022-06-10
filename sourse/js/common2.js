@@ -430,8 +430,9 @@ function eventHandler() {
   });
   $('#datepicker2').datepicker({
     uiLibrary: 'bootstrap4'
-  });
-};
+	});
+	
+
 
 	$('.top_line2__city').on('click', function() {
 		$('.top_line2__city-content').addClass('active');
@@ -442,18 +443,18 @@ function eventHandler() {
 	$('.top_line2__btn-wrap a').on('click', function() {
 		$('.top_line2__city-content').removeClass('active');
 	});
-
+	
 	$('.popup-with-move-anim').magnificPopup({
 		type:'inline',
 		midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
 	});
-
-	const  sSimilarProductsSlider = new Swiper('.sSimilarProducts .sSimilarProducts__slider--js', {
+	
+	const  sSimilarProductsSlider = new Swiper(' .sSimilarProducts__slider--js', {
 		slidesPerView: 4,
 		spaceBetween: 30,
 		loop: true,
-    pagination: {
-			el: '.sSimilarProducts .swiper-pagination',
+		pagination: {
+			el: '.sSimilarProducts__pagination',
 			type: 'bullets',
 			clickable: true,
 		},
@@ -463,25 +464,31 @@ function eventHandler() {
 			},
 		},
 	});
+	
+	var cardHeadSwiper = new Swiper(".card-head__newSlider--thumbs", {
+		loop: true,
+		spaceBetween: 15,
+		slidesPerView: 4,
+		// freeMode: true,
+		// watchSlidesProgress: true,
+	});
+	var cardHeadSwiper2 = new Swiper(".card-head__newSlider--js", {
+		loop: true,
+		spaceBetween: 10,
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		thumbs: {
+			swiper: cardHeadSwiper,
+		},
+	});
 
-	// var cardHeadSwiper = new Swiper("card-head__newSslider--thumbs", {
-	// 	loop: true,
-	// 	spaceBetween: 10,
-	// 	slidesPerView: 4,
-	// 	freeMode: true,
-	// 	watchSlidesProgress: true,
-	// });
-	// var cardHeadSwiper2 = new Swiper(".card-head__newSslider--js", {
-	// 	loop: true,
-	// 	spaceBetween: 10,
-	// 	navigation: {
-	// 		nextEl: ".swiper-button-next",
-	// 		prevEl: ".swiper-button-prev",
-	// 	},
-	// 	thumbs: {
-	// 		swiper: cardHeadSwiper,
-	// 	},
-	// });
+	// cardHeadSwiper.controller.control = cardHeadSwiper2;
+	// 		cardHeadSwiper2.controller.control = cardHeadSwiper;
+};
+
+
 
 if (document.readyState !== 'loading') {
 	eventHandler();

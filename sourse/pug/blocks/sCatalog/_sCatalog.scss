@@ -145,28 +145,6 @@
 		}
 	}
 	
-	.swiper-pagination {
-		bottom: 1px !important;
-	}
-	.swiper-pagination-bullet {
-		border-radius: 0 !important;
-		height: 2px;
-		width: 14%;
-		background-color: $white;
-		opacity: .7;
-	}
-	.swiper-pagination-bullet-active {
-		border-radius: 0 !important;
-		height: 2px;
-		width: 15%;
-		background-color: $white;
-		opacity: 1;
-		transform: none;
-	}
-	.swiper-pagination-bullet:before {
-		content: none !important;
-	}
-
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}
@@ -393,6 +371,31 @@
 		font-weight: 400;
 		font-size: 14px;
 	}
+
+
+
+	.swiper-pagination {
+		bottom: 1px !important;
+	}
+	.swiper-pagination-bullet {
+		border-radius: 0 !important;
+		height: 2px;
+		width: 14%;
+		background-color: $white;
+		opacity: .7;
+	}
+	.swiper-pagination-bullet-active {
+		border-radius: 0 !important;
+		height: 2px;
+		width: 15%;
+		background-color: $white;
+		opacity: 1;
+		transform: none;
+	}
+	.swiper-pagination-bullet:before {
+		content: none !important;
+	}
+
 }
 
 .catalog-summary {

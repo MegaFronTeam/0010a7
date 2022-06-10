@@ -353,34 +353,36 @@ mixin card-head(data)
 									+e.num.text-body.tdn(href='tel:+7 (495) 138-43-88') +7 (495) 138-43-88
 						.d-block.d-xl-none
 							+e.btn.btn.btn-primary.btn-block.popup-with-move-anim(href='#') Арендовать
-						+e.slider--main.gallery-top.gal
-							.swiper-container
-								+e.slide--lg.swiper-slide
-									+e.img-wrap--lg.img-bg.d-block(href="img/card-slide-1.png" style='background-image: url("img/card-slide-1.png");')
-										img.res-i.lazy-bg(itemprop='image' src='img/card-slide-1.png' data-src='img/card-slide-1.png' alt='Аренда Kia Rio AT недорого' title='Kia Rio AT от 1450 на прокат')
-								//- -for(i=1; i<=4; i++)
-						+e.slider--thumbs.gal(style='margin-top: 0.5em;')
-							-for(i=1; i<=4; i++)
-								+e.slide--sm.swiper-slide
-									+e.img-wrap--sm.img-bg.d-block(href=`img/card-slide-${i}.png` style=`background-image: url("img/card-slide-${i}.png");`)
-										img.res-i.lazy-bg(src=`img/card-slide-${i}.png` data-src=`img/card-slide-${i}.png` alt='Аренда Kia Rio AT недорого' title='Kia Rio AT от 1450 на прокат')
-							-for(i=1; i<=4; i++)
-								+e.slide--sm.swiper-slide
-									+e.img-wrap--sm.img-bg.d-block(href=`img/card-slide-${i}.png` style=`background-image: url("img/card-slide-${i}.png");`)
-										img.res-i.lazy-bg(src=`img/card-slide-${i}.png` data-src=`img/card-slide-${i}.png` alt='Аренда Kia Rio AT недорого' title='Kia Rio AT от 1450 на прокат')
-						+e.newSlider--js.swiper-container.gallery-top.gal
-						//- 	.swiper-wrapper
-						//- 		-for(i=1; i<=4; i++)
-						//- 			+e.slide.swiper-slide
-						//- 				+e.img-wrap--lg.img-bg.d-block(href="img/card-slide-1.png" style='background-image: url("img/card-slide-1.png");')
-						//- 					img.res-i.lazy-bg(itemprop='image' src='img/card-slide-1.png' data-src='img/card-slide-1.png' alt='Аренда Kia Rio AT недорого' title='Kia Rio AT от 1450 на прокат')
-						//- 	//- +arrow
-						//- +e.newSlider--thumbs.swiper-container.gal(style='margin-top: 0.5em;')
-						//- 	.swiper-wrapper
-						//- 		-for(i=1; i<=4; i++)
-						//- 			+e.slide--sm.swiper-slide
-						//- 				+e.img-wrap--sm.img-bg.d-block(href=`img/card-slide-${i}.png` style=`background-image: url("img/card-slide-${i}.png");`)
-						//- 					img.res-i.lazy-bg(src=`/img/card-slide-${i}.png` data-src=`/img/card-slide-${i}.png` alt='Аренда Kia Rio AT недорого' title='Kia Rio AT от 1450 на прокат')
+						//- +e.slider--main.gallery-top.gal
+						//- 	.swiper-container
+						//- 		.swiper-wrapper
+						//- 			-for(i=1; i<=4; i++)
+						//- 				+e.slide--lg.swiper-slide
+						//- 					+e.img-wrap--lg.img-bg.d-block(href="img/card-slide-1.png" style='background-image: url("img/card-slide-1.png");')
+						//- 						img.res-i.lazy-bg(itemprop='image' src='img/card-slide-1.png' data-src='img/card-slide-1.png' alt='Аренда Kia Rio AT недорого' title='Kia Rio AT от 1450 на прокат')
+						//- +e.slider--thumbs.gal(style='margin-top: 0.5em;')
+						//- 	-for(i=1; i<=4; i++)
+						//- 		+e.slide--sm.swiper-slide
+						//- 			+e.img-wrap--sm.img-bg.d-block(href=`img/card-slide-${i}.png` style=`background-image: url("img/card-slide-${i}.png");`)
+						//- 				img.res-i.lazy-bg(src=`img/card-slide-${i}.png` data-src=`img/card-slide-${i}.png` alt='Аренда Kia Rio AT недорого' title='Kia Rio AT от 1450 на прокат')
+						//- 	-for(i=1; i<=4; i++)
+						//- 		+e.slide--sm.swiper-slide
+						//- 			+e.img-wrap--sm.img-bg.d-block(href=`img/card-slide-${i}.png` style=`background-image: url("img/card-slide-${i}.png");`)
+						//- 				img.res-i.lazy-bg(src=`img/card-slide-${i}.png` data-src=`img/card-slide-${i}.png` alt='Аренда Kia Rio AT недорого' title='Kia Rio AT от 1450 на прокат')
+						+e.newSlider--js.swiper-container.gallery-top
+							.swiper-wrapper 
+									-for(i=1; i<=4; i++)
+										+e.slide.swiper-slide
+											+e.img-wrap--lg.img-bg.d-block(  style=`background-image: url("img/card-slide-${i}.png");`)
+												img.res-i.lazy-bg(itemprop='image' src=`img/card-slide-${i}.png` data-src=`img/card-slide-${i}.png` alt='Аренда Kia Rio AT недорого' title='Kia Rio AT от 1450 на прокат') 
+							+arrow
+							//- +arrow
+						+e.newSlider--thumbs.swiper-container
+							.swiper-wrapper 
+									-for(i=1; i<=4; i++)
+										+e.slide--sm.swiper-slide
+											+e.img-wrap--sm.img-bg.d-block( style=`background-image: url("img/card-slide-${i}.png");`)
+												img.res-i.lazy-bg(src=`img/card-slide-${i}.png` data-src=`img/card-slide-${i}.png` alt='Аренда Kia Rio AT недорого' title='Kia Rio AT от 1450 на прокат') 
 						+e.title.h5.pb-1 Характеристики:
 						+e.char.row
 							+e.char-col.col-md-4.col-6
