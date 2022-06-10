@@ -302,7 +302,7 @@
 			<!-- end header-->
 			<!-- start sCatalog-->
 			<section class="sCatalog section" id="sCatalog">
-				<div class="container display-tabs display-tabs--js">
+				<div class="container">
 					<div class="section-title text-center">
 						<h2>Посуточная аренда авто без водителя в&nbsp;Москве				</h2>
 					</div>
@@ -423,17 +423,17 @@
 											<button>По возрастанию цены</button>
 										</div>
 										<div class="filter-result__display d-none d-lg-block">
-											<button class="display-tabs__btn display-tabs__btn--active" data-tabs-path="tile">
+											<button class="active">
 												<svg class="icon icon-square ">
 													<use xlink:href="img/svg/sprite.svg#square"></use>
 												</svg>
 											</button>
-											<button class="display-tabs__btn" data-tabs-path="string">
+											<button>
 												<svg class="icon icon-stroke ">
 													<use xlink:href="img/svg/sprite.svg#stroke"></use>
 												</svg>
 											</button>
-											<button class="display-tabs__btn" data-tabs-path="table">
+											<button>
 												<svg class="icon icon-lines ">
 													<use xlink:href="img/svg/sprite.svg#lines"></use>
 												</svg>
@@ -757,101 +757,136 @@
 							</buttun>
 						</div>
 						<div class="sCatalog__right col-lg-3">
-							<div class="catalog-summary d-none d-lg-flex">
+							<form class="catalog-summary d-none d-lg-flex">
 								<div class="catalog-summary__title">Весь парк A7 RENT
 								</div>
 								<a class="catalog-summary__reset" href="#">Сбросить
 								</a>
-								<dl class="catalog-summary__list">
-									<button class="catalog-summary__list-row">
-										<dt>Без залога</dt>
-										<dd>876</dd>
-									</button>
-								</dl>
-								<dl class="catalog-summary__list">
-									<a class="catalog-summary__list-row catalog-summary__list-row--chosen" href="#">
-										<dt>На механике</dt>
-										<dd>259</dd>
-									</a>
-									<button class="catalog-summary__list-row">
-										<dt>На автомате</dt>
-										<dd>215</dd>
-									</button>
-								</dl>
-								<dl class="catalog-summary__list">
-									<button class="catalog-summary__list-row">
-										<dt>Эконом</dt>
-										<dd>563</dd>
-									</button>
-									<button class="catalog-summary__list-row">
-										<dt>Бизнес</dt>
-										<dd>185</dd>
-									</button>
-									<button class="catalog-summary__list-row">
-										<dt>Премиум</dt>
-										<dd>29</dd>
-									</button>
-								</dl>
-								<dl class="catalog-summary__list">
-									<button class="catalog-summary__list-row">
-										<dt> <img src="img/sedan.png" alt="" loading="lazy"/>Седан
-										</dt>
-										<dd>563</dd>
-									</button>
-									<button class="catalog-summary__list-row">
-										<dt> <img src="img/hatchback.png" alt="" loading="lazy"/>Хэтчбек
-										</dt>
-										<dd>563</dd>
-									</button>
-									<button class="catalog-summary__list-row">
-										<dt> <img src="img/minivan.png" alt="" loading="lazy"/>Минивен
-										</dt>
-										<dd>563</dd>
-									</button>
-									<button class="catalog-summary__list-row">
-										<dt> <img src="img/suv.png" alt="" loading="lazy"/>Внедорожник
-										</dt>
-										<dd>563</dd>
-									</button>
-									<button class="catalog-summary__list-row">
-										<dt> <img src="img/coupe.png" alt="" loading="lazy"/>Купе
-										</dt>
-										<dd>563</dd>
-									</button>
-									<button class="catalog-summary__list-row">
-										<dt> <img src="img/pickup-truck.png" alt="" loading="lazy"/>Пикап
-										</dt>
-										<dd>563</dd>
-									</button>
-									<button class="catalog-summary__list-row">
-										<dt> <img src="img/roadster.png" alt="" loading="lazy"/>Родстер
-										</dt>
-										<dd>563</dd>
-									</button>
-									<button class="catalog-summary__list-row">
-										<dt> <img src="img/station-wagon.png" alt="" loading="lazy"/>Универсал
-										</dt>
-										<dd>563</dd>
-									</button>
-									<button class="catalog-summary__list-row">
-										<dt> <img src="img/van.png" alt="" loading="lazy"/>Фургон
-										</dt>
-										<dd>563</dd>
-									</button>
-								</dl>
-								<dl class="catalog-summary__list">
-									<button class="catalog-summary__list-row">
-										<dt> <img src="img/audi.png" alt="" loading="lazy"/>Audi
-										</dt>
-										<dd>876</dd>
-									</button>
-									<button class="catalog-summary__list-row">
-										<dt> <img src="img/bmw.png" alt="" loading="lazy"/>BMW
-										</dt>
-										<dd>259</dd>
-									</button>
-								</dl>
-							</div>
+								<div class="catalog-summary__list">
+									<div class="catalog-summary__item">
+										<label class="custom-input form-check">
+											<input class="custom-input__input form-check-input" type="checkbox"/><span class="custom-input__text form-check-label">Без залога</span>
+										</label>
+										<div>876</div>
+									</div>
+								</div>
+								<div class="catalog-summary__list">
+									<div class="catalog-summary__item">
+										<label class="custom-input form-check">
+											<input class="custom-input__input form-check-input" type="checkbox"/><span class="custom-input__text form-check-label">На механике</span>
+										</label>
+										<div>259</div>
+									</div>
+									<div class="catalog-summary__item">
+										<label class="custom-input form-check">
+											<input class="custom-input__input form-check-input" type="checkbox"/><span class="custom-input__text form-check-label">На автомате</span>
+										</label>
+										<div>215</div>
+									</div>
+								</div>
+								<div class="catalog-summary__list">
+									<div class="catalog-summary__item">
+										<label class="custom-input form-check">
+											<input class="custom-input__input form-check-input" type="checkbox"/><span class="custom-input__text form-check-label">Эконом</span>
+										</label>
+										<div>563</div>
+									</div>
+									<div class="catalog-summary__item">
+										<label class="custom-input form-check">
+											<input class="custom-input__input form-check-input" type="checkbox"/><span class="custom-input__text form-check-label">Бизнес</span>
+										</label>
+										<div>185</div>
+									</div>
+									<div class="catalog-summary__item">
+										<label class="custom-input form-check">
+											<input class="custom-input__input form-check-input" type="checkbox"/><span class="custom-input__text form-check-label">Премиум</span>
+										</label>
+										<div>29</div>
+									</div>
+								</div>
+								<div class="catalog-summary__list">
+									<div class="catalog-summary__item"><img src="img/sedan.png" alt="" loading="lazy"/>
+										<label class="custom-input form-check">
+											<input class="custom-input__input form-check-input" type="checkbox"/><span class="custom-input__text form-check-label">Седан</span>
+										</label>
+										<div>563</div>
+									</div>
+									<div class="catalog-summary__item"><img src="img/hatchback.png" alt="" loading="lazy"/>
+										<label class="custom-input form-check">
+											<input class="custom-input__input form-check-input" type="checkbox"/><span class="custom-input__text form-check-label">Хэтчбек</span>
+										</label>
+										<div>563</div>
+									</div>
+									<div class="catalog-summary__item"><img src="img/minivan.png" alt="" loading="lazy"/>
+										<label class="custom-input form-check">
+											<input class="custom-input__input form-check-input" type="checkbox"/><span class="custom-input__text form-check-label">Минивен</span>
+										</label>
+										<div>563</div>
+									</div>
+									<div class="catalog-summary__item"><img src="img/suv.png" alt="" loading="lazy"/>
+										<label class="custom-input form-check">
+											<input class="custom-input__input form-check-input" type="checkbox"/><span class="custom-input__text form-check-label">Внедорожник</span>
+										</label>
+										<div>563</div>
+									</div>
+									<div class="catalog-summary__item"><img src="img/coupe.png" alt="" loading="lazy"/>
+										<label class="custom-input form-check">
+											<input class="custom-input__input form-check-input" type="checkbox"/><span class="custom-input__text form-check-label">Купе</span>
+										</label>
+										<div>563</div>
+									</div>
+									<div class="catalog-summary__item"><img src="img/pickup-truck.png" alt="" loading="lazy"/>
+										<label class="custom-input form-check">
+											<input class="custom-input__input form-check-input" type="checkbox"/><span class="custom-input__text form-check-label">Пикап</span>
+										</label>
+										<div>563</div>
+									</div>
+									<div class="catalog-summary__item"><img src="img/roadster.png" alt="" loading="lazy"/>
+										<label class="custom-input form-check">
+											<input class="custom-input__input form-check-input" type="checkbox"/><span class="custom-input__text form-check-label">Родстер</span>
+										</label>
+										<div>563</div>
+									</div>
+									<div class="catalog-summary__item"><img src="img/station-wagon.png" alt="" loading="lazy"/>
+										<label class="custom-input form-check">
+											<input class="custom-input__input form-check-input" type="checkbox"/><span class="custom-input__text form-check-label">Универсал</span>
+										</label>
+										<div>563</div>
+									</div>
+									<div class="catalog-summary__item"><img src="img/van.png" alt="" loading="lazy"/>
+										<label class="custom-input form-check">
+											<input class="custom-input__input form-check-input" type="checkbox"/><span class="custom-input__text form-check-label">Фургон</span>
+										</label>
+										<div>563</div>
+									</div>
+								</div>
+								<div class="catalog-summary__list">
+									<div class="catalog-summary__item"><img src="img/audi.png" alt="" loading="lazy"/>
+										<label class="custom-input form-check">
+											<input class="custom-input__input form-check-input" type="checkbox"/><span class="custom-input__text form-check-label">Audi</span>
+										</label>
+										<div>876</div>
+									</div>
+									<div class="catalog-summary__item"><img src="img/bmw.png" alt="" loading="lazy"/>
+										<label class="custom-input form-check">
+											<input class="custom-input__input form-check-input" type="checkbox"/><span class="custom-input__text form-check-label">BMW</span>
+										</label>
+										<div>876</div>
+									</div>
+									<div class="catalog-summary__item"><img src="img/audi.png" alt="" loading="lazy"/>
+										<label class="custom-input form-check">
+											<input class="custom-input__input form-check-input" type="checkbox"/><span class="custom-input__text form-check-label">Audi</span>
+										</label>
+										<div>876</div>
+									</div>
+									<div class="catalog-summary__item"><img src="img/bmw.png" alt="" loading="lazy"/>
+										<label class="custom-input form-check">
+											<input class="custom-input__input form-check-input" type="checkbox"/><span class="custom-input__text form-check-label">BMW</span>
+										</label>
+										<div>876</div>
+									</div>
+								</div>
+							</form>
 						</div>
 					</div>
 				</div>
