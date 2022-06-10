@@ -53,9 +53,9 @@
 		font-size: rem(14);
 		margin-bottom: rem(10);
 	}
-	&__slider {
-		&--main {
-			margin-bottom: rem(15);
+	&__newSlider {
+		&--js {
+			margin-bottom: rem(5);
 			// border-radius: 8px;
 		}
 		&--thumbs {
@@ -63,8 +63,25 @@
 			// border-radius: 6px;
 		}
 	}
+	.swiper-button-hand {
+		background-color: rgba($color: #1D1D1B, $alpha: .4);
+		&-prev {
+			left: 15px;
+		}
+		&-next {
+			right: 15px;
+		}
+		&:hover {
+			background-color: #fff;
+
+		}
+	}
 	&__img-wrap {
+		cursor: pointer;
 		border-radius: 8px;
+		&:before, &:after {
+			content: unset;
+		}
 	}
 	&__head {
 		margin-bottom: rem(15);

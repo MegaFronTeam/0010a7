@@ -24,11 +24,11 @@
 		position: relative;
 		max-width: max-content;
 		@include mt;
-		@include media-breakpoint-up(lg) {
-			padding: rem(7) rem(5);
+		@media (min-width: 1200px) and (max-width: 1470px) {
+			padding: 0;
 			max-width: none;
 		}
-		@media (min-width: 1470px) {
+		@include media-breakpoint-up(lg) {
 			padding: 0;
 			height: 100%;
 		}
@@ -42,7 +42,7 @@
 			bottom: 0;
 			left: calc(var(--bs-gutter-x) / 2);
 			background-color: transparent;
-			@media (min-width: 1470px) {
+			@include media-breakpoint-up(lg) {
 				bottom: -1px;
 			}
 		}
@@ -65,7 +65,7 @@
 					bottom: 0;
 					left: calc(var(--bs-gutter-x) / 2);
 				}
-				@media (min-width: 1470px) {
+				@include media-breakpoint-up(lg) {
 					bottom: -1px;
 				}
 			}
@@ -90,7 +90,7 @@
 					top: -14px;
 					top: -7px;
 				}
-				@media (min-width: 1470px) {
+				@include media-breakpoint-up(xl) {
 					top: 13px;
 				}
 			}
@@ -100,7 +100,12 @@
 		display: block;
 		padding: 0 calc(var(--bs-gutter-x) / 2);
 		text-transform: uppercase;
-		@media (min-width: 1470px) {
+		@media (min-width: 1200px) and (max-width: 1470px) {
+			padding: 0 10px;
+			font-size: rem(14);
+		}
+		@include media-breakpoint-up(lg) {
+			padding: 0 calc(var(--bs-gutter-x) / 2);
 			height: 100%;
 			display: flex;
 			align-items: center;

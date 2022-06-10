@@ -72,7 +72,8 @@ mixin sCatalog(tile,table,string)
 					+b.filter-result
 						+e.left
 							+e.all(href="#") 
-								+e.all-text Все фильтры
+								+e.all-text.btn-tab-js(data-tab-block="all-filters") Все фильтры
+								+filter()
 								+e.all-number 9
 							+e.reset(href="#") Сбросить
 							+e.founded 
@@ -430,3 +431,427 @@ mixin sCatalog(tile,table,string)
 								div 876
 
 	// end sCatalog
+
+
+mixin filter()
+	#all-filters.tab-block.tab-block--js
+		.s-catalog-filter__body.container
+			.modal-filter.row
+				.col-xl-4.col-lg-6
+					.modal-filter__item.hover-block
+						.modal-filter__head-row.row.showhide.btn-click.align-items-center.small
+							.col &Mcy;&acy;&rcy;&kcy;&acy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&yacy;
+							.col-auto
+								// тут убираешь класс  .gray  когда будет выбран пункт
+								.modal-filter__choice-text.gray
+									| &Ncy;&iecy; &vcy;&ycy;&bcy;&rcy;&acy;&ncy;&ocy;
+						.showhide-all__inner
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Mcy;&acy;&rcy;&kcy;&acy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&yacy; 0
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Mcy;&acy;&rcy;&kcy;&acy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&yacy; 1
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Mcy;&acy;&rcy;&kcy;&acy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&yacy; 2
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Mcy;&acy;&rcy;&kcy;&acy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&yacy; 3
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Mcy;&acy;&rcy;&kcy;&acy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&yacy; 4
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Mcy;&acy;&rcy;&kcy;&acy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&yacy; 5
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Mcy;&acy;&rcy;&kcy;&acy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&yacy; 6
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Mcy;&acy;&rcy;&kcy;&acy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&yacy; 7
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Mcy;&acy;&rcy;&kcy;&acy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&yacy; 8
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Mcy;&acy;&rcy;&kcy;&acy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&yacy; 9
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Mcy;&acy;&rcy;&kcy;&acy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&yacy; 10
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Mcy;&acy;&rcy;&kcy;&acy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&yacy; 11
+					.modal-filter__item.hover-block
+						.modal-filter__head-row.row.showhide.btn-click.align-items-center.small
+							.col &Mcy;&ocy;&dcy;&iecy;&lcy;&softcy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&yacy;
+							.col-auto
+								// тут убираешь класс  .gray  когда будет выбран пункт
+								.modal-filter__choice-text.gray
+									| &Ncy;&iecy; &vcy;&ycy;&bcy;&rcy;&acy;&ncy;&ocy;
+						.showhide-all__inner
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Mcy;&ocy;&dcy;&iecy;&lcy;&softcy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&yacy; 0
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Mcy;&ocy;&dcy;&iecy;&lcy;&softcy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&yacy; 1
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Mcy;&ocy;&dcy;&iecy;&lcy;&softcy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&yacy; 2
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Mcy;&ocy;&dcy;&iecy;&lcy;&softcy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&yacy; 3
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Mcy;&ocy;&dcy;&iecy;&lcy;&softcy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&yacy; 4
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Mcy;&ocy;&dcy;&iecy;&lcy;&softcy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&yacy; 5
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Mcy;&ocy;&dcy;&iecy;&lcy;&softcy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&yacy; 6
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Mcy;&ocy;&dcy;&iecy;&lcy;&softcy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&yacy; 7
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Mcy;&ocy;&dcy;&iecy;&lcy;&softcy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&yacy; 8
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Mcy;&ocy;&dcy;&iecy;&lcy;&softcy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&yacy; 9
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Mcy;&ocy;&dcy;&iecy;&lcy;&softcy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&yacy; 10
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Mcy;&ocy;&dcy;&iecy;&lcy;&softcy; &acy;&vcy;&tcy;&ocy;&mcy;&ocy;&bcy;&icy;&lcy;&yacy; 11
+					.modal-filter__item.hover-block
+						.modal-filter__head-row.row.showhide.btn-click.align-items-center.small
+							.col &TScy;&iecy;&ncy;&acy;, &Rcy;:
+							.col-auto
+								// тут убираешь класс  .gray  когда будет выбран пункт
+								.modal-filter__choice-text.gray
+									| &Ncy;&iecy; &vcy;&ycy;&bcy;&rcy;&acy;&ncy;&ocy;
+						.modal-filter__range-wrap.showhide-all__inner
+							input.input-range(data-max='10000' data-min='0' type='text')
+					.modal-filter__item.hover-block
+						.modal-filter__head-row.row.showhide.btn-click.align-items-center.small
+							.col &Kcy;&Pcy;&Pcy;
+							.col-auto
+								// тут убираешь класс  .gray  когда будет выбран пункт
+								.modal-filter__choice-text.gray
+									| &Ncy;&iecy; &vcy;&ycy;&bcy;&rcy;&acy;&ncy;&ocy;
+						.showhide-all__inner
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Rcy;&ucy;&chcy;&ncy;&acy;&yacy;
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Acy;&vcy;&tcy;&ocy;&mcy;&acy;&tcy;
+					.modal-filter__item.hover-block
+						.modal-filter__head-row.row.showhide.btn-click.align-items-center.small
+							.col &Gcy;&ocy;&dcy; &vcy;&ycy;&pcy;&ucy;&scy;&kcy;&acy;
+							.col-auto
+								// тут убираешь класс  .gray  когда будет выбран пункт
+								.modal-filter__choice-text.gray
+									| &Ncy;&iecy; &vcy;&ycy;&bcy;&rcy;&acy;&ncy;&ocy;
+						.modal-filter__range-wrap.showhide-all__inner
+							input.input-range(data-max='2018' data-min='2000' type='text')
+					.modal-filter__item.hover-block
+						.modal-filter__head-row.row.showhide.btn-click.align-items-center.small
+							.col &Tcy;&icy;&pcy; &kcy;&ucy;&zcy;&ocy;&vcy;&acy;
+							.col-auto
+								// тут убираешь класс  .gray  когда будет выбран пункт
+								.modal-filter__choice-text.gray
+									| &Ncy;&iecy; &vcy;&ycy;&bcy;&rcy;&acy;&ncy;&ocy;
+						.showhide-all__inner
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Scy;&iecy;&dcy;&acy;&ncy;
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &KHcy;&iecy;&tcy;&chcy;&bcy;&ecy;&kcy;
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Ucy;&ncy;&icy;&vcy;&iecy;&rcy;&scy;&acy;&lcy;
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Vcy;&ncy;&iecy;&dcy;&ocy;&rcy;&ocy;&zhcy;&ncy;&icy;&kcy;
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Kcy;&acy;&bcy;&rcy;&icy;&ocy;&lcy;&iecy;&tcy;
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Kcy;&ucy;&pcy;&iecy;
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Mcy;&icy;&ncy;&icy;&vcy;&ecy;&ncy;
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Pcy;&icy;&kcy;&acy;&pcy;
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Fcy;&ucy;&rcy;&gcy;&ocy;&ncy;
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Mcy;&icy;&kcy;&rcy;&ocy;&acy;&vcy;&tcy;&ocy;&bcy;&ucy;&scy;
+					.modal-filter__item.hover-block
+						.modal-filter__head-row.row.showhide.btn-click.align-items-center.small
+							.col &TScy;&vcy;&iecy;&tcy; &kcy;&ucy;&zcy;&ocy;&vcy;&acy;
+							.col-auto
+								// тут убираешь класс  .gray  когда будет выбран пункт
+								.modal-filter__choice-text.gray
+									| &Ncy;&iecy; &vcy;&ycy;&bcy;&rcy;&acy;&ncy;&ocy;
+						.showhide-all__inner
+							.color-custom
+								input#color-1.color-custom__input(type='checkbox')
+								label.color-custom__label(for='color-1' style='background:#231f20;')
+							.color-custom.color-custom-light
+								input#color-2.color-custom__input(type='checkbox')
+								label.color-custom__label(for='color-2' style='background:white;')
+							.color-custom.color-custom-light
+								input#color-3.color-custom__input(type='checkbox')
+								label.color-custom__label(for='color-3' style='background:linear-gradient(to top, #dcdcdc 0%, #f8f8f8 100%);')
+							.color-custom
+								input#color-4.color-custom__input(type='checkbox')
+								label.color-custom__label(for='color-4' style='background:#9c9999;')
+							.color-custom
+								input#color-5.color-custom__input(type='checkbox')
+								label.color-custom__label(for='color-5' style='background:#334dff;')
+							.color-custom
+								input#color-6.color-custom__input(type='checkbox')
+								label.color-custom__label(for='color-6' style='background:#fc4829;')
+							.color-custom
+								input#color-7.color-custom__input(type='checkbox')
+								label.color-custom__label(for='color-7' style='background: #35ba2b;')
+							.color-custom
+								input#color-8.color-custom__input(type='checkbox')
+								label.color-custom__label(for='color-8' style='background:#926547;')
+							.color-custom
+								input#color-9.color-custom__input(type='checkbox')
+								label.color-custom__label(for='color-9' style='background: #f1d9b2;')
+							.color-custom
+								input#color-10.color-custom__input(type='checkbox')
+								label.color-custom__label(for='color-10' style='background: #36a1ff;')
+							.color-custom
+								input#color-11.color-custom__input(type='checkbox')
+								label.color-custom__label(for='color-11' style='background:#fec701;')
+							.color-custom
+								input#color-12.color-custom__input(type='checkbox')
+								label.color-custom__label(for='color-12' style='background:#c5172d;')
+							.color-custom
+								input#color-13.color-custom__input(type='checkbox')
+								label.color-custom__label(for='color-13' style='background:#96c;')
+							.color-custom
+								input#color-14.color-custom__input(type='checkbox')
+								label.color-custom__label(for='color-14' style='background:#fde90f;')
+							.color-custom
+								input#color-15.color-custom__input(type='checkbox')
+								label.color-custom__label(for='color-15' style='background:#f96;')
+							.color-custom
+								input#color-16.color-custom__input(type='checkbox')
+								label.color-custom__label(for='color-16' style='background:#ffc0cb;')
+				.col-xl-4.col-lg-6
+					.modal-filter__item.hover-block
+						.modal-filter__head-row.row.showhide.btn-click.align-items-center.small
+							.col &Kcy;&ocy;&lcy;&icy;&chcy;&iecy;&scy;&tcy;&vcy;&ocy; &mcy;&iecy;&scy;&tcy;
+							.col-auto
+								// тут убираешь класс  .gray  когда будет выбран пункт
+								.modal-filter__choice-text.gray
+									| &Ncy;&iecy; &vcy;&ycy;&bcy;&rcy;&acy;&ncy;&ocy;
+						.showhide-all__inner
+							.modal-filter__range-wrap
+								input.input-range-single(data-max='15' data-min='0' type='text')
+					.modal-filter__item.hover-block
+						.modal-filter__head-row.row.showhide.btn-click.align-items-center.small
+							.col &Mcy;&acy;&tcy;&iecy;&rcy;&icy;&acy;&lcy; &scy;&icy;&dcy;&iecy;&ncy;&icy;&jcy;
+							.col-auto
+								// тут убираешь класс  .gray  когда будет выбран пункт
+								.modal-filter__choice-text.gray
+									| &Ncy;&iecy; &vcy;&ycy;&bcy;&rcy;&acy;&ncy;&ocy;
+						.showhide-all__inner
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Tcy;&kcy;&acy;&ncy;&softcy; 
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Kcy;&ocy;&zhcy;&acy; 
+					.modal-filter__item.hover-block
+						.modal-filter__head-row.row.showhide.btn-click.align-items-center.small
+							.col &Tcy;&icy;&pcy; &dcy;&vcy;&icy;&gcy;&acy;&tcy;&iecy;&lcy;&yacy;
+							.col-auto
+								// тут убираешь класс  .gray  когда будет выбран пункт
+								.modal-filter__choice-text.gray
+									| &Ncy;&iecy; &vcy;&ycy;&bcy;&rcy;&acy;&ncy;&ocy;
+						.showhide-all__inner
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Bcy;&iecy;&ncy;&zcy;&icy;&ncy;
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Dcy;&icy;&zcy;&iecy;&lcy;&softcy;
+					.modal-filter__item.hover-block
+						.modal-filter__head-row.row.showhide.btn-click.align-items-center.small
+							.col &Ocy;&bcy;&hardcy;&iecy;&mcy; &dcy;&vcy;&icy;&gcy;&acy;&tcy;&iecy;&lcy;&yacy;, &lcy;
+							.col-auto
+								// тут убираешь класс  .gray  когда будет выбран пункт
+								.modal-filter__choice-text.gray
+									| &Ncy;&iecy; &vcy;&ycy;&bcy;&rcy;&acy;&ncy;&ocy;
+						.modal-filter__range-wrap.showhide-all__inner
+							input.input-range(data-max='6' data-min='1' type='text')
+					.modal-filter__item.hover-block
+						.modal-filter__head-row.row.showhide.btn-click.align-items-center.small
+							.col &Pcy;&rcy;&icy;&vcy;&ocy;&dcy;
+							.col-auto
+								// тут убираешь класс  .gray  когда будет выбран пункт
+								.modal-filter__choice-text.gray
+									| &Ncy;&iecy; &vcy;&ycy;&bcy;&rcy;&acy;&ncy;&ocy;
+						.showhide-all__inner
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Pcy;&iecy;&rcy;&iecy;&dcy;&ncy;&icy;&jcy;
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Zcy;&acy;&dcy;&ncy;&icy;&jcy;
+							label.custom-input
+								input.custom-input__input(type='checkbox')
+								span.custom-input__lab
+								span &Pcy;&ocy;&lcy;&ncy;&ycy;&jcy;
+					.modal-filter__item.hover-block
+						.modal-filter__head-row.row.showhide.btn-click.align-items-center.small
+							.col &Mcy;&ocy;&shchcy;&ncy;&ocy;&scy;&tcy;&softcy;, &lcy;.&scy;.
+							.col-auto
+								// тут убираешь класс  .gray  когда будет выбран пункт
+								.modal-filter__choice-text.gray
+									| &Ncy;&iecy; &vcy;&ycy;&bcy;&rcy;&acy;&ncy;&ocy;
+						.modal-filter__range-wrap.showhide-all__inner
+							input.input-range(data-max='550' data-min='60' type='text')
+					.modal-filter__item.hover-block
+						.modal-filter__head-row.row.showhide.btn-click.align-items-center.small
+							.col &Rcy;&acy;&scy;&khcy;&ocy;&dcy; &tcy;&ocy;&pcy;&lcy;&icy;&vcy;&acy;, &lcy;/100&kcy;&mcy;
+							.col-auto
+								// тут убираешь класс  .gray  когда будет выбран пункт
+								.modal-filter__choice-text.gray
+									| &Ncy;&iecy; &vcy;&ycy;&bcy;&rcy;&acy;&ncy;&ocy;
+						.modal-filter__range-wrap.showhide-all__inner
+							input.input-range(data-max='30' data-min='4' type='text')
+				.col-xl-4
+					.row
+						.col-xl-12.col-lg-6
+							.modal-filter__item.hover-block
+								.modal-filter__head-row.row.showhide.btn-click.align-items-center.small
+									.col &Ocy;&bcy;&hardcy;&iecy;&mcy; &bcy;&acy;&gcy;&acy;&zhcy;&ncy;&icy;&kcy;&acy;, &lcy;
+									.col-auto
+										// тут убираешь класс  .gray  когда будет выбран пункт
+										.modal-filter__choice-text.gray
+											| &Ncy;&iecy; &vcy;&ycy;&bcy;&rcy;&acy;&ncy;&ocy;
+								.modal-filter__range-wrap.showhide-all__inner
+									input.input-range(data-max='2000' data-min='100' type='text')
+							.modal-filter__item.hover-block
+								.modal-filter__head-row.row.showhide.btn-click.align-items-center.small
+									.col &Lcy;&yucy;&kcy;
+									.col-auto
+										// тут убираешь класс  .gray  когда будет выбран пункт
+										.modal-filter__choice-text.gray
+											| &Ncy;&iecy; &vcy;&ycy;&bcy;&rcy;&acy;&ncy;&ocy;
+								.showhide-all__inner
+									label.custom-input
+										input.custom-input__input(type='radio' name='filter-1')
+										span.custom-input__lab
+										span &Dcy;&acy;
+									label.custom-input
+										input.custom-input__input(type='radio' name='filter-1')
+										span.custom-input__lab
+										span &Ncy;&iecy;&tcy;
+							.modal-filter__item.hover-block
+								.modal-filter__head-row.row.showhide.btn-click.align-items-center.small
+									.col &Fcy;&acy;&rcy;&kcy;&ocy;&pcy;
+									.col-auto
+										// тут убираешь класс  .gray  когда будет выбран пункт
+										.modal-filter__choice-text.gray
+											| &Ncy;&iecy; &vcy;&ycy;&bcy;&rcy;&acy;&ncy;&ocy;
+								.showhide-all__inner
+									label.custom-input
+										input.custom-input__input(type='radio' name='filter-2')
+										span.custom-input__lab
+										span &Dcy;&acy;
+									label.custom-input
+										input.custom-input__input(type='radio' name='filter-2')
+										span.custom-input__lab
+										span &Ncy;&iecy;&tcy;
+						.col-xl-12.col-lg-6
+							.modal-filter__item.hover-block
+								.modal-filter__head-row.row.showhide.btn-click.align-items-center.small
+									.col &Rcy;&iecy;&jcy;&lcy;&icy;&ncy;&gcy;&icy; &ncy;&acy; &kcy;&rcy;&ycy;&shcy;&iecy;
+									.col-auto
+										// тут убираешь класс  .gray  когда будет выбран пункт
+										.modal-filter__choice-text.gray
+											| &Ncy;&iecy; &vcy;&ycy;&bcy;&rcy;&acy;&ncy;&ocy;
+								.showhide-all__inner
+									label.custom-input
+										input.custom-input__input(type='radio' name='filter-3')
+										span.custom-input__lab
+										span &Dcy;&acy;
+									label.custom-input
+										input.custom-input__input(type='radio' name='filter-3')
+										span.custom-input__lab
+										span &Ncy;&iecy;&tcy;
+							.modal-filter__item.hover-block
+								.modal-filter__head-row.row.showhide.btn-click.align-items-center.small
+									.col &Tcy;&ocy;&ncy;&icy;&rcy;&ocy;&vcy;&kcy;&acy; &zcy;&acy;&dcy;&ncy;&icy;&khcy; &scy;&tcy;&iecy;&kcy;&ocy;&lcy;
+									.col-auto
+										// тут убираешь класс  .gray  когда будет выбран пункт
+										.modal-filter__choice-text.gray
+											| &Ncy;&iecy; &vcy;&ycy;&bcy;&rcy;&acy;&ncy;&ocy;
+								.showhide-all__inner
+									label.custom-input
+										input.custom-input__input(type='radio' name='filter-1-4')
+										span.custom-input__lab
+										span &Dcy;&acy;
+									label.custom-input
+										input.custom-input__input(type='radio' name='filter-1-4')
+										span.custom-input__lab
+										span &Ncy;&iecy;&tcy;

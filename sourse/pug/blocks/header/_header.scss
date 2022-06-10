@@ -266,18 +266,9 @@
 	}
 	.swiper-button-hand {
 		top: auto;
-		background-color: rgba($color: #fff, $alpha: .2);
-		// opacity: 0.2;
-		color: #fff;
-		border-radius: 8px;
-		width: 46px;
-		height: 46px;
 		display: none;
 		@include media-breakpoint-up(lg) {
 			display: flex;
-		}
-		.icon {
-			font-size: rem(20);
 		}
 		&-prev {
 			left: auto;
@@ -315,4 +306,19 @@
 .gj-picker {
 	padding: 10px;
 	text-align: center;
+}
+
+.swiper-button-hand {
+	background-color: rgba($color: #fff, $alpha: .2);
+	// opacity: 0.2;
+	color: #fff;
+	border-radius: 8px;
+	width: 46px;
+	height: 46px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.icon {
+		font-size: rem(20);
+	}
 }
