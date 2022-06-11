@@ -11,6 +11,10 @@
 	&__col {
 		padding-top: rem(14);
 		padding-bottom: rem(14);
+		@media (min-width: 1200px) and (max-width: 1470px) {
+			padding-left: rem(5);
+			padding-right: rem(5);
+		}
 		&--2 {
 			padding-top: 0;
 			padding-bottom: 0;
@@ -36,10 +40,10 @@
 		padding: rem(10) rem(64) rem(10) rem(15);
 		border-radius: 8px;
 		font-size: rem(14);
-		@include media-breakpoint-only(lg) {
+		@media (min-width: 1200px) and (max-width: 1470px) {
 			width: rem(309);
 		}
-		@include media-breakpoint-up(lg) {
+		@media (min-width: 1470px) {
 			width: rem(462);
 		}
 	}
