@@ -365,31 +365,6 @@ function eventHandler() {
 	});
 	// modal window
 
-	//tariff tabs
-
-	const tabs = document.querySelector('.t-tabs');
-  const tabsBtn = document.querySelectorAll('.t-tabs__btn');
-  const tabsContent = document.querySelectorAll('.t-tabs__content');
-
-  if (tabs) {
-    tabs.addEventListener('click', (e) => {
-      if (e.target.classList.contains('t-tabs__btn')) {
-        const tabsPath = e.target.dataset.tabsPath;
-        tabsBtn.forEach(el => {el.classList.remove('t-tabs__btn--active')});
-        document.querySelector(`[data-tabs-path="${tabsPath}"]`).classList.add('t-tabs__btn--active');
-        tabsHandler(tabsPath);
-      }
-    });
-  }
-
-  const tabsHandler = (path) => {
-    tabsContent.forEach(el => {el.classList.remove('t-tabs__content--active')});
-    document.querySelector(`[data-tabs-target="${path}"]`).classList.add('t-tabs__content--active');
-  };
-
-	// /tariff tabs
-
-	
 
   const header2Swiper = new Swiper('.header2__slider--js', {
 		slidesPerView: 1,

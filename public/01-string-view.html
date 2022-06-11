@@ -310,11 +310,11 @@
 						<div class="form-wrap form-wrap--row">
 							<form>
 								<div class="properties-row">
-									<label class="custom-input form-check form-check--all"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">Все</span>
+									<label class="custom-input form-check form-check--all"><input class="custom-input__input form-check-input" name="transmission" type="radio"/><span class="custom-input__text form-check-label">Все</span>
 									</label>
-									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">Механика</span>
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="transmission" type="radio"/><span class="custom-input__text form-check-label">Механика</span>
 									</label>
-									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">Автомат</span>
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="transmission" type="radio"/><span class="custom-input__text form-check-label">Автомат</span>
 									</label>
 								</div>
 								<div class="properties-row">
@@ -472,19 +472,26 @@
 										</div>
 										<div class="string-item__descr">Автомат, бензин (3.0/250), задний, дверей 5, мест 5, люк, фаркоп, рейлинги, тонировка
 										</div>
-										<div class="string-item__tariff t-tabs">
-											<div class="string-item__tariff-caption t-tabs__list">Тариф
-												<div class="t-tabs__btn" data-tabs-path="1">1</div>
-												<div class="t-tabs__btn t-tabs__btn--active" data-tabs-path="2">2</div>
-												<div class="t-tabs__btn" data-tabs-path="3">3</div>
-												<div class="t-tabs__btn" data-tabs-path="4">4</div>
-												<div class="t-tabs__btn" data-tabs-path="5">5</div>
+										<div class="string-item__tariff">
+											<div class="string-item__tariff-caption">Тариф
+												<label class="string-item__tariff-btn custom-input form-check">
+													<input class="custom-input__input form-check-input" type="radio" name="tariff"/><span class="custom-input__text form-check-label">1</span>
+												</label>
+												<label class="string-item__tariff-btn custom-input form-check">
+													<input class="custom-input__input form-check-input" type="radio" name="tariff"/><span class="custom-input__text form-check-label">2</span>
+												</label>
+												<label class="string-item__tariff-btn custom-input form-check">
+													<input class="custom-input__input form-check-input" type="radio" name="tariff"/><span class="custom-input__text form-check-label">3</span>
+												</label>
+												<label class="string-item__tariff-btn custom-input form-check">
+													<input class="custom-input__input form-check-input" type="radio" name="tariff"/><span class="custom-input__text form-check-label">4</span>
+												</label>
+												<label class="string-item__tariff-btn custom-input form-check">
+													<input class="custom-input__input form-check-input" type="radio" name="tariff"/><span class="custom-input__text form-check-label">5</span>
+												</label>
+												<div class="string-item__tariff-content t-tabs__content t-tabs__content--active">2 900 ₽
+												</div>
 											</div>
-											<div class="t-tabs__content" data-tabs-target="1">1 900 ₽</div>
-											<div class="t-tabs__content t-tabs__content--active" data-tabs-target="2">2 900 ₽</div>
-											<div class="t-tabs__content" data-tabs-target="3">3 900 ₽</div>
-											<div class="t-tabs__content" data-tabs-target="4">4 900 ₽</div>
-											<div class="t-tabs__content" data-tabs-target="5">5 900 ₽</div>
 										</div>
 										<div class="string-item__note">Аренда от 3 до 5 суток
 										</div>
@@ -586,19 +593,26 @@
 										</div>
 										<div class="string-item__descr">Автомат, бензин (3.0/250), задний, дверей 5, мест 5, люк, фаркоп, рейлинги, тонировка
 										</div>
-										<div class="string-item__tariff t-tabs">
-											<div class="string-item__tariff-caption t-tabs__list">Тариф
-												<div class="t-tabs__btn" data-tabs-path="1">1</div>
-												<div class="t-tabs__btn t-tabs__btn--active" data-tabs-path="2">2</div>
-												<div class="t-tabs__btn" data-tabs-path="3">3</div>
-												<div class="t-tabs__btn" data-tabs-path="4">4</div>
-												<div class="t-tabs__btn" data-tabs-path="5">5</div>
+										<div class="string-item__tariff">
+											<div class="string-item__tariff-caption">Тариф
+												<label class="string-item__tariff-btn custom-input form-check">
+													<input class="custom-input__input form-check-input" type="radio" name="tariff"/><span class="custom-input__text form-check-label">1</span>
+												</label>
+												<label class="string-item__tariff-btn custom-input form-check">
+													<input class="custom-input__input form-check-input" type="radio" name="tariff"/><span class="custom-input__text form-check-label">2</span>
+												</label>
+												<label class="string-item__tariff-btn custom-input form-check">
+													<input class="custom-input__input form-check-input" type="radio" name="tariff"/><span class="custom-input__text form-check-label">3</span>
+												</label>
+												<label class="string-item__tariff-btn custom-input form-check">
+													<input class="custom-input__input form-check-input" type="radio" name="tariff"/><span class="custom-input__text form-check-label">4</span>
+												</label>
+												<label class="string-item__tariff-btn custom-input form-check">
+													<input class="custom-input__input form-check-input" type="radio" name="tariff"/><span class="custom-input__text form-check-label">5</span>
+												</label>
+												<div class="string-item__tariff-content t-tabs__content t-tabs__content--active">2 900 ₽
+												</div>
 											</div>
-											<div class="t-tabs__content" data-tabs-target="1">1 900 ₽</div>
-											<div class="t-tabs__content t-tabs__content--active" data-tabs-target="2">2 900 ₽</div>
-											<div class="t-tabs__content" data-tabs-target="3">3 900 ₽</div>
-											<div class="t-tabs__content" data-tabs-target="4">4 900 ₽</div>
-											<div class="t-tabs__content" data-tabs-target="5">5 900 ₽</div>
 										</div>
 										<div class="string-item__note">Выкуп за 24 месяца
 										</div>
@@ -653,19 +667,26 @@
 										</div>
 										<div class="string-item__descr">Автомат, бензин (3.0/250), задний, дверей 5, мест 5, люк, фаркоп, рейлинги, тонировка
 										</div>
-										<div class="string-item__tariff t-tabs">
-											<div class="string-item__tariff-caption t-tabs__list">Тариф
-												<div class="t-tabs__btn" data-tabs-path="1">1</div>
-												<div class="t-tabs__btn t-tabs__btn--active" data-tabs-path="2">2</div>
-												<div class="t-tabs__btn" data-tabs-path="3">3</div>
-												<div class="t-tabs__btn" data-tabs-path="4">4</div>
-												<div class="t-tabs__btn" data-tabs-path="5">5</div>
+										<div class="string-item__tariff">
+											<div class="string-item__tariff-caption">Тариф
+												<label class="string-item__tariff-btn custom-input form-check">
+													<input class="custom-input__input form-check-input" type="radio" name="tariff"/><span class="custom-input__text form-check-label">1</span>
+												</label>
+												<label class="string-item__tariff-btn custom-input form-check">
+													<input class="custom-input__input form-check-input" type="radio" name="tariff"/><span class="custom-input__text form-check-label">2</span>
+												</label>
+												<label class="string-item__tariff-btn custom-input form-check">
+													<input class="custom-input__input form-check-input" type="radio" name="tariff"/><span class="custom-input__text form-check-label">3</span>
+												</label>
+												<label class="string-item__tariff-btn custom-input form-check">
+													<input class="custom-input__input form-check-input" type="radio" name="tariff"/><span class="custom-input__text form-check-label">4</span>
+												</label>
+												<label class="string-item__tariff-btn custom-input form-check">
+													<input class="custom-input__input form-check-input" type="radio" name="tariff"/><span class="custom-input__text form-check-label">5</span>
+												</label>
+												<div class="string-item__tariff-content t-tabs__content t-tabs__content--active">2 900 ₽
+												</div>
 											</div>
-											<div class="t-tabs__content" data-tabs-target="1">1 900 ₽</div>
-											<div class="t-tabs__content t-tabs__content--active" data-tabs-target="2">2 900 ₽</div>
-											<div class="t-tabs__content" data-tabs-target="3">3 900 ₽</div>
-											<div class="t-tabs__content" data-tabs-target="4">4 900 ₽</div>
-											<div class="t-tabs__content" data-tabs-target="5">5 900 ₽</div>
 										</div>
 										<div class="string-item__note">Аренда от 3 до 5 суток
 										</div>
@@ -769,19 +790,26 @@
 										</div>
 										<div class="string-item__descr">Автомат, бензин (3.0/250), задний, дверей 5, мест 5, люк, фаркоп, рейлинги, тонировка
 										</div>
-										<div class="string-item__tariff t-tabs">
-											<div class="string-item__tariff-caption t-tabs__list">Тариф
-												<div class="t-tabs__btn" data-tabs-path="1">1</div>
-												<div class="t-tabs__btn t-tabs__btn--active" data-tabs-path="2">2</div>
-												<div class="t-tabs__btn" data-tabs-path="3">3</div>
-												<div class="t-tabs__btn" data-tabs-path="4">4</div>
-												<div class="t-tabs__btn" data-tabs-path="5">5</div>
+										<div class="string-item__tariff">
+											<div class="string-item__tariff-caption">Тариф
+												<label class="string-item__tariff-btn custom-input form-check">
+													<input class="custom-input__input form-check-input" type="radio" name="tariff"/><span class="custom-input__text form-check-label">1</span>
+												</label>
+												<label class="string-item__tariff-btn custom-input form-check">
+													<input class="custom-input__input form-check-input" type="radio" name="tariff"/><span class="custom-input__text form-check-label">2</span>
+												</label>
+												<label class="string-item__tariff-btn custom-input form-check">
+													<input class="custom-input__input form-check-input" type="radio" name="tariff"/><span class="custom-input__text form-check-label">3</span>
+												</label>
+												<label class="string-item__tariff-btn custom-input form-check">
+													<input class="custom-input__input form-check-input" type="radio" name="tariff"/><span class="custom-input__text form-check-label">4</span>
+												</label>
+												<label class="string-item__tariff-btn custom-input form-check">
+													<input class="custom-input__input form-check-input" type="radio" name="tariff"/><span class="custom-input__text form-check-label">5</span>
+												</label>
+												<div class="string-item__tariff-content t-tabs__content t-tabs__content--active">2 900 ₽
+												</div>
 											</div>
-											<div class="t-tabs__content" data-tabs-target="1">1 900 ₽</div>
-											<div class="t-tabs__content t-tabs__content--active" data-tabs-target="2">2 900 ₽</div>
-											<div class="t-tabs__content" data-tabs-target="3">3 900 ₽</div>
-											<div class="t-tabs__content" data-tabs-target="4">4 900 ₽</div>
-											<div class="t-tabs__content" data-tabs-target="5">5 900 ₽</div>
 										</div>
 										<div class="string-item__note">Выкуп за 24 месяца
 										</div>
@@ -836,19 +864,26 @@
 										</div>
 										<div class="string-item__descr">Автомат, бензин (3.0/250), задний, дверей 5, мест 5, люк, фаркоп, рейлинги, тонировка
 										</div>
-										<div class="string-item__tariff t-tabs">
-											<div class="string-item__tariff-caption t-tabs__list">Тариф
-												<div class="t-tabs__btn" data-tabs-path="1">1</div>
-												<div class="t-tabs__btn t-tabs__btn--active" data-tabs-path="2">2</div>
-												<div class="t-tabs__btn" data-tabs-path="3">3</div>
-												<div class="t-tabs__btn" data-tabs-path="4">4</div>
-												<div class="t-tabs__btn" data-tabs-path="5">5</div>
+										<div class="string-item__tariff">
+											<div class="string-item__tariff-caption">Тариф
+												<label class="string-item__tariff-btn custom-input form-check">
+													<input class="custom-input__input form-check-input" type="radio" name="tariff"/><span class="custom-input__text form-check-label">1</span>
+												</label>
+												<label class="string-item__tariff-btn custom-input form-check">
+													<input class="custom-input__input form-check-input" type="radio" name="tariff"/><span class="custom-input__text form-check-label">2</span>
+												</label>
+												<label class="string-item__tariff-btn custom-input form-check">
+													<input class="custom-input__input form-check-input" type="radio" name="tariff"/><span class="custom-input__text form-check-label">3</span>
+												</label>
+												<label class="string-item__tariff-btn custom-input form-check">
+													<input class="custom-input__input form-check-input" type="radio" name="tariff"/><span class="custom-input__text form-check-label">4</span>
+												</label>
+												<label class="string-item__tariff-btn custom-input form-check">
+													<input class="custom-input__input form-check-input" type="radio" name="tariff"/><span class="custom-input__text form-check-label">5</span>
+												</label>
+												<div class="string-item__tariff-content t-tabs__content t-tabs__content--active">2 900 ₽
+												</div>
 											</div>
-											<div class="t-tabs__content" data-tabs-target="1">1 900 ₽</div>
-											<div class="t-tabs__content t-tabs__content--active" data-tabs-target="2">2 900 ₽</div>
-											<div class="t-tabs__content" data-tabs-target="3">3 900 ₽</div>
-											<div class="t-tabs__content" data-tabs-target="4">4 900 ₽</div>
-											<div class="t-tabs__content" data-tabs-target="5">5 900 ₽</div>
 										</div>
 										<div class="string-item__note">Аренда от 3 до 5 суток
 										</div>
@@ -950,19 +985,26 @@
 										</div>
 										<div class="string-item__descr">Автомат, бензин (3.0/250), задний, дверей 5, мест 5, люк, фаркоп, рейлинги, тонировка
 										</div>
-										<div class="string-item__tariff t-tabs">
-											<div class="string-item__tariff-caption t-tabs__list">Тариф
-												<div class="t-tabs__btn" data-tabs-path="1">1</div>
-												<div class="t-tabs__btn t-tabs__btn--active" data-tabs-path="2">2</div>
-												<div class="t-tabs__btn" data-tabs-path="3">3</div>
-												<div class="t-tabs__btn" data-tabs-path="4">4</div>
-												<div class="t-tabs__btn" data-tabs-path="5">5</div>
+										<div class="string-item__tariff">
+											<div class="string-item__tariff-caption">Тариф
+												<label class="string-item__tariff-btn custom-input form-check">
+													<input class="custom-input__input form-check-input" type="radio" name="tariff"/><span class="custom-input__text form-check-label">1</span>
+												</label>
+												<label class="string-item__tariff-btn custom-input form-check">
+													<input class="custom-input__input form-check-input" type="radio" name="tariff"/><span class="custom-input__text form-check-label">2</span>
+												</label>
+												<label class="string-item__tariff-btn custom-input form-check">
+													<input class="custom-input__input form-check-input" type="radio" name="tariff"/><span class="custom-input__text form-check-label">3</span>
+												</label>
+												<label class="string-item__tariff-btn custom-input form-check">
+													<input class="custom-input__input form-check-input" type="radio" name="tariff"/><span class="custom-input__text form-check-label">4</span>
+												</label>
+												<label class="string-item__tariff-btn custom-input form-check">
+													<input class="custom-input__input form-check-input" type="radio" name="tariff"/><span class="custom-input__text form-check-label">5</span>
+												</label>
+												<div class="string-item__tariff-content t-tabs__content t-tabs__content--active">2 900 ₽
+												</div>
 											</div>
-											<div class="t-tabs__content" data-tabs-target="1">1 900 ₽</div>
-											<div class="t-tabs__content t-tabs__content--active" data-tabs-target="2">2 900 ₽</div>
-											<div class="t-tabs__content" data-tabs-target="3">3 900 ₽</div>
-											<div class="t-tabs__content" data-tabs-target="4">4 900 ₽</div>
-											<div class="t-tabs__content" data-tabs-target="5">5 900 ₽</div>
 										</div>
 										<div class="string-item__note">Выкуп за 24 месяца
 										</div>
@@ -1016,13 +1058,13 @@
 								<div class="catalog-summary__list">
 									<div class="catalog-summary__item">
 										<label class="custom-input form-check">
-											<input class="custom-input__input form-check-input" type="checkbox"/><span class="custom-input__text form-check-label">На механике</span>
+											<input class="custom-input__input form-check-input" type="radio" name="transmission-aside"/><span class="custom-input__text form-check-label">На механике</span>
 										</label>
 										<div>259</div>
 									</div>
 									<div class="catalog-summary__item">
 										<label class="custom-input form-check">
-											<input class="custom-input__input form-check-input" type="checkbox"/><span class="custom-input__text form-check-label">На автомате</span>
+											<input class="custom-input__input form-check-input" type="radio" name="transmission-aside"/><span class="custom-input__text form-check-label">На автомате</span>
 										</label>
 										<div>215</div>
 									</div>

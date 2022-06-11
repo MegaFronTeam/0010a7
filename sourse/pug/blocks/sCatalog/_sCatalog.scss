@@ -122,6 +122,7 @@
 			font-size: 14px;
 		}
 	}
+	.custom-input__input[type=radio]:checked,
 	.custom-input__input[type=checkbox]:checked {
 		background: #F6EE25;
 	}
@@ -151,14 +152,14 @@
 	.swiper-pagination-bullet {
 		border-radius: 0 !important;
 		height: 2px;
-		width: 14%;
+		width: 18%;
 		background-color: $white;
 		opacity: .7;
 	}
 	.swiper-pagination-bullet-active {
 		border-radius: 0 !important;
 		height: 2px;
-		width: 15%;
+		width: 18%;
 		background-color: $white;
 		opacity: 1;
 		transform: none;
@@ -293,6 +294,11 @@
 					fill: $body-color;
 				}
 			}
+			&:active {
+				.icon {
+					fill: $body-color;
+				}
+			}
 		}
 		.icon {
 			fill: #CACACA;
@@ -306,11 +312,11 @@
 	}
 }
 .sCatalog__catalog-item-col {
-	&:not(:nth-child(-n+3)) {
-		@include media-breakpoint-down(md) {
-			display: none;
-		}
-	}
+	// &:not(:nth-child(-n+3)) {
+	// 	@include media-breakpoint-down(md) {
+	// 		display: none;
+	// 	}
+	// }
 	@media (min-width: 1200px) and (max-width: 1469px) {
 		width: 50%;
 	}
@@ -321,6 +327,7 @@
 	height: 100%;
 	border: 1px solid #E8E8E8;
 	border-radius: 8px;
+	@include mt;
 	@media (min-width: 1200px) and (max-width: 1469px) {
 		max-width: 100%;
 	}
@@ -543,7 +550,31 @@
 	&__tariff-caption {
 		display: flex;
 		align-items: center;
+		width: 100%;
 	}
+	&__tariff-btn {
+		margin: 0 2.5px;
+		width: 20px;
+		height: 20px !important;
+		text-align: center;
+		background-color: #F8F8F8;
+		border-radius: 3px;
+		cursor: pointer;
+	}
+	.custom-input__input {
+		border-radius: 3px !important;
+		border-color: transparent !important;
+	}
+	
+	&__tariff-btn--active {
+		background-color: #F6EE25;	;
+		transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+		pointer-events: none;
+	}
+	&__tariff-content {
+		margin-left: auto;
+	}
+
 	&__note {
 		font-size: 14px;
 		color: #7C7C7C;	
@@ -585,6 +616,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		min-width: 147px;
 	}
 	&__period {
 		max-width: 145px;
@@ -626,25 +658,3 @@
 	}
 }
 
-.t-tabs__btn {
-	margin: 0 5px;
-	width: 20px;
-	height: 20px;
-	text-align: center;
-	background-color: #F8F8F8;
-	border-radius: 3px;
-	cursor: pointer;
-}
-
-.t-tabs__btn--active {
-	background-color: #F6EE25;	;
-	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-	pointer-events: none;
-}
-
-.t-tabs__content {
-	display: none;
-	&--active {
-		display: block;
-	}
-}

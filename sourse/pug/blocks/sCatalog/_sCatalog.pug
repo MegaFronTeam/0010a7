@@ -36,9 +36,9 @@ mixin sCatalog(tile,table,string)
 			+e.filter-row
 				+form-wrap.--row
 					.properties-row
-						+in-c('checkbox','Все').--all
-						+in-c('checkbox','Механика')
-						+in-c('checkbox','Автомат')
+						+in-c('radio','Все','transmission').--all
+						+in-c('radio','Механика','transmission')
+						+in-c('radio','Автомат','transmission')
 					.properties-row
 						+in-c('checkbox','Все').--all
 						+in-c('checkbox','Седан')
@@ -271,18 +271,24 @@ mixin sCatalog(tile,table,string)
 										+e.caption!= caption
 										+e.descr!= descr
 										if tariff
-											+e.tariff.t-tabs
-												+e.tariff-caption.t-tabs__list Тариф
-													.t-tabs__btn(data-tabs-path="1") 1
-													.t-tabs__btn.t-tabs__btn--active(data-tabs-path="2") 2
-													.t-tabs__btn(data-tabs-path="3") 3
-													.t-tabs__btn(data-tabs-path="4") 4
-													.t-tabs__btn(data-tabs-path="5") 5
-												.t-tabs__content(data-tabs-target="1") 1 900 ₽
-												.t-tabs__content.t-tabs__content--active(data-tabs-target="2") 2 900 ₽
-												.t-tabs__content(data-tabs-target="3") 3 900 ₽
-												.t-tabs__content(data-tabs-target="4") 4 900 ₽
-												.t-tabs__content(data-tabs-target="5") 5 900 ₽
+											+e.tariff
+												+e.tariff-caption Тариф
+													+e.tariff-btn.custom-input.form-check.LABEL
+														input.custom-input__input.form-check-input(type="radio" name="tariff")
+														span.custom-input__text.form-check-label 1
+													+e.tariff-btn.custom-input.form-check.LABEL
+														input.custom-input__input.form-check-input(type="radio" name="tariff")
+														span.custom-input__text.form-check-label 2
+													+e.tariff-btn.custom-input.form-check.LABEL
+														input.custom-input__input.form-check-input(type="radio" name="tariff")
+														span.custom-input__text.form-check-label 3
+													+e.tariff-btn.custom-input.form-check.LABEL
+														input.custom-input__input.form-check-input(type="radio" name="tariff")
+														span.custom-input__text.form-check-label 4
+													+e.tariff-btn.custom-input.form-check.LABEL
+														input.custom-input__input.form-check-input(type="radio" name="tariff")
+														span.custom-input__text.form-check-label 5
+													+e.tariff-content.t-tabs__content--active 2 900 ₽
 										if note
 											+e.note!= note
 									+e.price-block
@@ -320,12 +326,12 @@ mixin sCatalog(tile,table,string)
 						+e.list
 							+e.item
 								label.custom-input.form-check
-									input.custom-input__input.form-check-input(type="checkbox")
+									input.custom-input__input.form-check-input(type="radio" name="transmission-aside")
 									span.custom-input__text.form-check-label На механике
 								div 259
 							+e.item
 								label.custom-input.form-check
-									input.custom-input__input.form-check-input(type="checkbox")
+									input.custom-input__input.form-check-input(type="radio" name="transmission-aside")
 									span.custom-input__text.form-check-label На автомате
 								div 215
 						+e.list
