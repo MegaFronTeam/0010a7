@@ -1,7 +1,7 @@
 mixin right-side()
 	+e.block
 		.row
-			.col-xl-12.col-lg-6(itemprop='offers' itemscope='' itemtype='http://schema.org/Offer')
+			.col-xl-12.col-lg-6
 				+e.link-wrap.text-center
 					a.popup-with-move-anim.text-gray-700.tdu.popup-with-move-anim(href='#modal-tarif') Посмотреть тарифы на доставку
 				+e.title-table.h5
@@ -17,8 +17,8 @@ mixin right-side()
 											span.d-none.d-xl-inline суток
 											span.d-xl-none сут.
 							+e.price.col-auto 1760 ₽
-					meta(itemprop='price' content='1760')
-					meta(itemprop='priceCurrency' content='RUB')
+					//- meta( content='1760')
+					//- meta( content='RUB')
 					+e.table-item
 						.row.no-gutters
 							.col
@@ -126,7 +126,7 @@ mixin right-side()
 						| Авто находится на стоянке:
 					+e.adress.h6 Россия, Москва, бульвар Дмитрия Донского, 2к1
 					+e.time.text-gray-700 Ежедневно с 10:00 до 22:00
-					+e.tel.text-body.tdn(href='tel:+7 (495) 138-43-88') +7 (495) 138-43-88
+					+e.tel.text-body.tdn(href='tel:+74951384388') +7 (495) 138-43-88
 					+e.btn.btn.btn-primary.btn-block.popup-with-move-anim(href='#modal-zakaz') Арендовать
 					div
 						+e.link.tdu.text-gray-700.popup-with-move-anim(href='#modal-offer') Получить коммерческое предложение
@@ -134,7 +134,7 @@ mixin right-side()
 mixin right-side2()
 	+e.block
 		.row
-			.col-xl-12.col-lg-6(itemprop='offers' itemscope='' itemtype='http://schema.org/Offer')
+			.col-xl-12.col-lg-6
 				+e.link-wrap.text-center
 					a.popup-with-move-anim.text-gray-700.tdu.popup-with-move-anim(href='#modal-tarif') Посмотреть тарифы на доставку
 				+e.content-wrap.text-center
@@ -208,7 +208,7 @@ mixin right-side2()
 						| Авто находится на стоянке:
 					+e.adress.h6 Россия, Москва, бульвар Дмитрия Донского, 2к1
 					+e.time.text-gray-700 Ежедневно с 10:00 до 22:00
-					+e.tel.text-body.tdn(href='tel:+7 (495) 138-43-88') +7 (495) 138-43-88
+					+e.tel.text-body.tdn(href='tel:+74951384388') +7 (495) 138-43-88
 					+e.btn.btn.btn-primary.btn-block.popup-with-move-anim(href='#modal-zakaz') Арендовать
 					div
 						+e.link.tdu.text-gray-700.popup-with-move-anim(href='#modal-offer') Получить коммерческое предложение
@@ -216,7 +216,7 @@ mixin right-side2()
 mixin right-side3()
 	+e.block
 		.row
-			.col-xl-12.col-lg-6(itemprop='offers' itemscope='' itemtype='http://schema.org/Offer')
+			.col-xl-12.col-lg-6
 				+e.link-wrap.text-center
 					a.popup-with-move-anim.text-gray-700.tdu.popup-with-move-anim(href='#modal-tarif') Посмотреть тарифы на доставку
 				.row
@@ -287,7 +287,7 @@ mixin right-side3()
 						| Авто находится на стоянке:
 					+e.adress.h6 Россия, Москва, бульвар Дмитрия Донского, 2к1
 					+e.time.text-gray-700 Ежедневно с 10:00 до 22:00
-					+e.tel.text-body.tdn(href='tel:+7 (495) 138-43-88') +7 (495) 138-43-88
+					+e.tel.text-body.tdn(href='tel:+74951384388') +7 (495) 138-43-88
 					+e.btn.btn.btn-primary.btn-block.popup-with-move-anim(href='#modal-zakaz') Арендовать
 					div
 						+e.link.tdu.text-gray-700.popup-with-move-anim(href='#modal-offer') Получить коммерческое предложение
@@ -295,7 +295,7 @@ mixin right-side3()
 mixin right-side4()
 	+e.block
 		.row
-			.col-xl-12.col-lg-6(itemprop='offers' itemscope='' itemtype='http://schema.org/Offer')
+			.col-xl-12.col-lg-6
 				+e.link-wrap.text-center
 					a.popup-with-move-anim.text-gray-700.tdu.popup-with-move-anim(href='#modal-tarif') Посмотреть тарифы на доставку
 				+e.content-wrap.text-center
@@ -330,7 +330,7 @@ mixin right-side4()
 			.col-xl-12.col-lg-6
 				+e.foot.text-center
 					+e.time.text-gray-700 Ежедневно с 10:00 до 22:00
-					+e.tel.text-body.tdn(href='tel:+7 (495) 138-43-88') +7 (495) 138-43-88
+					+e.tel.text-body.tdn(href='tel:+74951384388') +7 (495) 138-43-88
 					+e.btn.btn.btn-primary.btn-block.popup-with-move-anim(href='#modal-zakaz') Арендовать
 					div
 						+e.link.tdu.text-gray-700.popup-with-move-anim(href='#modal-offer') Получить коммерческое предложение
@@ -345,12 +345,12 @@ mixin card-head(data)
 						+e.head.text-lg-left.text-center
 							.row
 								.col-lg
-									h1.mb-0.page-title.ttu(itemprop='name')
+									h1.mb-0.page-title.ttu
 										| KIA RIO  
 										span.text-gray-700 AT
 									+e.subtitle.text-gray-700.d-none.d-md-block Реальные фотографии автомобиля
 								.col-lg-auto
-									+e.num.text-body.tdn(href='tel:+7 (495) 138-43-88') +7 (495) 138-43-88
+									+e.num.text-body.tdn(href='tel:+7(495)1384388') +7 (495) 138-43-88
 						.d-block.d-xl-none
 							+e.btn.btn.btn-primary.btn-block.popup-with-move-anim(href='#') Арендовать
 						//- +e.slider--main.gallery-top.gal
@@ -374,7 +374,7 @@ mixin card-head(data)
 									-for(i=1; i<=4; i++)
 										+e.slide.swiper-slide
 											+e.img-wrap--lg.img-bg.d-block(  style=`background-image: url("img/card-slide-${i}.png");`)
-												img.res-i.lazy-bg(itemprop='image' src=`img/card-slide-${i}.png` data-src=`img/card-slide-${i}.png` alt='Аренда Kia Rio AT недорого' title='Kia Rio AT от 1450 на прокат') 
+												img.res-i.lazy-bg(src=`img/card-slide-${i}.png` data-src=`img/card-slide-${i}.png` alt='Аренда Kia Rio AT недорого' title='Kia Rio AT от 1450 на прокат') 
 							+arrow
 							//- +arrow
 						+e.newSlider--thumbs.swiper-container
@@ -395,7 +395,7 @@ mixin card-head(data)
 								span.text-gray-700 Кузов: 
 								| Седан
 							+e.char-col.col-md-4.col-6
-								span.text-gray-700 Салон: кожа
+								span.text-gray-700 Салон: 
 								| кожа
 							+e.char-col.col-md-4.col-6
 								span.text-gray-700 КОНДИЦИОНЕР

@@ -57,6 +57,9 @@
 		&--js {
 			margin-bottom: rem(5);
 			// border-radius: 8px;
+			.card-head__img-wrap {
+				cursor: default;
+			}
 		}
 		&--thumbs {
 			margin-bottom: rem(19);
@@ -79,6 +82,9 @@
 	&__img-wrap {
 		cursor: pointer;
 		border-radius: 8px;
+		@include media-breakpoint-down(lg) {
+			margin-bottom: 0;
+		}
 		&:before, &:after {
 			content: unset;
 		}
@@ -159,6 +165,15 @@
 		.card-head__title {
 			margin-bottom: rem(0);
 			line-height: 1.40em;
+		}
+	}
+	.card-head__newSlider--thumbs {
+		.card-head__slide {
+			border: 2px solid transparent;
+			border-radius: 8px;
+			&.swiper-slide-thumb-active {
+				border-color: #1D1D1B;
+			}
 		}
 	}
 	@include media-breakpoint-up(xl) {}

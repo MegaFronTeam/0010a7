@@ -1,33 +1,32 @@
 mixin markItem()
 	label.mark-block__col.col-xl-2.col-lg-3.col-md-3.col-sm-4.col-6
 		input.mark-block__input(type='checkbox')
-		span.mark-block__item
+		a.mark-block__item(href="#")
 			span.row
 				span.mark-block__img-wrap.col-xl-auto
-					a(href='#')
-						img(src='img/mark-2.png', data-src='img/mark-2.png', alt='', title='')
+					img(src='img/mark-2.png', data-src='img/mark-2.png', alt='', title='')
 				span.col
 					span.mark-block__title
-						a.tdu.myb(href='#') Mercedes Benz
+						span.tdu.myb Mercedes Benz
 					span.small
 						strong.mcnt 25 авто
 						|  
 						span.text-gray-400 авто
 mixin s-content(data)
 	// start s-content
-	+b.SECTION.s-content.section#s-content&attributes(attributes)
+	+b.s-content.section#s-content&attributes(attributes)
 		.container
 			+e.title Наш парк по коробке передач
 			+b.form-wrap
 				+e.inc-wrap
 					+in-c('radio', '', 'transmission')
-						+e.wrap
+						+e.wrap(href="#").active
 							+e.SPAN.text.form-check-label Механика
-							+e.num 215
+							+e.SPAN.num 215
 					+in-c('radio', '', 'transmission')
 						+e.wrap
 							+e.SPAN.text.form-check-label Автомат
-							+e.num 254
+							+e.SPAN.num 254
 			+e.title Наш парк по типу кузова
 			+b.form-wrap
 				+e.inc-wrap--2

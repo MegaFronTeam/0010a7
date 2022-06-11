@@ -144,7 +144,30 @@
 			font-size: 18px;
 		}
 	}
-	
+	.modal-filter {
+		@include media-breakpoint-up(md) {
+			max-width: none;
+		}
+	}
+	.showhide-all__inner {
+		.custom-input__input {
+			opacity: 0	;
+		}
+		.custom-input__lab {
+			top: 7px;
+		}
+	}
+	.s-catalog-filter__line {
+		.custom-input__input {
+			opacity: 0	;
+		}
+		.custom-input__lab {
+			top: 7px !important;
+			@include media-breakpoint-up(md) {
+				left: -33px;
+			}
+		}
+	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

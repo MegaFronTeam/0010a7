@@ -423,14 +423,15 @@ function eventHandler() {
 
 	$('.catalog-item-slider .swiper-pagination-bullet').hover(function() {
 		$( this ).trigger( "click" );
- });
-
-  $('#datepicker').datepicker({
-    uiLibrary: 'bootstrap4'
-  });
-  $('#datepicker2').datepicker({
-    uiLibrary: 'bootstrap4'
 	});
+
+	var datepicker, datepicker2, config;
+	config = {
+		locale: 'ru-ru',
+		uiLibrary: 'bootstrap4'
+	};
+	datepicker = $('#datepicker').datepicker(config);
+	datepicker2 = $('#datepicker2').datepicker(config);
 	
 
 
@@ -469,6 +470,12 @@ function eventHandler() {
 		loop: true,
 		spaceBetween: 15,
 		slidesPerView: 4,
+		breakpoints: {
+			// when window width is >= 320px
+			992: {
+				spaceBetween: 5
+			},
+		}
 		// freeMode: true,
 		// watchSlidesProgress: true,
 	});
@@ -484,6 +491,24 @@ function eventHandler() {
 		},
 	});
 
+	$('.filter-result__all').on('click', function() {
+		// $('.tab-block--js').toggleClass('active');
+	})
+	// $('.btn-tab-js').click(function (e) {
+	// 	if($('.tab-block--js').hasClass('active')) {
+	// 		$('.tab-block--js').slideToggle();
+	// 	}
+
+	// })
+	$('.btn-tab-js2').click(function (e) {
+		$('.tab-block--js').removeClass('active').slideUp();
+
+	})
+
+	$('.dop-block__btn-p').popover({
+		placement: 'auto',
+		trigger: 'hover',
+	})
 	// cardHeadSwiper.controller.control = cardHeadSwiper2;
 	// 		cardHeadSwiper2.controller.control = cardHeadSwiper;
 };

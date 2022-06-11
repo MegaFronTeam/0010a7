@@ -73,7 +73,6 @@ mixin sCatalog(tile,table,string)
 						+e.left
 							+e.all(href="#") 
 								+e.all-text.btn-tab-js(data-tab-block="all-filters") Все фильтры
-								+filter()
 								+e.all-number 9
 							+e.reset(href="#") Сбросить
 							+e.founded 
@@ -94,6 +93,7 @@ mixin sCatalog(tile,table,string)
 									+icon('stroke')
 								button
 									+icon('lines')
+			+filter()
 
 			+e.catalog-row.row
 				+e.left.col-12.col-lg-9
@@ -855,3 +855,20 @@ mixin filter()
 										input.custom-input__input(type='radio' name='filter-1-4')
 										span.custom-input__lab
 										span &Ncy;&iecy;&tcy;
+		.s-catalog-filter__line
+			.container
+				.row.align-items-center
+					.col-md.order-md-first.order-last.row.align-items-center.justify-content-md-start.justify-content-between
+						.col-auto
+							.s-catalog-filter__reset(role='link')
+								| &Scy;&bcy;&rcy;&ocy;&scy;&icy;&tcy;&softcy; &fcy;&icy;&lcy;&softcy;&tcy;&rcy;&ycy;
+						.col-auto
+							a.s-catalog-filter__link.text-white.btn-tab-js.btn-tab-js2.mr-0(data-tab-block='basic-filters' href='#') &Vcy;&iecy;&rcy;&ncy;&ucy;&tcy;&softcy;&scy;&yacy; &vcy; &pcy;&rcy;&ocy;&scy;&tcy;&ocy;&jcy; &pcy;&ocy;&icy;&scy;&kcy;
+					.col-md-auto.col-6
+						label.custom-input
+							input.custom-input__input(type='checkbox')
+							span.custom-input__lab
+							span &Vcy; &ncy;&acy;&lcy;&icy;&chcy;&icy;&icy;  &scy;&iecy;&jcy;&chcy;&acy;&scy;
+					.col-md-auto.col-6
+						button.s-catalog-filter__btn(type='button')
+							| &Pcy;&ocy;&kcy;&acy;&zcy;&acy;&tcy;&softcy; 26 &acy;&vcy;&tcy;&ocy;

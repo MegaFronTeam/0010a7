@@ -4,20 +4,21 @@ include ../blocks/modal/_modal.pug
 doctype html
 html(lang="ru")
 	head
-	meta(charset='utf-8')
-	block title
-		title title
-	meta(name='description' content='о чем страница')
-	meta(http-equiv='X-UA-Compatible' content='IE=edge')
-	meta(name='viewport' meta='meta' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
-	link(href='img/favicon/favicon.ico' rel='shortcut icon')
-	// Custom Browsers Color
-	meta(name='theme-color' content='#f6ee25')
-	link(type='font/woff2' href='fonts/fontawesome-pro-5.0.8/webfonts/fa-regular-400.woff2' rel='preload' as='font' crossorigin='anonymous')
-	style.
-		.loaded_hiding {  opacity: 0; pointer-events: none;  } .loaded_hiding::before { display: none; }
+		meta(charset='utf-8')
+		block title
+			title title
+		meta(name="description", content="о чем страница")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport", content="width=device-width,initial-scale=1.0,  shrink-to-fit=no")
+		link(href='img/favicon/favicon.ico' rel='shortcut icon')
+		// Custom Browsers Color
+		<meta name="format-detection" content="telephone=no">
+		meta(name='theme-color' content='#f6ee25')
+		link(type='font/woff2' href='fonts/fontawesome-pro-5.0.8/webfonts/fa-regular-400.woff2' rel='preload' as='font' crossorigin='anonymous')
+		style.
+			.loaded_hiding {  opacity: 0; pointer-events: none;  } .loaded_hiding::before { display: none; }
 
-	+allcss()
+		+allcss()
 	block variables
 	//- style.
 	//- 	.loaded_hiding {  opacity: 0; pointer-events: none;  } .loaded_hiding::before { display: none; }
