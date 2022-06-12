@@ -249,22 +249,22 @@
 								<div class="h1 text-center">Аренда автомобилей без залога</div>
 								<div class="form-wrap">
 									<div class="form-wrap__inc-wrap">
-										<label class="custom-input form-check border-bottom"><input class="custom-input__input form-check-input" name="rent" type="radio"/><span class="custom-input__text form-check-label">Посуточная</span>
+										<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="rent" type="radio"/><span class="custom-input__text form-check-label">Посуточная</span>
 										</label>
-										<label class="custom-input form-check border-bottom"><input class="custom-input__input form-check-input" name="rent" type="radio"/><span class="custom-input__text form-check-label">Долгосрочная</span>
+										<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="rent" type="radio"/><span class="custom-input__text form-check-label">Долгосрочная</span>
 										</label>
 										<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="rent" type="radio"/><span class="custom-input__text form-check-label">С выкупом</span>
 										</label>
 										<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="rent" type="radio"/><span class="custom-input__text form-check-label">С водителем</span>
 										</label>
 									</div>
-									<div class="form-wrap__date-picker">
-										<div class="form-wrap__date-item">
-											<p>Дата начала</p><input id="datepicker" width="215" alt='1' />
+									<div class="form-wrap__date-picker date-picker-block-js">
+										<div class="form-wrap__date-item label-date-picker-js">
+											<p>Дата начала</p><input class="startDate" alt='1' />
 										</div>
 										<div class="dash"></div>
-										<div class="form-wrap__date-item form-wrap__date-item--2">
-											<p>Дата окончания</p><input id="datepicker2" width="215" alt='2' />
+										<div class="form-wrap__date-item form-wrap__date-item--2 label-date-picker-js">
+											<p>Дата окончания</p><input class="endDate" alt='2' />
 										</div>
 									</div>
 									<button class="form-wrap__submit btn btn-primary" type="submit">подобрать
@@ -355,7 +355,7 @@
 									</label>
 									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">Toyota</span>
 									</label>
-									<label class="custom-input form-check form-check--chosen"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">Volkswagen</span>
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checked" type="checkbox"/><span class="custom-input__text form-check-label">Volkswagen</span>
 									</label>
 									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">Audi</span>
 									</label>
@@ -2085,7 +2085,6 @@
 <script src="libs/bootstrap/popover.js"></script>
 <script src="libs/swiper-4.2.0/js/swiper.min.js"></script>
 <script src="libs/@fancyapps/fancybox/jquery.fancybox.min.js"></script>
-<script src="js/common.js"></script> 
 <script src="js/common-start.js"></script>
 		<script src="js/common.js"></script>
 		<script src="js/common2.js"></script>

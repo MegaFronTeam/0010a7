@@ -127,7 +127,7 @@ jQuery(document).ready(function ($) {
 		placement: 'auto',
 		trigger: 'hover',
 	})
-
+// console.log(11);
 
 
 	var today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
