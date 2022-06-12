@@ -87,12 +87,24 @@ mixin sCatalog(tile,table,string)
 								button.active По убыванию цены
 								button По возрастанию цены
 							+e.display.d-none.d-lg-block
-								button.active
-									+icon('square')
-								button
-									+icon('stroke')
-								button
-									+icon('lines')
+								if tile
+									button.active
+										+icon('square')
+								else
+									button
+										+icon('square')
+								if string
+									button.active
+										+icon('stroke')
+								else
+									button
+										+icon('stroke')
+								if table
+									button.active
+										+icon('lines')
+								else
+									button
+										+icon('lines')
 			+filter()
 
 			+e.catalog-row.row
