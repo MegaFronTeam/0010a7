@@ -6,11 +6,14 @@
 
 	&__tile.row {
 		// --bs-gutter-x: #{rem()};
-		// --bs-gutter-y: #{rem(30)};
+		--bs-gutter-y: #{rem(30)};
 		// --bs-gutter-y: 30px;
 		// .col-auto, .col {
 		// 	margin-bottom: rem(30);
 		// }
+	}
+	&__catalog-item-col {
+		margin-bottom: rem(30);
 	}
 
 	.section-title {
@@ -424,6 +427,7 @@
 	.catalog-tile-item {
 		max-width: 330px;
 		height: 100%;
+		max-height: 375px;
 		border: 1px solid #E8E8E8;
 		border-radius: 8px;
 		@include mt;
@@ -456,11 +460,11 @@
 			padding: 15px;
 			display: flex;
 			flex-direction: column;
-			// flex-grow: 1;
+			flex-grow: 1;
 		}
 
 		&__head {
-			// flex-grow: 1;
+			flex-grow: 1;
 		}
 
 		&__about {
@@ -487,14 +491,14 @@
 		}
 
 		&__price {
-			// margin-bottom: 10px;	
+			margin-bottom: 10px;	
 			font-weight: 600;
 			font-size: rem(20);
 		}
 
 		&__more {
 			margin-right: auto;
-			// margin-bottom: auto;
+			margin-bottom: auto;
 		}
 
 		&__cost {
