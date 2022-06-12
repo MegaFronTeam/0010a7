@@ -522,7 +522,33 @@
 			font-weight: 400;
 			font-size: 14px;
 		}
-
+		.swiper-pagination {
+			bottom: 4px !important;
+			height: 100%;
+		}
+		
+		.swiper-pagination-bullet {
+			border-radius: 0 !important;
+			height: 100%;
+			width: 18%;
+			background-color: transparent;
+			border-bottom: 2px solid $white;
+			opacity: .7;
+		}
+		
+		.swiper-pagination-bullet-active {
+			border-radius: 0 !important;
+			height:100%;
+			width: 18%;
+			background-color: transparent;
+			border-bottom: 2px solid $white;
+			opacity: 1;
+			transform: none;
+		}
+		
+		.swiper-pagination-bullet:before {
+			content: none !important;
+		}
 
 	}
 
