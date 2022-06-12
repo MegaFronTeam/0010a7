@@ -494,21 +494,22 @@ function eventHandler() {
 	$('.filter-result__all').on('click', function() {
 		// $('.tab-block--js').toggleClass('active');
 	})
-	// $('.btn-tab-js').click(function (e) {
-	// 	if($('.tab-block--js').hasClass('active')) {
-	// 		$('.tab-block--js').slideToggle();
-	// 	}
-
-	// })
+	$('.btn-tab-js').click(function (e) {
+		if($('.tab-block--js').hasClass('on')) {
+			$('.tab-block--js').removeClass('on').slideUp();
+		} else {
+			$('.tab-block--js').addClass('on');
+		}
+	})
 	$('.btn-tab-js2').click(function (e) {
-		$('.tab-block--js').removeClass('active').slideUp();
+		$('.tab-block--js').removeClass('on').slideUp();
 
 	})
 
-	$('.dop-block__btn-p').popover({
-		placement: 'auto',
-		trigger: 'hover',
-	})
+	// $('.dop-block__btn-p').popover({
+	// 	placement: 'auto',
+	// 	trigger: 'hover',
+	// })
 	// cardHeadSwiper.controller.control = cardHeadSwiper2;
 	// 		cardHeadSwiper2.controller.control = cardHeadSwiper;
 };

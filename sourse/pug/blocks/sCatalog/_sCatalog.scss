@@ -6,9 +6,13 @@
 	&__tile{
 		// --bs-gutter-x: #{rem()};
 		--bs-gutter-y: #{rem(30)};
-		.col-auto, .col {
-			margin-bottom: rem(30);
-		}
+		// .col-auto, .col {
+		// 	margin-bottom: rem(30);
+		// }
+	}
+	&__catalog-item-col {
+		margin-bottom: rem(30);
+
 	}
 	.section-title{
 		padding-bottom: 0;
@@ -320,6 +324,7 @@
 .catalog-tile-item {
 	max-width: 330px;
 	height: 100%;
+	max-height: 375px;
 	border: 1px solid #E8E8E8;
 	border-radius: 8px;
 	display: flex;
