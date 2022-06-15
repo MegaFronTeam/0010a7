@@ -20,6 +20,10 @@ block pagecontent
 		.row
 			mixin btn(id, name)
 				.col-auto.mb-2
-					a.btn.btn-primary(href=`#` data-src=id data-fancybox="modal")= name
-			+btn("modal-call", "modal-call")
+					a.btn.btn-primary.popup-with-move-anim(href=`${id}`)= name
+			+btn("#modal-call", "modal-call")
 
+		a.btn.btn-primary.btn-primary-new.mb-2.popup-with-move-anim.data-modal(href='#modal-with-input-tel' data-title='Введите телефон' data-text='Телефон будет логином, а пароль придет по SMS') Личный кабинет создан
+		a.btn.btn-primary.btn-primary-new.mb-2.popup-with-move-anim.data-modal(href='#modal-login' data-title='Личный кабинет создан' data-text='Введите пароль из SMS') Личный кабинет создан SMS
+		a.btn.btn-primary.btn-primary-new.mb-2.popup-with-move-anim.data-modal(href='#modal-with-input-tel' data-title='Заказать звонок' data-text='Укажите Ваш телефон и наш менеджер свяжется с Вами в ближайшее время') Заказать звонок
+		a.btn.btn-primary.btn-primary-new.mb-2.popup-with-move-anim.data-modal(href='#modal-with-input-tel' data-title='Заказать подбор авто' data-text='Введите номер и ждите звонка менеджера по подбору авто') Заказать подбор авто
