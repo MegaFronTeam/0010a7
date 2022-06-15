@@ -400,13 +400,42 @@ function eventHandler() {
 		$( this ).trigger( "click" );
 	});
 
-	var datepicker, datepicker2, config;
-	config = {
-		locale: 'ru-ru',
-		uiLibrary: 'bootstrap4'
-	};
-	datepicker = $('#datepicker').datepicker(config);
-	datepicker2 = $('#datepicker2').datepicker(config);
+	// var datepicker, datepicker2, config;
+	// config = {
+	// 	locale: 'ru-ru',
+	// 	uiLibrary: 'bootstrap4'
+	// };
+	// datepicker = $('#datepicker').datepicker(config);
+	// datepicker2 = $('#datepicker2').datepicker(config);
+
+
+
+	// var today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
+
+	// $(".date-picker-block-js").each(function () {
+
+	// 	var th = $(this);
+
+	// 	th.find('.startDate').datepicker({
+	// 		locale: 'ru-ru',
+	// 		uiLibrary: 'bootstrap4',
+	// 		// iconsLibrary: 'fontawesome',
+	// 		format: 'dd.mm.yyyy',
+	// 		minDate: today,
+	// 		maxDate: function () {
+	// 			return th.find('.endDate').val();
+	// 		}
+	// 	});
+	// 	th.find('.endDate').datepicker({
+	// 		locale: 'ru-ru',
+	// 		uiLibrary: 'bootstrap4',
+	// 		// iconsLibrary: 'fontawesome',
+	// 		format: 'dd.mm.yyyy',
+	// 		minDate: function () {
+	// 			return th.find('.startDate').val();
+	// 		}
+	// 	});
+	// });
 	
 
 

@@ -8,18 +8,18 @@ mixin header()
 						.h1.text-center Аренда автомобилей без залога
 						+b.form-wrap
 							+e.inc-wrap
-								+in-c('radio', 'Посуточная', 'rent').border-bottom
-								+in-c('radio', 'Долгосрочная', 'rent').border-bottom
+								+in-c('radio', 'Посуточная', 'rent')
+								+in-c('radio', 'Долгосрочная', 'rent')
 								+in-c('radio', 'С выкупом', 'rent')
 								+in-c('radio', 'С водителем', 'rent')
-							+e.date-picker
-								+e.date-item
+							+e.date-picker.date-picker-block-js
+								+e.date-item.label-date-picker-js
 									p Дата начала
-									<input id="datepicker" width="215" alt='1' />
+									<input class="startDate" alt='1' />
 								.dash
-								+e.date-item--2
+								+e.date-item--2.label-date-picker-js
 									p Дата окончания
-									<input id="datepicker2" width="215" alt='2' />
+									<input class="endDate" alt='2' />
 							+e.BUTTON.submit(type="submit").btn.btn-primary подобрать
 				.col-lg-6.order-1.order-lg-1
 					+e.button-wrap
