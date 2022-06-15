@@ -169,9 +169,9 @@ jQuery(document).ready(function ($) {
 
 	// правил
 	// accordion
-	$(".showhide").click(function () {
-		$(this).toggleClass("active").next("div").slideToggle().parent().toggleClass("active");
-	})
+	// $(".showhide").click(function () {
+	// 	$(this).toggleClass("active").next("div").slideToggle().parent().toggleClass("active");
+	// })
 
 	// галерея
 	$(".gal").each(function () {
