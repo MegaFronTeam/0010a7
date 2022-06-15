@@ -427,7 +427,7 @@
 	}
 
 	.catalog-tile-item {
-		max-width: 330px;
+		// max-width: 330px;
 		height: 100%;
 		// max-height: 375px;
 		border: 1px solid #E8E8E8;
@@ -438,28 +438,19 @@
 		
 
 		@media (min-width: 1200px) and (max-width: 1469px) {
-			max-width: 100%;
+			// max-width: 100%;
 			font-size: 14px;
 		}
 
-		@include media-breakpoint-down(md) {
-			max-width: 100%;
-		}
+		// @include media-breakpoint-down(md) {
+		// 	max-width: 100%;
+		// }
 
 		&:hover {
 			box-shadow: 0px 5px 25px rgba(29, 29, 27, 0.25);
 		}
 
-		&__img-wrap {
-			border-top-left-radius: 8px;
-			border-top-right-radius: 8px;
-			overflow: hidden;
-
-			img {
-				width: 100%;
-			}
-		}
-
+		
 		&__text-wrap {
 			padding: em(15px);
 			display: flex;
@@ -471,6 +462,7 @@
 		}
 
 		&__head {
+			padding-bottom: 10px;
 			flex-grow: 1;
 		}
 
@@ -509,6 +501,7 @@
 		}
 
 		&__cost {
+			margin-bottom: 3px;
 			font-size: em(14px);
 		}
 
@@ -537,11 +530,15 @@
 			// font-size: 14px;
 		}
 		.swiper-pagination {
+			display: flex;
+			flex-wrap: nowrap;
+			padding: 0 5px;
 			bottom: 4px !important;
 			height: 100%;
 		}
 		
 		.swiper-pagination-bullet {
+			flex-grow: 1;
 			border-radius: 0 !important;
 			height: 100%;
 			width: 18%;
@@ -679,24 +676,22 @@
 			box-shadow: 0px 5px 25px rgba(29, 29, 27, 0.25);
 		}
 
-		&__slider {
-			margin-right: 20px;
-
+		
+		.card-img-wrap {
+			flex: 0 0 auto;
+			width: 310px;
+			margin-right: 20px;	
 			@media (max-width: 1470px) and (min-width: 992px) {
 				margin-right: auto;
 				margin-bottom: 20px;
 				order: -2;
 			}
-		}
-
-		.catalog-item-slider {
-			max-width: 310px;
-			height: 174px;
-
+			// height: 174px;
+			
 			img {
-				height: 174px;
-				width: 310px;
 				border-radius: 8px;
+				// height: 174px;
+				// width: 310px;
 			}
 		}
 
@@ -873,4 +868,21 @@
 	.sCatalog .custom-input__input,
 	.custom-input{
 		cursor: pointer;
+	}
+
+	.card-img-wrap {
+		border-top-left-radius: 8px;
+		border-top-right-radius: 8px;
+		overflow: hidden;
+		.swiper-slide {
+			@include block(330,186);
+		}
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+		}
+	
 	}
