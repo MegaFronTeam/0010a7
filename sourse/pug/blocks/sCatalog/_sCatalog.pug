@@ -28,7 +28,8 @@ mixin catalogTileItem(img,name,transmission,period,price,cost)
 					+e.cost!= cost
 					+e.details(href="#") Подробнее
 				.col-auto
-					+btn('Заказать в 1 клик').btn.btn-primary
+					//- +btn('Заказать в 1 клик').btn.btn-primary
+					+e.btn.popup-with-move-anim.data-modal(href="#modal-with-input-tel").btn.btn-primary Заказать в 1 клик
 
 
 mixin sCatalog(tile,table,string)
@@ -36,7 +37,7 @@ mixin sCatalog(tile,table,string)
 	+b.SECTION.sCatalog.section#sCatalog&attributes(attributes)
 		.container
 			+b.section-title.text-center
-				h2 Посуточная аренда авто без водителя в&nbsp;Москве				
+				h1 Посуточная аренда авто без водителя в&nbsp;Москве				
 			+e.filter-row
 				+form-wrap.--row
 					.properties-row

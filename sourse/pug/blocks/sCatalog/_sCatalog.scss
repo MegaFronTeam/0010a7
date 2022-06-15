@@ -18,6 +18,12 @@
 
 	.section-title {
 		padding-bottom: 0;
+		h1 {
+			font-size: rem(18);
+			@include media-breakpoint-up(lg) {
+				font-size: rem(24);
+			}
+		}
 	}
 
 	&__table-wrap {
