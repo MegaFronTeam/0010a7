@@ -1,25 +1,21 @@
-mixin catalogTileItem(img,name,transmission,period,price,cost)
+mixin cardSlider(img,slides)
+	+b.card-img-wrap(href="#")
+		.swiper-container.catalog-item-slider.catalog-item-slider--js
+			.swiper-wrapper
+				- for (var x = 0; x < slides; x++)
+					.swiper-slide
+						+img(`img/catalog-${img}.jpg`)
+			.swiper-pagination
+
+
+mixin catalogTileItem(img,name,transmission,period,price,cost,slides=5)
 	+b.catalog-tile-item
-		+e.img-wrap
-			.swiper-container.catalog-item-slider.catalog-item-slider--js
-				.swiper-wrapper
-					.swiper-slide
-						+img(`img/catalog-${img}.jpg`)
-					.swiper-slide
-						+img(`img/catalog-${img}.jpg`)
-					.swiper-slide
-						+img(`img/catalog-${img}.jpg`)
-					.swiper-slide
-						+img(`img/catalog-${img}.jpg`)
-					.swiper-slide
-						+img(`img/catalog-${img}.jpg`)
-				.swiper-pagination
+		+cardSlider(img,slides)
 		+e.text-wrap
 			+e.head.row 
 				+e.about.col
 					+e.name!= name
 					+e.transmission!= transmission
-			
 				+e.total.col-auto
 					+e.period!= period
 					+e.price!= price
@@ -112,41 +108,41 @@ mixin sCatalog(tile,table,string)
 				+e.left.col-12.col-lg-9
 					if tile 
 						+e.tile.row
-							+e.catalog-item-col.col.col-md-auto
-								+catalogTileItem('1','Ravon NEXIA&nbsp;R3','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;6&nbsp;суток','16&nbsp;530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽')
-							+e.catalog-item-col.col.col-md-auto
-								+catalogTileItem('2','Renault SYMBOL','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;30&nbsp;суток','99 530&nbsp;₽','1540&nbsp;₽ от&nbsp;30&nbsp;сут.')
-							+e.catalog-item-col.col.col-md-auto
-								+catalogTileItem('3','Lada VESTA','2013, МТ, 1.6&nbsp;л.','Выкуп за&nbsp;36&nbsp;мес','900&nbsp;₽','900&nbsp;&mdash; 2560&nbsp;₽')
-							+e.catalog-item-col.col.col-md-auto
+							+e.catalog-item-col.col-md-6.col-xl-4
+								+catalogTileItem('1','Ravon NEXIA&nbsp;R3','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;6&nbsp;суток','16&nbsp;530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽','2')
+							+e.catalog-item-col.col-md-6.col-xl-4
+								+catalogTileItem('2','Renault SYMBOL','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;30&nbsp;суток','99 530&nbsp;₽','1540&nbsp;₽ от&nbsp;30&nbsp;сут.','5')
+							+e.catalog-item-col.col-md-6.col-xl-4
+								+catalogTileItem('3','Lada VESTA','2013, МТ, 1.6&nbsp;л.','Выкуп за&nbsp;36&nbsp;мес','900&nbsp;₽','900&nbsp;&mdash; 2560&nbsp;₽','3')
+							+e.catalog-item-col.col-md-6.col-xl-4
 								+catalogTileItem('4','Chevrolet CRUZE','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;3+1 часа (включено 100&nbsp;км)','99 530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽')
-							+e.catalog-item-col.col.col-md-auto
+							+e.catalog-item-col.col-md-6.col-xl-4
 								+catalogTileItem('5','Kia RIO','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;6&nbsp;суток','16&nbsp;530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽')
-							+e.catalog-item-col.col.col-md-auto
+							+e.catalog-item-col.col-md-6.col-xl-4
 								+catalogTileItem('6','Volkswagen POLO','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;6&nbsp;суток','16&nbsp;530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽')
-							+e.catalog-item-col.col.col-md-auto
+							+e.catalog-item-col.col-md-6.col-xl-4
 								+catalogTileItem('1','Ravon NEXIA&nbsp;R3','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;6&nbsp;суток','16&nbsp;530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽')
-							+e.catalog-item-col.col.col-md-auto
+							+e.catalog-item-col.col-md-6.col-xl-4
 								+catalogTileItem('2','Renault SYMBOL','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;30&nbsp;суток','99 530&nbsp;₽','1540&nbsp;₽ от&nbsp;30&nbsp;сут.')
-							+e.catalog-item-col.col.col-md-auto
+							+e.catalog-item-col.col-md-6.col-xl-4
 								+catalogTileItem('3','Lada VESTA','2013, МТ, 1.6&nbsp;л.','Выкуп за&nbsp;36&nbsp;мес','900&nbsp;₽','900&nbsp;&mdash; 2560&nbsp;₽')
-							+e.catalog-item-col.col.col-md-auto
+							+e.catalog-item-col.col-md-6.col-xl-4
 								+catalogTileItem('4','Chevrolet CRUZE','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;3+1 часа (включено 100&nbsp;км)','99 530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽')
-							+e.catalog-item-col.col.col-md-auto
+							+e.catalog-item-col.col-md-6.col-xl-4
 								+catalogTileItem('5','Kia RIO','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;6&nbsp;суток','16&nbsp;530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽')
-							+e.catalog-item-col.col.col-md-auto
+							+e.catalog-item-col.col-md-6.col-xl-4
 								+catalogTileItem('6','Volkswagen POLO','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;6&nbsp;суток','16&nbsp;530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽')
-							+e.catalog-item-col.col.col-md-auto
+							+e.catalog-item-col.col-md-6.col-xl-4
 								+catalogTileItem('1','Ravon NEXIA&nbsp;R3','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;6&nbsp;суток','16&nbsp;530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽')
-							+e.catalog-item-col.col.col-md-auto
+							+e.catalog-item-col.col-md-6.col-xl-4
 								+catalogTileItem('2','Renault SYMBOL','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;30&nbsp;суток','99 530&nbsp;₽','1540&nbsp;₽ от&nbsp;30&nbsp;сут.')
-							+e.catalog-item-col.col.col-md-auto
+							+e.catalog-item-col.col-md-6.col-xl-4
 								+catalogTileItem('3','Lada VESTA','2013, МТ, 1.6&nbsp;л.','Выкуп за&nbsp;36&nbsp;мес','900&nbsp;₽','900&nbsp;&mdash; 2560&nbsp;₽')
-							+e.catalog-item-col.col.col-md-auto
+							+e.catalog-item-col.col-md-6.col-xl-4
 								+catalogTileItem('4','Chevrolet CRUZE','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;3+1 часа (включено 100&nbsp;км)','99 530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽')
-							+e.catalog-item-col.col.col-md-auto
+							+e.catalog-item-col.col-md-6.col-xl-4
 								+catalogTileItem('5','Kia RIO','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;6&nbsp;суток','16&nbsp;530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽')
-							+e.catalog-item-col.col.col-md-auto
+							+e.catalog-item-col.col-md-6.col-xl-4
 								+catalogTileItem('6','Volkswagen POLO','2013, МТ, 1.6&nbsp;л.','Итого за&nbsp;6&nbsp;суток','16&nbsp;530&nbsp;₽','1540&nbsp;&mdash; 1880&nbsp;₽')
 					if table
 						+e.tabular
@@ -270,20 +266,7 @@ mixin sCatalog(tile,table,string)
 						+e.string
 							mixin catalogStringItem(img,name,caption,descr,tariff,note,price,period,totalPrice,...priceItems)
 								+b.string-item
-									+e.slider
-										.swiper-container.catalog-item-slider.catalog-item-slider--js
-											.swiper-wrapper
-												.swiper-slide
-													+img(`img/catalog-${img}.jpg`)
-												.swiper-slide
-													+img(`img/catalog-${img}.jpg`)
-												.swiper-slide
-													+img(`img/catalog-${img}.jpg`)
-												.swiper-slide
-													+img(`img/catalog-${img}.jpg`)
-												.swiper-slide
-													+img(`img/catalog-${img}.jpg`)
-											.swiper-pagination
+									+cardSlider(img,5)
 									+e.features
 										+e.name!= name
 										+e.caption!= caption
@@ -312,6 +295,7 @@ mixin sCatalog(tile,table,string)
 									+e.price-block
 										+e.price
 											+e.price-title!= price
+											block
 											each item in priceItems
 												+e.price-items= item
 										+e.total
@@ -320,6 +304,7 @@ mixin sCatalog(tile,table,string)
 											+btn('Заказать в 1 клик').btn.btn-primary
 											+e.details(href="#") Подробнее
 							+catalogStringItem('1','Ravon NEXIA R3','2013, внедорожник, цвет белый','Автомат, бензин (3.0/250), задний, дверей 5, мест 5, люк, фаркоп, рейлинги, тонировка','tariff','Аренда от 3 до 5 суток','22755 ₽ в&nbsp;сутки','Итого за 6 суток','16 530 ₽','Без залога','Только паспорт и права','Проверка 20 минут')
+								+e.price-items.text-success Первый взнос 0 ₽
 							+catalogStringItem('1','Ravon NEXIA R3','2013, внедорожник, цвет белый','Автомат, бензин (3.0/250), задний, дверей 5, мест 5, люк, фаркоп, рейлинги, тонировка','','','22755 ₽ в&nbsp;сутки','Итого за 30 суток','16 530 ₽','Без залога','Только паспорт и права','Проверка 20 минут')
 							+catalogStringItem('1','Ravon NEXIA R3','2013, внедорожник, цвет белый','Автомат, бензин (3.0/250), задний, дверей 5, мест 5, люк, фаркоп, рейлинги, тонировка','tariff','Выкуп за 24 месяца','от 900 ₽ в&nbsp;сутки','Итого в&nbsp;сутки при выкупе на 24 мес.','900 ₽','Первый взнос 0 ₽ ','Без залога','Только паспорт и права','Проверка 20 минут')
 							+catalogStringItem('1','Ravon NEXIA R3','2013, внедорожник, цвет белый','Автомат, бензин (3.0/250), задний, дверей 5, мест 5, люк, фаркоп, рейлинги, тонировка','tariff','Аренда от 3 до 5 суток','22755 ₽ в&nbsp;сутки','Итого за 3+1 часа (включено 100 км)','16 530 ₽','Минимальная аренда 3 часа','Т+1 час на подачу','На 1 час включено 25 км пробега','Перепробег: 6 ₽/км')
