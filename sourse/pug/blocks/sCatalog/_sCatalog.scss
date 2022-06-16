@@ -218,20 +218,26 @@
 			.custom-input__input {
 				opacity: 0;
 			}
-
+			.custom-input {
+				justify-content: flex-start;
+				margin-bottom: 0;
+			}
+			
 			.custom-input__lab {
-				top: 7px;
+				// top: 7px;
+				top: 0;
+				position: relative;
+				margin-top: 0;
 			}
 		}
 
 		.s-catalog-filter__line {
+			margin-bottom: rem(15);
 			.custom-input__input {
 				opacity: 0;
 			}
 
 			.custom-input__lab {
-				top: 7px !important;
-
 				@include media-breakpoint-up(md) {
 					left: -33px;
 				}
