@@ -110,6 +110,14 @@
 	}
 	&__td-inner {
 		font-size: rem(14);
+		display: flex;
+    align-items: center;
+		.dop-block__btn-p {
+			position: static;
+			top: 0;
+			transform: translateY(0);
+			margin-left: rem(10);
+		}
 	}
 	&__price {
 		font-size: rem(14);

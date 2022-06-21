@@ -8,29 +8,25 @@ mixin trop-list()
 		li.trop__list-item.first.active 
 			a.trop__list-link(href='#') Главная
 		li.trop__list-item
-			a.trop__list-link(href='#') Доставка
-		li.trop__list-item
-			a.trop__list-link(href='#') Франшиза
-		li.trop__list-item
-			a.trop__list-link(href='#') Сдать авто в аренду
-		li.trop__list-item
-			a.trop__list-link(href='#') Автоломбард
-		li.trop__list-item
-			a.trop__list-link(href='#') О компании
-		li.trop__list-item
-			a.trop__list-link(href='#') Отзывы
-		li.trop__list-item
-			a.trop__list-link(href='#') Новости
-		li.trop__list-item
 			a.trop__list-link(href='#') Условия аренды
-		li.trop__list-item
-			a.trop__list-link(href='#') Контакты
+		li.trop__list-item.last 
+			a.trop__list-link(href='#') Публичная оферта
 		li.trop__list-item
 			a.trop__list-link(href='#') Проверка
 		li.trop__list-item
+			a.trop__list-link(href='#') Доставка
+		li.trop__list-item
+			a.trop__list-link(href='#') О компании
+		li.trop__list-item
+			a.trop__list-link(href='#') 
+				| Новости
+				span 7
+		li.trop__list-item
+			a.trop__list-link(href='#') Отзывы
+		li.trop__list-item
+			a.trop__list-link(href='#') Контакты
+		li.trop__list-item
 			a.trop__list-link(href='#') Карта сайта
-		li.trop__list-item.last 
-			a.trop__list-link(href='#') Публичная оферта
 
 mixin mob-mnu()
 	-
@@ -45,7 +41,7 @@ mixin mob-mnu()
 	+b.menu-mobile--js
 		+e.inner 
 			//- .container
-			+e.wrap.d-block.d-lg-none
+			+e.wrap.d-block.d-lg-none.mb-2
 				+input("Поиск авто")
 					+icon('search')
 				+e.buy.text-center(href="#") Купить франшизу за 99 т.р.
@@ -58,11 +54,13 @@ mixin mob-mnu()
 						+icon('analysis_graph')
 						| Инвестировать
 				+e.indent
-					+e.login-in(href="#")
+					+e.login-in.popup-with-move-anim.data-modal(href="#modal-with-input-tel")
 						+icon('account')
 						| Войти
 				+e.indent
 					+e.online-pay(href="#") Онлайн-оплата
+				+e.indent--2
+					+e.mail(href="mailtp:info@a7.rent") info@a7.rent
 				+e.indent--2
 					+e.num(href="tel:+74951384388") +7 495 138 43 88
 					+soc()
@@ -70,9 +68,8 @@ mixin mob-mnu()
 						+item-sos('telegram')
 				+e.indent--2
 					+e.get-call.popup-with-move-anim.data-modal(href="#modal-with-input-tel") Заказать звонок
-				+e.indent--2
-					+e.mail(href="mailtp:info@a7.rent") info@a7.rent
-			+mnu().d-block.d-xl-none
+				//- +e.indent--2
+			//- +mnu().d-block.d-xl-none
 			+trop-list
 			//- +topLine().d-block.d-lg-none
 	//  мобильное меню
@@ -93,7 +90,7 @@ mixin top-nav()
 							//- +menu-toggle()
 					+mnu()
 				+e.col.col-auto.d-none.d-lg-block.ml-auto
-					+e.login-in(href="#")
+					+e.login-in.popup-with-move-anim.data-modal(href="#modal-with-input-tel")
 						+icon('account')
 						| Войти
 				+e.col.col-auto.ml-auto.ml-lg-0

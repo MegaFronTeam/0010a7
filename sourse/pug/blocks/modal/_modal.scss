@@ -34,7 +34,9 @@
 		font-weight: 100;
 	}
 
-	
+	.form-wrap__btn {
+		border-radius: 8px;
+	}
 	&--choose-city {
 		padding: rem(18) rem(20) rem(20) rem(18);
 		position: relative;

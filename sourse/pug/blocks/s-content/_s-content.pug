@@ -19,62 +19,62 @@ mixin s-content(data)
 			+e.title Наш парк по коробке передач
 			+b.form-wrap
 				+e.inc-wrap
-					+in-c('radio', '', 'transmission')
-						+e.wrap(href="#").active
-							+e.SPAN.text.form-check-label Механика
-							+e.SPAN.num 215
-					+in-c('radio', '', 'transmission')
-						+e.wrap
-							+e.SPAN.text.form-check-label Автомат
-							+e.SPAN.num 254
+					//- +in-c('radio', '', 'transmission')
+					+e.wrap(href="#").active
+						+e.SPAN.text.form-check-label Механика
+						+e.SPAN.num 215
+					//- +in-c('radio', '', 'transmission')
+					+e.wrap(href="#")
+						+e.SPAN.text.form-check-label Автомат
+						+e.SPAN.num 254
 			+e.title Наш парк по типу кузова
 			+b.form-wrap
 				+e.inc-wrap--2
-					+in-c('checkbox', '', 'carcase')
-						+e.wrap--2
-							+img('img/sedan.png')
-							+e.SPAN.text.form-check-label Седан
-							+e.num 24
-					+in-c('checkbox', '', 'carcase')
-						+e.wrap--2
-							+img('img/hatchback.png')
-							+e.SPAN.text.form-check-label Автомат
-							+e.num 254
-					+in-c('checkbox', '', 'carcase')
-						+e.wrap--2
-							+img('img/minivan.png')
-							+e.SPAN.text.form-check-label Седан
-							+e.num 24
-					+in-c('checkbox', '', 'carcase')
-						+e.wrap--2
-							+img('img/suv.png')
-							+e.SPAN.text.form-check-label Автомат
-							+e.num 254
-					+in-c('checkbox', '', 'carcase')
-						+e.wrap--2
-							+img('img/coupe.png')
-							+e.SPAN.text.form-check-label Седан
-							+e.num 24
-					+in-c('checkbox', '', 'carcase')
-						+e.wrap--2
-							+img('img/pickup-truck.png')
-							+e.SPAN.text.form-check-label Автомат
-							+e.num 254
-					+in-c('checkbox', '', 'carcase')
-						+e.wrap--2
-							+img('img/roadster.png')
-							+e.SPAN.text.form-check-label Седан
-							+e.num 24
-					+in-c('checkbox', '', 'carcase')
-						+e.wrap--2
-							+img('img/station-wagon.png')
-							+e.SPAN.text.form-check-label Автомат
-							+e.num 254
-					+in-c('checkbox', '', 'carcase')
-						+e.wrap--2
-							+img('img/van.png')
-							+e.SPAN.text.form-check-label Автомат
-							+e.num 254
+					//- +in-c('checkbox', '', 'carcase')
+					+e.wrap--2(href="#")
+						+img('img/sedan.png')
+						+e.SPAN.text.form-check-label Седан
+						+e.num 24
+					//- +in-c('checkbox', '', 'carcase')
+					+e.wrap--2(href="#")
+						+img('img/hatchback.png')
+						+e.SPAN.text.form-check-label Автомат
+						+e.num 254
+					//- +in-c('checkbox', '', 'carcase')
+					+e.wrap--2(href="#")
+						+img('img/minivan.png')
+						+e.SPAN.text.form-check-label Седан
+						+e.num 24
+					//- +in-c('checkbox', '', 'carcase')
+					+e.wrap--2(href="#")
+						+img('img/suv.png')
+						+e.SPAN.text.form-check-label Автомат
+						+e.num 254
+					//- +in-c('checkbox', '', 'carcase')
+					+e.wrap--2(href="#")
+						+img('img/coupe.png')
+						+e.SPAN.text.form-check-label Седан
+						+e.num 24
+					//- +in-c('checkbox', '', 'carcase')
+					+e.wrap--2(href="#")
+						+img('img/pickup-truck.png')
+						+e.SPAN.text.form-check-label Автомат
+						+e.num 254
+					//- +in-c('checkbox', '', 'carcase')
+					+e.wrap--2(href="#")
+						+img('img/roadster.png')
+						+e.SPAN.text.form-check-label Седан
+						+e.num 24
+					//- +in-c('checkbox', '', 'carcase')
+					+e.wrap--2(href="#")
+						+img('img/station-wagon.png')
+						+e.SPAN.text.form-check-label Автомат
+						+e.num 254
+					//- +in-c('checkbox', '', 'carcase')
+					+e.wrap--2(href="#")
+						+img('img/van.png')
+						+e.SPAN.text.form-check-label Автомат
+						+e.num 254
 			+e.title Наш парк по маркам авто
 			+e.row.row
 				-for(i=1; i<=15; i++)

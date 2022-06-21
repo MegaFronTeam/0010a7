@@ -25,7 +25,7 @@
 		<div class="main-wrapper">
 			<div class="menu-mobile menu-mobile--js">
 				<div class="menu-mobile__inner"> 
-					<div class="menu-mobile__wrap d-block d-lg-none">
+					<div class="menu-mobile__wrap d-block d-lg-none mb-2">
 						<div class="menu-mobile__input-wrap form-group"><input class="menu-mobile__input form-control" name="text" type="text" placeholder="Поиск авто"/>
 							<svg class="icon icon-search ">
 								<use xlink:href="img/svg/sprite.svg#search"></use>
@@ -49,7 +49,7 @@
 							</a>
 						</div>
 						<div class="menu-mobile__indent">
-							<a class="menu-mobile__login-in" href="#">
+							<a class="menu-mobile__login-in popup-with-move-anim data-modal" href="#modal-with-input-tel">
 								<svg class="icon icon-account ">
 									<use xlink:href="img/svg/sprite.svg#account"></use>
 								</svg>Войти
@@ -57,6 +57,10 @@
 						</div>
 						<div class="menu-mobile__indent">
 							<a class="menu-mobile__online-pay" href="#">Онлайн-оплата
+							</a>
+						</div>
+						<div class="menu-mobile__indent menu-mobile__indent--2">
+							<a class="menu-mobile__mail" href="mailtp:info@a7.rent">info@a7.rent
 							</a>
 						</div>
 						<div class="menu-mobile__indent menu-mobile__indent--2">
@@ -79,32 +83,19 @@
 							<a class="menu-mobile__get-call popup-with-move-anim data-modal" href="#modal-with-input-tel">Заказать звонок
 							</a>
 						</div>
-						<div class="menu-mobile__indent menu-mobile__indent--2">
-							<a class="menu-mobile__mail" href="mailtp:info@a7.rent">info@a7.rent
-							</a>
-						</div>
 					</div>
-					<ul class="menu d-block d-xl-none" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-						<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Условия</a></li>
-						<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Цены</a></li>
-						<li class="menu-item active" itemprop="item"><a href="#" itemprop="url">Новости</a></li>
-						<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Контакты</a></li>
-						<li class="menu-item d-none d-lg-block" itemprop="item"><a class="text-success" href="#" itemprop="url">Онлайн-оплата</a></li>
-					</ul>
 					<ul class="trop__list">
 						<li class="trop__list-item first active"> <a class="trop__list-link" href="#">Главная</a></li>
-						<li class="trop__list-item"><a class="trop__list-link" href="#">Доставка</a></li>
-						<li class="trop__list-item"><a class="trop__list-link" href="#">Франшиза</a></li>
-						<li class="trop__list-item"><a class="trop__list-link" href="#">Сдать авто в аренду</a></li>
-						<li class="trop__list-item"><a class="trop__list-link" href="#">Автоломбард</a></li>
-						<li class="trop__list-item"><a class="trop__list-link" href="#">О компании</a></li>
-						<li class="trop__list-item"><a class="trop__list-link" href="#">Отзывы</a></li>
-						<li class="trop__list-item"><a class="trop__list-link" href="#">Новости</a></li>
 						<li class="trop__list-item"><a class="trop__list-link" href="#">Условия аренды</a></li>
-						<li class="trop__list-item"><a class="trop__list-link" href="#">Контакты</a></li>
-						<li class="trop__list-item"><a class="trop__list-link" href="#">Проверка</a></li>
-						<li class="trop__list-item"><a class="trop__list-link" href="#">Карта сайта</a></li>
 						<li class="trop__list-item last"> <a class="trop__list-link" href="#">Публичная оферта</a></li>
+						<li class="trop__list-item"><a class="trop__list-link" href="#">Проверка</a></li>
+						<li class="trop__list-item"><a class="trop__list-link" href="#">Доставка</a></li>
+						<li class="trop__list-item"><a class="trop__list-link" href="#">О компании</a></li>
+						<li class="trop__list-item"><a class="trop__list-link" href="#">
+								 Новости<span>7</span></a></li>
+						<li class="trop__list-item"><a class="trop__list-link" href="#">Отзывы</a></li>
+						<li class="trop__list-item"><a class="trop__list-link" href="#">Контакты</a></li>
+						<li class="trop__list-item"><a class="trop__list-link" href="#">Карта сайта</a></li>
 					</ul>
 				</div>
 			</div>
@@ -224,7 +215,7 @@
 							</ul>
 						</div>
 						<div class="top-nav2__col col-auto d-none d-lg-block ml-auto">
-							<a class="top-nav2__login-in" href="#">
+							<a class="top-nav2__login-in popup-with-move-anim data-modal" href="#modal-with-input-tel">
 								<svg class="icon icon-account ">
 									<use xlink:href="img/svg/sprite.svg#account"></use>
 								</svg>Войти
@@ -933,36 +924,52 @@
 					</div>
 					<div class="form-wrap">
 						<div class="form-wrap__inc-wrap">
-							<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="transmission" type="radio"/>
-								<a class="custom-input__wrap active" href="#"><span class="custom-input__text form-check-label">Механика</span><span class="custom-input__num">215</span>
-								</a>
-							</label>
-							<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="transmission" type="radio"/><span class="custom-input__wrap"><span class="custom-input__text form-check-label">Автомат</span><span class="custom-input__num">254</span></span>
-							</label>
+							<a class="form-wrap__wrap active" href="#"><span class="form-wrap__text form-check-label">Механика</span><span class="form-wrap__num">215</span>
+							</a>
+							<a class="form-wrap__wrap" href="#"><span class="form-wrap__text form-check-label">Автомат</span><span class="form-wrap__num">254</span>
+							</a>
 						</div>
 					</div>
 					<div class="s-content__title">Наш парк по типу кузова
 					</div>
 					<div class="form-wrap">
 						<div class="form-wrap__inc-wrap form-wrap__inc-wrap--2">
-							<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="carcase" type="checkbox"/><span class="custom-input__wrap custom-input__wrap--2"><img src="img/sedan.png" alt="" loading="lazy"/><span class="custom-input__text form-check-label">Седан</span><span class="custom-input__num">24</span></span>
-							</label>
-							<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="carcase" type="checkbox"/><span class="custom-input__wrap custom-input__wrap--2"><img src="img/hatchback.png" alt="" loading="lazy"/><span class="custom-input__text form-check-label">Автомат</span><span class="custom-input__num">254</span></span>
-							</label>
-							<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="carcase" type="checkbox"/><span class="custom-input__wrap custom-input__wrap--2"><img src="img/minivan.png" alt="" loading="lazy"/><span class="custom-input__text form-check-label">Седан</span><span class="custom-input__num">24</span></span>
-							</label>
-							<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="carcase" type="checkbox"/><span class="custom-input__wrap custom-input__wrap--2"><img src="img/suv.png" alt="" loading="lazy"/><span class="custom-input__text form-check-label">Автомат</span><span class="custom-input__num">254</span></span>
-							</label>
-							<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="carcase" type="checkbox"/><span class="custom-input__wrap custom-input__wrap--2"><img src="img/coupe.png" alt="" loading="lazy"/><span class="custom-input__text form-check-label">Седан</span><span class="custom-input__num">24</span></span>
-							</label>
-							<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="carcase" type="checkbox"/><span class="custom-input__wrap custom-input__wrap--2"><img src="img/pickup-truck.png" alt="" loading="lazy"/><span class="custom-input__text form-check-label">Автомат</span><span class="custom-input__num">254</span></span>
-							</label>
-							<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="carcase" type="checkbox"/><span class="custom-input__wrap custom-input__wrap--2"><img src="img/roadster.png" alt="" loading="lazy"/><span class="custom-input__text form-check-label">Седан</span><span class="custom-input__num">24</span></span>
-							</label>
-							<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="carcase" type="checkbox"/><span class="custom-input__wrap custom-input__wrap--2"><img src="img/station-wagon.png" alt="" loading="lazy"/><span class="custom-input__text form-check-label">Автомат</span><span class="custom-input__num">254</span></span>
-							</label>
-							<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="carcase" type="checkbox"/><span class="custom-input__wrap custom-input__wrap--2"><img src="img/van.png" alt="" loading="lazy"/><span class="custom-input__text form-check-label">Автомат</span><span class="custom-input__num">254</span></span>
-							</label>
+							<a class="form-wrap__wrap form-wrap__wrap--2" href="#"><img src="img/sedan.png" alt="" loading="lazy"/><span class="form-wrap__text form-check-label">Седан</span>
+								<div class="form-wrap__num">24
+								</div>
+							</a>
+							<a class="form-wrap__wrap form-wrap__wrap--2" href="#"><img src="img/hatchback.png" alt="" loading="lazy"/><span class="form-wrap__text form-check-label">Автомат</span>
+								<div class="form-wrap__num">254
+								</div>
+							</a>
+							<a class="form-wrap__wrap form-wrap__wrap--2" href="#"><img src="img/minivan.png" alt="" loading="lazy"/><span class="form-wrap__text form-check-label">Седан</span>
+								<div class="form-wrap__num">24
+								</div>
+							</a>
+							<a class="form-wrap__wrap form-wrap__wrap--2" href="#"><img src="img/suv.png" alt="" loading="lazy"/><span class="form-wrap__text form-check-label">Автомат</span>
+								<div class="form-wrap__num">254
+								</div>
+							</a>
+							<a class="form-wrap__wrap form-wrap__wrap--2" href="#"><img src="img/coupe.png" alt="" loading="lazy"/><span class="form-wrap__text form-check-label">Седан</span>
+								<div class="form-wrap__num">24
+								</div>
+							</a>
+							<a class="form-wrap__wrap form-wrap__wrap--2" href="#"><img src="img/pickup-truck.png" alt="" loading="lazy"/><span class="form-wrap__text form-check-label">Автомат</span>
+								<div class="form-wrap__num">254
+								</div>
+							</a>
+							<a class="form-wrap__wrap form-wrap__wrap--2" href="#"><img src="img/roadster.png" alt="" loading="lazy"/><span class="form-wrap__text form-check-label">Седан</span>
+								<div class="form-wrap__num">24
+								</div>
+							</a>
+							<a class="form-wrap__wrap form-wrap__wrap--2" href="#"><img src="img/station-wagon.png" alt="" loading="lazy"/><span class="form-wrap__text form-check-label">Автомат</span>
+								<div class="form-wrap__num">254
+								</div>
+							</a>
+							<a class="form-wrap__wrap form-wrap__wrap--2" href="#"><img src="img/van.png" alt="" loading="lazy"/><span class="form-wrap__text form-check-label">Автомат</span>
+								<div class="form-wrap__num">254
+								</div>
+							</a>
 						</div>
 					</div>
 					<div class="s-content__title">Наш парк по маркам авто

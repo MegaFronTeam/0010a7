@@ -25,7 +25,7 @@
 		<div class="main-wrapper">
 			<div class="menu-mobile menu-mobile--js">
 				<div class="menu-mobile__inner"> 
-					<div class="menu-mobile__wrap d-block d-lg-none">
+					<div class="menu-mobile__wrap d-block d-lg-none mb-2">
 						<div class="menu-mobile__input-wrap form-group"><input class="menu-mobile__input form-control" name="text" type="text" placeholder="Поиск авто"/>
 							<svg class="icon icon-search ">
 								<use xlink:href="img/svg/sprite.svg#search"></use>
@@ -49,7 +49,7 @@
 							</a>
 						</div>
 						<div class="menu-mobile__indent">
-							<a class="menu-mobile__login-in" href="#">
+							<a class="menu-mobile__login-in popup-with-move-anim data-modal" href="#modal-with-input-tel">
 								<svg class="icon icon-account ">
 									<use xlink:href="img/svg/sprite.svg#account"></use>
 								</svg>Войти
@@ -57,6 +57,10 @@
 						</div>
 						<div class="menu-mobile__indent">
 							<a class="menu-mobile__online-pay" href="#">Онлайн-оплата
+							</a>
+						</div>
+						<div class="menu-mobile__indent menu-mobile__indent--2">
+							<a class="menu-mobile__mail" href="mailtp:info@a7.rent">info@a7.rent
 							</a>
 						</div>
 						<div class="menu-mobile__indent menu-mobile__indent--2">
@@ -79,32 +83,19 @@
 							<a class="menu-mobile__get-call popup-with-move-anim data-modal" href="#modal-with-input-tel">Заказать звонок
 							</a>
 						</div>
-						<div class="menu-mobile__indent menu-mobile__indent--2">
-							<a class="menu-mobile__mail" href="mailtp:info@a7.rent">info@a7.rent
-							</a>
-						</div>
 					</div>
-					<ul class="menu d-block d-xl-none" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-						<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Условия</a></li>
-						<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Цены</a></li>
-						<li class="menu-item active" itemprop="item"><a href="#" itemprop="url">Новости</a></li>
-						<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Контакты</a></li>
-						<li class="menu-item d-none d-lg-block" itemprop="item"><a class="text-success" href="#" itemprop="url">Онлайн-оплата</a></li>
-					</ul>
 					<ul class="trop__list">
 						<li class="trop__list-item first active"> <a class="trop__list-link" href="#">Главная</a></li>
-						<li class="trop__list-item"><a class="trop__list-link" href="#">Доставка</a></li>
-						<li class="trop__list-item"><a class="trop__list-link" href="#">Франшиза</a></li>
-						<li class="trop__list-item"><a class="trop__list-link" href="#">Сдать авто в аренду</a></li>
-						<li class="trop__list-item"><a class="trop__list-link" href="#">Автоломбард</a></li>
-						<li class="trop__list-item"><a class="trop__list-link" href="#">О компании</a></li>
-						<li class="trop__list-item"><a class="trop__list-link" href="#">Отзывы</a></li>
-						<li class="trop__list-item"><a class="trop__list-link" href="#">Новости</a></li>
 						<li class="trop__list-item"><a class="trop__list-link" href="#">Условия аренды</a></li>
-						<li class="trop__list-item"><a class="trop__list-link" href="#">Контакты</a></li>
-						<li class="trop__list-item"><a class="trop__list-link" href="#">Проверка</a></li>
-						<li class="trop__list-item"><a class="trop__list-link" href="#">Карта сайта</a></li>
 						<li class="trop__list-item last"> <a class="trop__list-link" href="#">Публичная оферта</a></li>
+						<li class="trop__list-item"><a class="trop__list-link" href="#">Проверка</a></li>
+						<li class="trop__list-item"><a class="trop__list-link" href="#">Доставка</a></li>
+						<li class="trop__list-item"><a class="trop__list-link" href="#">О компании</a></li>
+						<li class="trop__list-item"><a class="trop__list-link" href="#">
+								 Новости<span>7</span></a></li>
+						<li class="trop__list-item"><a class="trop__list-link" href="#">Отзывы</a></li>
+						<li class="trop__list-item"><a class="trop__list-link" href="#">Контакты</a></li>
+						<li class="trop__list-item"><a class="trop__list-link" href="#">Карта сайта</a></li>
 					</ul>
 				</div>
 			</div>
@@ -224,7 +215,7 @@
 							</ul>
 						</div>
 						<div class="top-nav2__col col-auto d-none d-lg-block ml-auto">
-							<a class="top-nav2__login-in" href="#">
+							<a class="top-nav2__login-in popup-with-move-anim data-modal" href="#modal-with-input-tel">
 								<svg class="icon icon-account ">
 									<use xlink:href="img/svg/sprite.svg#account"></use>
 								</svg>Войти
@@ -320,47 +311,47 @@
 									</label>
 								</div>
 								<div class="properties-row">
-									<label class="custom-input form-check form-check--all"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">Все</span>
+									<label class="custom-input form-check form-check--all"><input class="custom-input__input form-check-input" name="type" type="radio"/><span class="custom-input__text form-check-label">Все</span>
 									</label>
-									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">Седан</span>
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="type" type="radio"/><span class="custom-input__text form-check-label">Седан</span>
 									</label>
-									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">Хэтчбек</span>
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="type" type="radio"/><span class="custom-input__text form-check-label">Хэтчбек</span>
 									</label>
-									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">Минивен</span>
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="type" type="radio"/><span class="custom-input__text form-check-label">Минивен</span>
 									</label>
-									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">Внедорожник</span>
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="type" type="radio"/><span class="custom-input__text form-check-label">Внедорожник</span>
 									</label>
-									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">Купе</span>
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="type" type="radio"/><span class="custom-input__text form-check-label">Купе</span>
 									</label>
-									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">Пикап</span>
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="type" type="radio"/><span class="custom-input__text form-check-label">Пикап</span>
 									</label>
-									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">Родстер</span>
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="type" type="radio"/><span class="custom-input__text form-check-label">Родстер</span>
 									</label>
-									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">Универсал</span>
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="type" type="radio"/><span class="custom-input__text form-check-label">Универсал</span>
 									</label>
-									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">Фургон</span>
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="type" type="radio"/><span class="custom-input__text form-check-label">Фургон</span>
 									</label>
 								</div>
 								<div class="properties-row">
-									<label class="custom-input form-check form-check--all"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">Все</span>
+									<label class="custom-input form-check form-check--all"><input class="custom-input__input form-check-input" name="mark" type="radio"/><span class="custom-input__text form-check-label">Все</span>
 									</label>
-									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">Lada</span>
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="mark" type="radio"/><span class="custom-input__text form-check-label">Lada</span>
 									</label>
-									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">Kia</span>
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="mark" type="radio"/><span class="custom-input__text form-check-label">Kia</span>
 									</label>
-									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">Hyundai</span>
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="mark" type="radio"/><span class="custom-input__text form-check-label">Hyundai</span>
 									</label>
-									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">Renault</span>
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="mark" type="radio"/><span class="custom-input__text form-check-label">Renault</span>
 									</label>
-									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">Toyota</span>
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="mark" type="radio"/><span class="custom-input__text form-check-label">Toyota</span>
 									</label>
-									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checked" type="checkbox"/><span class="custom-input__text form-check-label">Volkswagen</span>
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checked" type="radio"/><span class="custom-input__text form-check-label">Volkswagen</span>
 									</label>
-									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">Audi</span>
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="mark" type="radio"/><span class="custom-input__text form-check-label">Audi</span>
 									</label>
-									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">BMW</span>
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="mark" type="radio"/><span class="custom-input__text form-check-label">BMW</span>
 									</label>
-									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">Mercedes Benz</span>
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="mark" type="radio"/><span class="custom-input__text form-check-label">Mercedes Benz</span>
 									</label>
 								</div>
 								<div class="properties-select d-block d-lg-none">

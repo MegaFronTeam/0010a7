@@ -191,11 +191,29 @@
 			@include media-breakpoint-up(md) {
 				margin-left: 1.1em;
 				border: none;
-				margin-bottom: 1rem;
+				// margin-bottom: 1rem;
 			}
 		}
 		&__list-link {
 			font-size: 16px;
+			position: relative;
+			span {
+				align-items: center;
+				background-color: #ef2c2c;
+				border-radius: 50%;
+				color: #fff;
+				content: "7";
+				display: block;
+				display: flex;
+				font-size: .625rem;
+				font-weight: 700;
+				height: 16px;
+				justify-content: center;
+				position: absolute;
+				left: 78px;
+				top: 1px;
+				width: 16px;
+			}
 		}
 	}
 	&__wrap {
