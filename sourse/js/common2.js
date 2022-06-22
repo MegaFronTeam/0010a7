@@ -403,18 +403,6 @@ function eventHandler() {
 		},
 	});
 
-	const catalogItemSlider = new Swiper('.catalog-item-slider--js', {
-		slidesPerView: 1,
-    pagination: {
-			el: '.catalog-item-slider .swiper-pagination',
-			type: 'bullets',
-			clickable: true,
-		},
-	});
-
-	$('.catalog-item-slider .swiper-pagination-bullet').hover(function() {
-		$( this ).trigger( "click" );
-	});
 
 	// var datepicker, datepicker2, config;
 	// config = {
@@ -485,6 +473,21 @@ function eventHandler() {
 			},
 		},
 	});
+
+
+	const catalogItemSlider = new Swiper('.catalog-item-slider--js', {
+		slidesPerView: 1,
+    pagination: {
+			el: '.catalog-item-slider .swiper-pagination',
+			type: 'bullets',
+			clickable: true,
+		},
+	});
+
+	$('.catalog-item-slider .swiper-pagination-bullet').hover(function() {
+		$( this ).trigger( "click" );
+	});
+
 	
 	var cardHeadSwiper = new Swiper(".card-head__newSlider--thumbs", {
 		loop: true,
