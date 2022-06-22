@@ -40,7 +40,7 @@ mixin mob-mnu()
 	+b.menu-mobile--js
 		+e.inner 
 			//- .container
-			+e.wrap.d-block.d-lg-none.mb-2
+			+e.wrap.d-block.d-lg-none
 				+input("Поиск авто")
 					+icon('search')
 				+e.buy.text-center(href="#") Купить франшизу за 99 т.р.
@@ -62,13 +62,13 @@ mixin mob-mnu()
 							| Войти
 					li
 						a.text-success(href="#") Онлайн-оплата
-				+e.indent--2
-					+e.mail(href="mailtp:info@a7.rent") info@a7.rent
-				+e.indent
-					+e.num(href="tel:+74951384388") +7 495 138 43 88
-					+soc()
-						+item-sos('whatsapp')
-						+item-sos('telegram')
+				//- +e.indent--2
+				//- 	+e.mail(href="mailtp:info@a7.rent") info@a7.rent
+				//- +e.indent
+				//- 	+e.num(href="tel:+74951384388") +7 495 138 43 88
+				//- 	+soc()
+				//- 		+item-sos('whatsapp')
+				//- 		+item-sos('telegram')
 				+e.indent--2
 					+e.get-call.popup-with-move-anim.data-modal(href="#modal-with-input-tel") Заказать звонок
 				//- +e.indent--2
