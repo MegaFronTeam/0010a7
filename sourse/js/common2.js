@@ -461,7 +461,8 @@ function eventHandler() {
 	const  sSimilarProductsSlider = new Swiper(' .sSimilarProducts__slider--js', {
 		slidesPerView: 4,
 		spaceBetween: 30,
-		loop: true,
+		// loop: true,
+		rewind: true,
 		pagination: {
 			el: '.sSimilarProducts__pagination',
 			type: 'bullets',
@@ -482,6 +483,7 @@ function eventHandler() {
 			type: 'bullets',
 			clickable: true,
 		},
+		// observeParents: true,
 	});
 
 	$('.catalog-item-slider .swiper-pagination-bullet').hover(function() {
