@@ -175,7 +175,7 @@
 	&__inner {
 		height: 100%;
 	}
-	@include media-breakpoint-up(xl) {
+	@include media-breakpoint-up(lg) {
 		height: auto;
 		padding-bottom: 30px;
 	}
@@ -185,35 +185,41 @@
 			@include media-breakpoint-up(xl) {
 				margin-top: 30px;
 			}
+			@media (min-width: 992px) and (max-width: 1200px) {
+				padding-top: 20px;
+			}
 		}
 		&__list-item {
 			margin-left: 0;
 			@include media-breakpoint-up(md) {
-				margin-left: 1.1em;
+				// margin-left: 1.1em;
 				border: none;
 				// margin-bottom: 1rem;
 			}
 		}
 		&__list-link {
-			font-size: 16px;
 			position: relative;
-			span {
-				align-items: center;
-				background-color: #ef2c2c;
-				border-radius: 50%;
-				color: #fff;
-				content: "7";
-				display: block;
-				display: flex;
-				font-size: .625rem;
-				font-weight: 700;
-				height: 16px;
-				justify-content: center;
-				position: absolute;
-				left: 78px;
-				top: 1px;
-				width: 16px;
+			font-size: 16px;
+			@include media-breakpoint-up(lg) {
+				font-size: 24px;
 			}
+			// span {
+			// 	align-items: center;
+			// 	background-color: #ef2c2c;
+			// 	border-radius: 50%;
+			// 	color: #fff;
+			// 	content: "7";
+			// 	display: block;
+			// 	display: flex;
+			// 	font-size: .625rem;
+			// 	font-weight: 700;
+			// 	height: 16px;
+			// 	justify-content: center;
+			// 	position: absolute;
+			// 	left: 78px;
+			// 	top: 1px;
+			// 	width: 16px;
+			// }
 		}
 	}
 	&__wrap {
@@ -359,6 +365,12 @@
 			padding: 7.5px 10px;
 		}
 	}
+
+	&__container {
+		@include media-breakpoint-down(lg) {
+			max-width: none;
+		}
+	}
 }
 @include media-breakpoint-up(lg) {
 	.menu-mobile {
@@ -366,11 +378,11 @@
 		width: 100%;
 		background: $white;
 		display: block;
-		height: 100%;
+		// height: 100%;
 		position: absolute;
 		z-index: 999;
 		&__inner {
-			margin-top: 120px;
+			margin-top: 122px;
 			border-top: 1px solid #E8E8E8;
 		}
 		&.active { 
@@ -388,8 +400,11 @@
 	}
 }
 .menu-mobile__inner {
-	@media (min-width: 992px) and (max-width: 1470px) {
-		margin-top: 199px;
+	@media (min-width: 992px) and (max-width: 1200px) {
+		margin-top: 164px;
+	}
+	@media (min-width: 1200px) and (max-width: 1470px) {
+		margin-top: 122px;
 		max-height: calc(100% - 199px);
 	}
 }
