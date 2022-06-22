@@ -190,7 +190,7 @@
 				margin-bottom: 0;
 			}
 			@media (min-width: 992px) and (max-width: 1200px) {
-				padding-top: 20px;
+				// padding-top: 20px;
 			}
 			li {
 				margin-left:  0 !important;
@@ -198,6 +198,7 @@
 				margin-right: 0 !important;
 				@include media-breakpoint-up(lg) {
 					// margin-left: 1.1em;
+					max-width: max-content;
 					border: none;
 					// margin-bottom: 1rem;
 				}
@@ -207,8 +208,9 @@
 				position: relative;
 				// font-size: 16px; 
 				// font-size: 24px;
-				@include media-breakpoint-up(lg) {
-				}  
+				@media (min-width: 1200px) and (max-width: 1470px) {
+					font-size: rem(24);
+				}
 
 		}
 		} 
