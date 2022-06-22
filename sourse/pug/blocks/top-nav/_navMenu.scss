@@ -252,7 +252,7 @@
 			color: #f6ee25;
 		}
 		@include media-breakpoint-down(lg) {
-			font-size: rem(14);
+			// font-size: rem(14);
 		}
 	}
 	&__input-wrap {
