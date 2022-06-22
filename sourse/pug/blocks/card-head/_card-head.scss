@@ -113,10 +113,12 @@
 		display: flex;
     align-items: center;
 		.dop-block__btn-p {
-			position: static;
+			position: relative;
 			top: 0;
 			transform: translateY(0);
-			margin-left: rem(10);
+			margin-left: rem(20);
+			padding-bottom: rem(2);
+			padding-top: 0;
 		}
 	}
 	&__price {

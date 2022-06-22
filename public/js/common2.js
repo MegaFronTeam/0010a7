@@ -537,6 +537,7 @@ function eventHandler() {
 	// })
 	// cardHeadSwiper.controller.control = cardHeadSwiper2;
 	// 		cardHeadSwiper2.controller.control = cardHeadSwiper;
+
 };
 
 
