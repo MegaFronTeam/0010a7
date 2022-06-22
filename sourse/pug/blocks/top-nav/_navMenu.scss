@@ -186,7 +186,7 @@
 			margin-bottom: 1rem;
 			@include media-breakpoint-up(lg) {
 				columns: 2;
-				margin-top: 30px;
+				margin-top: 50px;
 				margin-bottom: 0;
 			}
 			@media (min-width: 992px) and (max-width: 1200px) {
@@ -242,6 +242,9 @@
 		// font-size: 24px;
 		&:hover {
 			color: #f6ee25;
+		}
+		@include media-breakpoint-down(lg) {
+			font-size: rem(14);
 		}
 	}
 	&__input-wrap {
@@ -317,6 +320,9 @@
 			width: auto;
 			height: auto;
 			border: none;
+			@include media-breakpoint-down(lg) {
+				font-size: rem(14);
+			}
 			.icon {
 				@include mt;
 				font-size: 1.4em;
@@ -343,16 +349,25 @@
 		font-weight: 600;
 		color: $gray-900;
 		// font-size: rem(14);
+		@include media-breakpoint-down(lg) {
+			font-size: rem(14);
+		}
 	}
 	&__get-call {
 		color: $gray-600; 
 		text-decoration: dashed !important;
 		text-decoration-line: underline !important;
+		@include media-breakpoint-down(lg) {
+			font-size: rem(14);
+		}
 	}
 	font-size: 24px;
 	&__mail {
 		// font-size: rem(14);
 		color: $gray-600;
+		@include media-breakpoint-down(lg) {
+			font-size: rem(14);
+		}
 	}
 	.menu {
 		height: auto;
@@ -368,6 +383,9 @@
 		}
 		a {
 			padding: 7.5px 10px;
+			@include media-breakpoint-down(lg) {
+				font-size: rem(14);
+			}
 		}
 	}
 
@@ -390,7 +408,7 @@
 		z-index: 999;
 		&__inner {
 			margin-top: 122px;
-			border-top: 1px solid #E8E8E8;
+			// border-top: 1px solid #E8E8E8;
 		}
 		&.active { 
 			.toggle-menu-mobile {
@@ -454,7 +472,7 @@
 			}
 		}
 		&__inner {
-			padding: rem(20) 0;
+			// padding: rem(20) 0;
 			overflow-x: hidden;
 			overflow-y: auto;
 			-webkit-overflow-scrolling: touch;
@@ -463,7 +481,7 @@
 			transition-delay: .4s;
 			opacity: var(--opacity);
 			margin-top: 120px;
-			border-top: 1px solid #E8E8E8;
+			// border-top: 1px solid #E8E8E8;
 			max-height: calc(100% - 120px);
 		}
 	

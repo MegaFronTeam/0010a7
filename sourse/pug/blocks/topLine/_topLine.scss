@@ -54,6 +54,15 @@
 		text-decoration: dashed !important;
 		text-decoration-line: underline !important;
 	}
+	&__invest {
+		font-size: rem(14);
+		display: flex;
+		align-items: center;
+		.icon {
+			margin-right: 6px;
+			font-size: rem(20);
+		}
+	}
 	.soc {
 		justify-content: flex-start;
 		&__item {
