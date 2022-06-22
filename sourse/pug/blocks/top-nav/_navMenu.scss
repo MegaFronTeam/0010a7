@@ -111,6 +111,11 @@
 			align-items: center;
 
 		}
+		&:hover {
+			@include media-breakpoint-up(lg) {
+				color: #231f20;
+			}
+		}
 		&.text-success {
 			font-weight: 600;
 		}
@@ -187,11 +192,11 @@
 			// margin-bottom: 1rem;
 			@include media-breakpoint-up(lg) {
 				columns: 2;
-				margin-top: 30px;
+				margin-top: 50px;
 				margin-bottom: 0;
 			}
 			@media (min-width: 992px) and (max-width: 1200px) {
-				padding-top: 20px;
+				// padding-top: 20px;
 			}
 			li {
 				margin-left:  0 !important;
@@ -199,6 +204,7 @@
 				margin-right: 0 !important;
 				@include media-breakpoint-up(lg) {
 					// margin-left: 1.1em;
+					max-width: max-content;
 					border: none;
 					// margin-bottom: 1rem;
 				}
@@ -208,8 +214,9 @@
 				position: relative;
 				// font-size: 16px; 
 				// font-size: 24px;
-				@include media-breakpoint-up(lg) {
-				}  
+				@media (min-width: 1200px) and (max-width: 1470px) {
+					font-size: rem(24);
+				}
 
 		}
 		} 
@@ -243,6 +250,9 @@
 		// font-size: 24px;
 		&:hover {
 			color: #f6ee25;
+		}
+		@include media-breakpoint-down(lg) {
+			font-size: rem(14);
 		}
 	}
 	&__input-wrap {
@@ -318,6 +328,9 @@
 			width: auto;
 			height: auto;
 			border: none;
+			@include media-breakpoint-down(lg) {
+				font-size: rem(14);
+			}
 			.icon {
 				@include mt;
 				font-size: 1.4em;
@@ -344,6 +357,9 @@
 		font-weight: 600;
 		color: $gray-900;
 		// font-size: rem(14);
+		@include media-breakpoint-down(lg) {
+			font-size: rem(14);
+		}
 	}
 	&__get-call {
 		// color: $gray-600; 
@@ -358,11 +374,14 @@
 	&__mail {
 		// font-size: rem(14);
 		color: $gray-600;
+		@include media-breakpoint-down(lg) {
+			font-size: rem(14);
+		}
 	}
 	.menu {
 		height: auto;
 		@include media-breakpoint-up(lg) {
-		padding-top: 12.5px;
+		padding-top: 30.5px;
 		}
 		li {
 			@include media-breakpoint-up(lg) {
@@ -373,6 +392,14 @@
 		}
 		a {
 			padding: 7.5px 10px;
+			@include media-breakpoint-down(lg) {
+				// font-size: rem(14);
+			}
+			&:hover {
+				@include media-breakpoint-down(lg) {
+					color: #807979;
+				}
+			}
 		}
 	}
 
@@ -395,7 +422,7 @@
 		z-index: 999;
 		&__inner {
 			margin-top: 122px;
-			border-top: 1px solid #E8E8E8;
+			// border-top: 1px solid #E8E8E8;
 		}
 		&.active { 
 			.toggle-menu-mobile {
@@ -459,7 +486,7 @@
 			}
 		}
 		&__inner {
-			padding: rem(20) 0;
+			// padding: rem(20) 0;
 			overflow-x: hidden;
 			overflow-y: auto;
 			-webkit-overflow-scrolling: touch;
@@ -468,7 +495,7 @@
 			transition-delay: .4s;
 			opacity: var(--opacity);
 			margin-top: 120px;
-			border-top: 1px solid #E8E8E8;
+			// border-top: 1px solid #E8E8E8;
 			max-height: calc(100% - 120px);
 		}
 	
