@@ -47,3 +47,10 @@ mixin page-head(...items)
 				+icon('chevron-left')
 				| Назад
 			+breadcrumb(...items)
+
+
+mixin search()
+	+b.FORM.search-block
+		+input("Поиск авто: audi, поло, минивен, двухдверный, черный")
+		+e.BUTTON.btn(type="button")
+			+icon('search')
