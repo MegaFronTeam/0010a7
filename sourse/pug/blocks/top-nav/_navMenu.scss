@@ -183,9 +183,11 @@
 
 		.menu {
 			display: block;
+			margin-bottom: 1rem;
 			@include media-breakpoint-up(lg) {
 				columns: 2;
 				margin-top: 30px;
+				margin-bottom: 0;
 			}
 			@media (min-width: 992px) and (max-width: 1200px) {
 				padding-top: 20px;
@@ -204,7 +206,7 @@
 			a {
 				position: relative;
 				// font-size: 16px; 
-				font-size: 24px;
+				// font-size: 24px;
 				@include media-breakpoint-up(lg) {
 				}  
 
@@ -237,7 +239,7 @@
 		position: relative;
 		background-color: $gray-900;
 		display: block;
-		font-size: 24px;
+		// font-size: 24px;
 		&:hover {
 			color: #f6ee25;
 		}
@@ -271,24 +273,20 @@
 		}
 	}
 	&__indent {
-		padding-top: 9.5px;
+		padding-bottom: 0;
+		border-bottom: none;
+		display: flex;
+		// padding-top: 9.5px;
 		padding-bottom: 9.5px;
-		border-bottom: 1px solid #EAEAEA;
 		padding-left: 10px;
-		line-height: 1.2em;
-		&--2 {
-			padding-bottom: 0;
-			border-bottom: none;
-			display: flex;
-			.menu-mobile__num {
-				margin-right: rem(10);
-			}
+		.menu-mobile__num {
+			margin-right: rem(10);
 		}
 	}
-	&__sell-auto, &__invest {
+	&__link {
 		display: flex;
 		align-items: center;
-		font-size: 24px;
+		// font-size: 24px;
 		color: $gray-900;
 		
 	}
@@ -300,10 +298,16 @@
 		color: $gray-900; 
 	}
 	&__online-pay {
+		border-bottom: 1px solid #EAEAEA;
+		padding-top: 9.5px;
+		padding-bottom: 9.5px;
+		padding-left: 10px;
+		margin-bottom: 9.5px;
 		font-weight: 600;
 		font-size: 14px;
 		color: #19BB70;
 		text-transform: uppercase;
+		display: block;
 	}
 	.soc {
 		justify-content: flex-start;
@@ -352,7 +356,9 @@
 	}
 	.menu {
 		height: auto;
+		@include media-breakpoint-up(lg) {
 		padding-top: 12.5px;
+		}
 		li {
 			@include media-breakpoint-up(lg) {
 				// max-width: max-content;
@@ -415,6 +421,7 @@
 	.menu-mobile {
 		position: fixed !important;
 		z-index: 999;
+		padding-top: 12px;
 		// max-width: 85%;
 		height: calc(var(--vh, 1vh) * 100);
 		width: 100%;
@@ -466,8 +473,7 @@
 			}
 		}
 	
-	
-		
+ 
 	}
 
 }

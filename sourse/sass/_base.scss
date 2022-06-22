@@ -23,6 +23,11 @@ html{
 }
 
 body {
+	transition: none;
+	&.fixed{
+
+		padding-right: var(--scroll-w);
+	}
 	min-width: auto;
 	&.fixed,
 	&.fancybox-active{
@@ -38,7 +43,7 @@ body {
 	// overflow-x: hidden; 
 	
 	&.loaded_hiding {
-		@include mt;
+		// @include mt;
 
 		opacity: 0;
 		pointer-events: none;

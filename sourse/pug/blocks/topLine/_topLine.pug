@@ -30,10 +30,10 @@ mixin topLine()
 					+e.indent
 						+e.mail(href="mailtp:info@a7.rent") info@a7.rent
 				+e.col.col-auto.d-none.d-lg-block
-					+e.indent
-						+e.sell-auto(href="#")
-							+icon('vehicle_car_regular')
-							| Сдать свой авто
+					//- +e.indent
+					+e.link(href="#")
+						+icon('vehicle_car_regular')
+						| Сдать свой авто
 				.col-auto.d-none.d-lg-block
 					+e.indent
 						+e.invest(href="#")

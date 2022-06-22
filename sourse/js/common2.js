@@ -1,4 +1,20 @@
 "use strict";
+
+
+// создадим элемент с прокруткой
+let div = document.createElement('div');
+
+div.style.overflowY = 'scroll';
+div.style.width = '50px';
+div.style.height = '50px';
+
+// мы должны вставить элемент в документ, иначе размеры будут равны 0
+document.body.append(div);
+let scrollWidth = div.offsetWidth - div.clientWidth;
+
+div.remove();
+document.documentElement.style.setProperty('--scroll-w', `${scrollWidth}px`);
+// alert(scrollWidth);
 const JSCCommon = { 
 	modalCall() {
 		// const link = '[data-fancybox="modal"], .link-modal-js';
