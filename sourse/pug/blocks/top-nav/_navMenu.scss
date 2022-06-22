@@ -111,6 +111,11 @@
 			align-items: center;
 
 		}
+		&:hover {
+			@include media-breakpoint-up(lg) {
+				color: #231f20;
+			}
+		}
 		&.text-success {
 			font-weight: 600;
 		}
@@ -387,6 +392,11 @@
 			padding: 7.5px 10px;
 			@include media-breakpoint-down(lg) {
 				font-size: rem(14);
+			}
+			&:hover {
+				@include media-breakpoint-down(lg) {
+					color: #807979;
+				}
 			}
 		}
 	}
