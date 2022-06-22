@@ -103,6 +103,12 @@
 		position: relative;
 		background-color: $gray-900;
 		display: block;
+		white-space: nowrap;
+		max-width: 100%;
+		position: relative;
+		text-align: center;
+		overflow: hidden;
+		text-overflow: ellipsis;
 		&:hover {
 			color: #f6ee25;
 		}
