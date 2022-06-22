@@ -44,23 +44,25 @@ mixin mob-mnu()
 				+input("Поиск авто")
 					+icon('search')
 				+e.buy.text-center(href="#") Купить франшизу за 99 т.р.
+				//- +e.indent
+				ul
+					li 
+						+e.link(href="#")
+							+icon('vehicle_car_regular')
+							| Сдать свой авто
+					li 
+						+e.link(href="#")
+							+icon('analysis_graph')
+							| Инвестировать
+					li 
+						+e.link.popup-with-move-anim.data-modal(href="#modal-with-input-tel")
+							+icon('account')
+							| Войти
+					li 
+						+e.online-pay(href="#") Онлайн-оплата
 				+e.indent
-					+e.sell-auto(href="#")
-						+icon('vehicle_car_regular')
-						| Сдать свой авто
-				+e.indent
-					+e.invest(href="#")
-						+icon('analysis_graph')
-						| Инвестировать
-				+e.indent
-					+e.login-in.popup-with-move-anim.data-modal(href="#modal-with-input-tel")
-						+icon('account')
-						| Войти
-				+e.indent
-					+e.online-pay(href="#") Онлайн-оплата
-				+e.indent--2
 					+e.mail(href="mailtp:info@a7.rent") info@a7.rent
-				+e.indent--2
+				+e.indent
 					+e.num(href="tel:+74951384388") +7 495 138 43 88
 					+soc()
 						+item-sos('whatsapp')

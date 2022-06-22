@@ -265,48 +265,54 @@
 		}
 	}
 	&__indent {
-		padding-top: 9.5px;
+		padding-bottom: 0;
+		border-bottom: none;
+		display: flex;
+		// padding-top: 9.5px;
 		padding-bottom: 9.5px;
-		border-bottom: 1px solid #EAEAEA;
 		padding-left: 10px;
-		line-height: 1.2em;
-		&--2 {
-			padding-bottom: 0;
-			border-bottom: none;
-			display: flex;
-			.menu-mobile__num {
-				margin-right: rem(10);
-			}
+		.menu-mobile__num {
+			margin-right: rem(10);
 		}
 	}
-	&__sell-auto, &__invest {
+	&__link {
 		display: flex;
 		align-items: center;
 		font-size: rem(14);
 		color: $gray-900;
+		padding-top: 9.5px;
+		padding-bottom: 9.5px;
+		padding-left: 10px;
+		border-bottom: 1px solid #EAEAEA;
 		.icon {
 			font-size: rem(20);
 			flex: 0 0 auto;
 			margin-right: 6px;
 		}
 	}
-	&__login-in {
-		display: flex;
-		align-items: center;
-		font-size: rem(14);
-		// text-transform: uppercase;
-		color: $gray-900;
-		.icon {
-			flex: 0 0 auto;
-			font-size: rem(20);
-			margin-right: rem(5);
-		}
-	}
+	// &__login-in {
+	// 	display: flex;
+	// 	align-items: center;
+	// 	font-size: rem(14);
+	// 	// text-transform: uppercase;
+	// 	color: $gray-900;
+	// 	.icon {
+	// 		flex: 0 0 auto;
+	// 		font-size: rem(20);
+	// 		margin-right: rem(5);
+	// 	}
+	// }
 	&__online-pay {
+		border-bottom: 1px solid #EAEAEA;
+		padding-top: 9.5px;
+		padding-bottom: 9.5px;
+		padding-left: 10px;
+		margin-bottom: 9.5px;
 		font-weight: 600;
 		font-size: 14px;
 		color: #19BB70;
 		text-transform: uppercase;
+		display: block;
 	}
 	.soc {
 		justify-content: flex-start;
@@ -468,6 +474,7 @@
 	
 		ul {
 			position: relative;
+			margin-bottom: 0;
 		}
 	
 		li {
@@ -479,7 +486,7 @@
 				// font-size: 16px;
 	
 				padding: 10px;
-				display: block;
+				display: flex;
 	
 			}
 		}
