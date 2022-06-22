@@ -5,27 +5,27 @@ mixin menu-toggle()
 
 mixin trop-list()
 	+e.container.container
-		ul.trop__list
-			li.trop__list-item.first.active 
-				a.trop__list-link(href='#') Главная
-			li.trop__list-item
-				a.trop__list-link(href='#') Условия аренды
-			li.trop__list-item.last 
-				a.trop__list-link(href='#') Публичная оферта
-			li.trop__list-item
-				a.trop__list-link(href='#') Проверка
-			li.trop__list-item
-				a.trop__list-link(href='#') Доставка
-			li.trop__list-item
-				a.trop__list-link(href='#') О компании
-			li.trop__list-item
-				a.trop__list-link(href='#') Новости
-			li.trop__list-item
-				a.trop__list-link(href='#') Отзывы
-			li.trop__list-item
-				a.trop__list-link(href='#') Контакты
-			li.trop__list-item
-				a.trop__list-link(href='#') Карта сайта
+		ul.menu
+			li 
+				a(href='#').active Главная
+			li
+				a(href='#') Условия аренды
+			li.last 
+				a(href='#') Публичная оферта
+			li
+				a(href='#') Проверка
+			li
+				a(href='#') Доставка
+			li
+				a(href='#') О компании
+			li
+				a(href='#') Новости
+			li
+				a(href='#') Отзывы
+			li
+				a(href='#') Контакты
+			li
+				a(href='#') Карта сайта
 
 mixin mob-mnu()
 	-
@@ -44,20 +44,24 @@ mixin mob-mnu()
 				+input("Поиск авто")
 					+icon('search')
 				+e.buy.text-center(href="#") Купить франшизу за 99 т.р.
-				+e.indent
-					+e.sell-auto(href="#")
-						+icon('vehicle_car_regular')
-						| Сдать свой авто
-				+e.indent
-					+e.invest(href="#")
-						+icon('analysis_graph')
-						| Инвестировать
-				+e.indent
-					+e.login-in.popup-with-move-anim.data-modal(href="#modal-with-input-tel")
-						+icon('account')
-						| Войти
-				+e.indent
-					+e.online-pay(href="#") Онлайн-оплата
+				ul.menu
+					li
+						a(href="#")
+							+e.icon-wrap
+								+icon('vehicle_car_regular')
+							| Сдать свой авто
+					li
+						a(href="#")
+							+e.icon-wrap
+								+icon('analysis_graph')
+							| Инвестировать
+					li
+						a.popup-with-move-anim.data-modal(href="#modal-with-input-tel")
+							+e.icon-wrap
+								+icon('account')
+							| Войти
+					li
+						a.text-success(href="#") Онлайн-оплата
 				+e.indent--2
 					+e.mail(href="mailtp:info@a7.rent") info@a7.rent
 				+e.indent--2
