@@ -1,15 +1,18 @@
 
 // start .header
 .header2 {
-	padding-top: rem(30);
-	padding-bottom: 0;
 	margin-bottom: 0;
 	background-color: #333333;
 	@include media-breakpoint-up(sm) {
 		margin-bottom: 0;
 	}
-	@include media-breakpoint-up(lg) {
-		padding-bottom: rem(30);
+	// padding-top: rem(30);
+	// padding-bottom: 0;
+	// @include media-breakpoint-up(lg) {
+	// 	padding-bottom: rem(30);
+	// }
+	.row{
+		// align-items: center;
 	}
 	&__col {
 		@include media-breakpoint-down(sm) {
@@ -19,6 +22,10 @@
 		}
 	}
 	&__wrap {
+		margin-top: rem(30);
+		@include media-breakpoint-up(lg){
+			margin-bottom: rem(30);
+		}
 		background-color: #fff;
 		padding: rem(18) rem(10) rem(10);
 		max-width: rem(520);
@@ -286,6 +293,7 @@
 			color: $gray-600;
 			margin-bottom: rem(8);
 		}
+		
 	}
 	&__button-wrap {
 		position: relative;
@@ -318,18 +326,26 @@
 		}
 	}
 	&__slider {
-		max-width: rem(572);
+		max-width: rem(670);
 		margin-left: auto;
 		margin-right: auto;
+		height: 100%;
+		.swiper-wrapper{
+			align-items: center;
+		}
 	}
 	&__slide {
-		@include block(572, 260);
+		// @include block(692, 353);
+		height: auto;
 		img {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
+			max-width: 100%;
+			max-height: 100%;
+			// position: absolute;
+			// top: 0;
+			// left: 0;
+			// width: 100%;
+			// height: 100%;
+			position: relative;
 			&.revert {
 				transform:matrix(-1.00,0.00,0.00,1.00,0,0);
 			}
@@ -339,6 +355,7 @@
 	.swiper-button-hand {
 		top: auto;
 		display: none;
+		bottom: rem(30);
 		@include media-breakpoint-up(lg) {
 			display: flex;
 		}

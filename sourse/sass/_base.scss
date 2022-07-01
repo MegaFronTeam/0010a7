@@ -618,19 +618,27 @@ iframe {
 		color: $gray-600;
 	} 
 	button{
-		color: $gray-600;
+		// color: $gray-600;
 		position: absolute;
+		// @extend .btn, .btn-primary;
+		padding: 0;
+		width: var(--size);
+		height: var(--size);
+		--size: 52px;
 		@include media-breakpoint-up(lg) {
-
-			right: 15px;
+			--size: #{rem(43)};
+			// right: 15px;
+			right: 0;
 		}
-		right: 25px;
-		top: 54%;
-		transform: translateY(-50%);
+		right: 10px;
+		top: 0;
+		// right: 25px;
+		// top: 54%;
+		// transform: translateY(-50%);
 		z-index: 2;
-		box-shadow: none;
-		border: none;
-		background: none;
+		// box-shadow: none;
+		// border: none;
+		// background: none;
 
 		.icon {
 			fill: none;
