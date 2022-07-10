@@ -1,6 +1,19 @@
 mixin header()
 	// start header
 	+b.HEADER.header2#header&attributes(attributes)
+		+e.button-wrap
+			+e.slider--js.swiper-container
+				.swiper-wrapper
+					mixin slide(i,c)
+						+e.slide.swiper-slide(style=`--bg:${c}`)
+							picture.container
+								source(media="(min-width: 992px )"  srcset=`img/${i}-desk.jpg`)
+								+img(`img/${i}-mob.jpg`)
+					+slide(`1`,`#eaff03`)
+					+slide(`2`,`#fe0a00`)
+					+slide(`3`,`#10058f`)
+			
+			.swiper-pagination
 		.container
 			.row
 				+e.col.col-lg-6.order-2.order-lg-1
@@ -21,18 +34,6 @@ mixin header()
 									p Дата окончания
 									<input class="endDate" alt='2' />
 							+e.BUTTON.submit(type="submit").btn.btn-primary подобрать
-				.col-lg-6.order-1.order-lg-1
-					+e.button-wrap
-						+e.slider--js.swiper-container
-							.swiper-wrapper
-								+e.slide.swiper-slide
-									+img('img/slider-car.png')
-								+e.slide.swiper-slide
-									+img('img/slider-car.png').revert
-								+e.slide.swiper-slide
-									+img('img/slider-car.png')
-								+e.slide.swiper-slide
-									+img('img/slider-car.png').revert
-						+arrow()
-						.swiper-pagination
+				+e.col.col-lg-6.order-1.order-lg-1
+					+arrow()
 	// end header

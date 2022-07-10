@@ -2,7 +2,12 @@
 // start .header
 .header2 {
 	margin-bottom: 0;
-	background-color: #333333;
+	// background-color: #333333;
+	position: relative;
+	@include media-breakpoint-up(lg) {
+		padding-top: 30px;
+
+	}
 	@include media-breakpoint-up(sm) {
 		margin-bottom: 0;
 	}
@@ -22,7 +27,9 @@
 		}
 	}
 	&__wrap {
-		margin-top: rem(30);
+		
+		position: relative;
+		z-index: 2;
 		@include media-breakpoint-up(lg){
 			margin-bottom: rem(30);
 		}
@@ -67,6 +74,8 @@
 		}
 	}
 	.form-wrap {
+		position: relative;
+		z-index: 2;
 		&__inc-wrap {
 			display: flex;
 			// border-radius: 8px;
@@ -298,8 +307,14 @@
 	&__button-wrap {
 		position: relative;
 		height: 100%;
-		@include media-breakpoint-down(lg) {
-			padding-bottom: rem(34);
+		
+		@include media-breakpoint-up(lg) {
+			position: absolute;
+			padding-bottom: 0;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
 		}
 	}
 	.swiper-pagination {
@@ -320,23 +335,45 @@
 		// 		background-color: #F6EE25;
 		// 		transform: scale(1);
 		// 	}
-			@include media-breakpoint-up(lg) {
-				display: none;
-			}
+		@include media-breakpoint-up(lg) {
+			display: none;
 		}
 	}
-	&__slider {
-		max-width: rem(670);
+}
+&__slider {
+		@include media-breakpoint-up(lg) {
+			// position: absolute;
+			// height: 100%;
+			// left: calc(-50vw - 15px);
+			// // transform: translateX(-50%);
+			// top: 0;
+			// width: calc(100vw);
+			// max-width: none;
+		}
+		// max-width: rem(670);
 		margin-left: auto;
 		margin-right: auto;
 		height: 100%;
 		.swiper-wrapper{
 			align-items: center;
+			height: 100%;
 		}
 	}
 	&__slide {
 		// @include block(692, 353);
-		height: auto;
+		// height: auto;
+		// align-self: center;d
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background-color: var(--bg);
+		@include media-breakpoint-down(lg) {
+			padding-bottom: rem(64);
+		}
+		picture{
+			text-align: center;
+		}
 		img {
 			max-width: 100%;
 			max-height: 100%;
@@ -366,6 +403,9 @@
 		&-next {
 			right: 0;
 		}
+	}
+	&__col{
+		// position: relative;
 	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
