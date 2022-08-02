@@ -364,19 +364,33 @@
 		// height: auto;
 		// align-self: center;d
 		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
+		align-items: flex-end;
+		// flex-direction: column;
+		// align-items: center;
+		// justify-content: center;
 		background-color: var(--bg);
 		@include media-breakpoint-down(lg) {
-			padding-bottom: rem(64);
+			// padding-bottom: rem(64);
 			padding-top: 30px;
 		}
 		picture{
-			text-align: center;
+			@include media-breakpoint-down(lg) {
+				padding: 0;
+			}
+			text-align: right;
 		}
 		img {
-			max-width: 100%;
+			@media (min-width: 1440px) {
+
+				max-width: calc(55% );
+			}
+			
+			@include media-breakpoint-up(lg) {
+
+				max-width: calc(50% );
+			}
+			
+			width: auto;
 			max-height: 100%;
 			// position: absolute;
 			// top: 0;

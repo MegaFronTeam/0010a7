@@ -7,9 +7,9 @@ mixin header()
 					mixin slide(i,c)
 						+e.slide.swiper-slide(style=`--bg:${c}` href="#")
 							picture.container
-								source(media="(min-width: 992px )"  srcset=`img/${i}-desk.jpg`)
-								+img(`img/${i}-mob.jpg`)
-					+slide(`1`,`#eaff03`)
+								source(media="(min-width: 576px )"  srcset=`img/banner-desk.png`)
+								+img(`img/banner-mob.png`)
+					+slide(`1`,`#F0B60A`)
 					+slide(`2`,`#fe0a00`)
 					+slide(`3`,`#10058f`)
 			

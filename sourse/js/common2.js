@@ -386,9 +386,9 @@ function eventHandler() {
 		slidesPerView: 1,
 		effect: 'fade',
 		loop: true,
-		autoplay: {
-			delay: '4500',
-		},
+		// autoplay: {
+		// 	delay: '4500',
+		// },
     fadeEffect: {
       crossFade: true,
     },
