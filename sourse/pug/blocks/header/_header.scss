@@ -383,11 +383,16 @@
 			@media (min-width: 1470px) {
 
 				max-width: calc(55% );
+				margin-right: 0;
 			}
 			
 			@include media-breakpoint-up(lg) {
+				margin-right: -100px;
+				max-width: calc(50% + 100px);
+			}
+			@include media-breakpoint-up(lg) {
 
-				max-width: calc(50% );
+				// max-width: calc(50% );
 			}
 			
 			width: auto;
