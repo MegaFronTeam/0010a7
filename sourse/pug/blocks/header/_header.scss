@@ -382,13 +382,13 @@
 		img {
 			@media (min-width: 1470px) {
 
-				max-width: calc(55% );
+				max-width: calc(59% );
 				margin-right: 0;
 			}
 			
 			@include media-breakpoint-up(lg) {
-				margin-right: -100px;
-				max-width: calc(50% + 100px);
+				margin-right: -120px;
+				max-width: calc(54% + 100px);
 			}
 			@include media-breakpoint-up(lg) {
 
