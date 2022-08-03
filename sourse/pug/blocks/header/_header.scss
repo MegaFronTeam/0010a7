@@ -371,7 +371,7 @@
 		background-color: var(--bg);
 		@include media-breakpoint-down(lg) {
 			// padding-bottom: rem(64);
-			padding-top: 30px;
+			// padding-top: 30px;
 		}
 		picture{
 			@include media-breakpoint-down(lg) {
