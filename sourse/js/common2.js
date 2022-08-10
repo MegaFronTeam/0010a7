@@ -381,14 +381,29 @@ function eventHandler() {
 	});
 	// modal window
 
+	// let slideSpeed = 4500;
+	let slideSpeed = 4500;
+ 
+	// document.querySelector(':root').style.setProperty('--animate-speed', slideSpeed / 1000+ 's');
 
+	function animateArrow() {
+		document.querySelector(".border-svg").animate([
+			// keyframes
+			{ strokeDashoffset: 170},
+			{ strokeDashoffset: 0}
+		], {
+			// timing options
+			duration: slideSpeed
+		})
+	}
   const header2Swiper = new Swiper('.header2__slider--js', {
 		slidesPerView: 1,
 		effect: 'fade',
 		loop: true,
-		// autoplay: {
-		// 	delay: '4500',
-		// },
+		autoplay: {
+			delay: slideSpeed,
+			disableOnInteractio: false
+		},
     fadeEffect: {
       crossFade: true,
     },
@@ -401,7 +416,17 @@ function eventHandler() {
 			type: 'bullets',
 			clickable: true,
 		},
+		on:{
+			init: () => animateArrow(),
+			
+			autoplay: () => animateArrow(),
+
+
+		}
 	});
+	$(".header2 .swiper-button-hand").click(function() {
+    header2Swiper.autoplay.start()
+});
 
 
 	// var datepicker, datepicker2, config;

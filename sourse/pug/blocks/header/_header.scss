@@ -416,7 +416,16 @@
 			top: 0;
 			width: 100%;
 			height: 100%;
+			// stroke: ;
+			stroke-width: 2px;
+			stroke-dasharray: 170;
+			// @include mt;
+			// animation: arrowanimate var(--animate-speed) linear infinite;
 		}
+
+
+
+		
 
 		top: auto;
 		display: none;
@@ -460,6 +469,19 @@
 	@include media-breakpoint-down(xs) {} 
 	
 } // end.header
+
+
+@keyframes arrowanimate {
+	from {
+		stroke-dashoffset: 170;
+	}
+	to {
+		stroke-dashoffset: 0; 
+	}
+}
+
+
+
 .gj-picker {
 	padding: 10px;
 	text-align: center;
