@@ -16,8 +16,9 @@ mixin header()
 					+slide(`2`,`#fe0a00`)
 					+slide(`3`,`#10058f`)
 			
-			.swiper-pagination
-		.d-lg-none.border-line(style="background:red")
+			+b.border-line.d-lg-none
+				+e.progress(style="background:red")
+			//- .swiper-pagination
 		.container
 			.row
 				+e.col.col-lg-6.order-2.order-lg-1
@@ -40,6 +41,7 @@ mixin header()
 							+e.BUTTON.submit(type="submit").btn.btn-primary подобрать
 				+e.col.col-lg-6.order-1.order-lg-1
 					+arrow()
+						// добавил svg рамку
 						<svg class="border-svg" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<rect x="0.5" y="0.5" width="45" height="45" rx="7.5"  />
 						</svg>
