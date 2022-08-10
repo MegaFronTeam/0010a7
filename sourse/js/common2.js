@@ -395,6 +395,16 @@ function eventHandler() {
 			// timing options
 			duration: slideSpeed
 		})
+		
+		document.querySelector(".border-line").animate([
+			// keyframes
+			{ transform: 'scaleX(0)'},
+			{transform: 'scaleX(1)'}
+		], {
+			// timing options
+			duration: slideSpeed
+		})
+
 	}
   const header2Swiper = new Swiper('.header2__slider--js', {
 		slidesPerView: 1,
