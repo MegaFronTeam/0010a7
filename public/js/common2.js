@@ -396,7 +396,7 @@ function eventHandler() {
 			duration: speed
 		})
 		
-		document.querySelector(".border-line").animate([
+		document.querySelector(".border-line__progress").animate([
 			// keyframes
 			{ transform: 'scaleX(0)'},
 			{transform: 'scaleX(1)'}
@@ -412,7 +412,7 @@ function eventHandler() {
 		loop: true,
 		autoplay: {
 			delay: slideSpeed,
-			disableOnInteractio: false
+			disableOnInteraction: false
 		},
     fadeEffect: {
       crossFade: true,
@@ -428,15 +428,16 @@ function eventHandler() {
 		},
 		on:{
 			init: () => animateArrow(),
+			slideChange: () => animateArrow(slideSpeed + 500),
 			
-			autoplay: () => animateArrow(slideSpeed + 500),
+			// autoplay: () => animateArrow(slideSpeed + 500),
 
 
 		}
 	});
-	$(".header2 .swiper-button-hand").click(function() {
-    header2Swiper.autoplay.start()
-		animateArrow();
+	$(".header2 .swiper-button-hand, .header2__slide").click(function() {
+    // header2Swiper.autoplay.start()
+		// animateArrow();
 });
 
 

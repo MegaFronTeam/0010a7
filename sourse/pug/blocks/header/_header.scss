@@ -419,6 +419,7 @@
 			stroke: currentColor ;
 			stroke-width: 2px;
 			stroke-dasharray: 170;
+			stroke-dashoffset: 170;
 			// @include mt;
 			// animation: arrowanimate var(--animate-speed) linear infinite;
 		}
@@ -445,10 +446,24 @@
 		// position: relative;
 	}
 	.border-line{
-		height: 5px;
-		transform-origin: left;
-		
+		// height: 5px;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		z-index: 4;
+		pointer-events: none;
+		background-color: rgba(0,0,0, .3);
+		&__progress{
+			width: 100%;
+			height: 8px;
+			position: relative;
+			left: 0;
+			// top: 0;
+			transform: scaleX(0);
 
+			transform-origin: left;
+		}
 	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
