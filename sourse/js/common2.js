@@ -386,14 +386,14 @@ function eventHandler() {
  
 	// document.querySelector(':root').style.setProperty('--animate-speed', slideSpeed / 1000+ 's');
 
-	function animateArrow() {
+	function animateArrow(speed= slideSpeed) {
 		document.querySelector(".border-svg").animate([
 			// keyframes
 			{ strokeDashoffset: 170},
 			{ strokeDashoffset: 0}
 		], {
 			// timing options
-			duration: slideSpeed
+			duration: speed
 		})
 		
 		document.querySelector(".border-line").animate([
@@ -429,13 +429,14 @@ function eventHandler() {
 		on:{
 			init: () => animateArrow(),
 			
-			autoplay: () => animateArrow(),
+			autoplay: () => animateArrow(slideSpeed + 500),
 
 
 		}
 	});
 	$(".header2 .swiper-button-hand").click(function() {
     header2Swiper.autoplay.start()
+		animateArrow();
 });
 
 
